@@ -1,0 +1,413 @@
+[gd_resource type="SpriteFrames" load_steps=169 format=2]
+
+[ext_resource path="res://actors/player/Male/Male_5_Pickup7.png" type="Texture" id=1]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup6.png" type="Texture" id=2]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup5.png" type="Texture" id=3]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup4.png" type="Texture" id=4]
+[ext_resource path="res://actors/player/Male/Male_5_Run5.png" type="Texture" id=5]
+[ext_resource path="res://actors/player/Male/Male_5_Run0.png" type="Texture" id=6]
+[ext_resource path="res://actors/player/Male/Male_5_Run1.png" type="Texture" id=7]
+[ext_resource path="res://actors/player/Male/Male_5_Run4.png" type="Texture" id=8]
+[ext_resource path="res://actors/player/Male/Male_7_Run9.png" type="Texture" id=9]
+[ext_resource path="res://actors/player/Male/Male_5_Run3.png" type="Texture" id=10]
+[ext_resource path="res://actors/player/Male/Male_6_Run2.png" type="Texture" id=11]
+[ext_resource path="res://actors/player/Male/Male_6_Run3.png" type="Texture" id=12]
+[ext_resource path="res://actors/player/Male/Male_6_Run4.png" type="Texture" id=13]
+[ext_resource path="res://actors/player/Male/Male_5_Run6.png" type="Texture" id=14]
+[ext_resource path="res://actors/player/Male/Male_5_Run7.png" type="Texture" id=15]
+[ext_resource path="res://actors/player/Male/Male_5_Run2.png" type="Texture" id=16]
+[ext_resource path="res://actors/player/Male/Male_5_Run8.png" type="Texture" id=17]
+[ext_resource path="res://actors/player/Male/Male_6_Run5.png" type="Texture" id=18]
+[ext_resource path="res://actors/player/Male/Male_6_Run6.png" type="Texture" id=19]
+[ext_resource path="res://actors/player/Male/Male_6_Run8.png" type="Texture" id=20]
+[ext_resource path="res://actors/player/Male/Male_6_Run1.png" type="Texture" id=21]
+[ext_resource path="res://actors/player/Male/Male_5_Run9.png" type="Texture" id=22]
+[ext_resource path="res://actors/player/Male/Male_6_Run0.png" type="Texture" id=23]
+[ext_resource path="res://actors/player/Male/Male_3_Run1.png" type="Texture" id=24]
+[ext_resource path="res://actors/player/Male/Male_6_Run9.png" type="Texture" id=25]
+[ext_resource path="res://actors/player/Male/Male_6_Run7.png" type="Texture" id=26]
+[ext_resource path="res://actors/player/Male/Male_3_Run2.png" type="Texture" id=27]
+[ext_resource path="res://actors/player/Male/Male_3_Run3.png" type="Texture" id=28]
+[ext_resource path="res://actors/player/Male/Male_3_Run6.png" type="Texture" id=29]
+[ext_resource path="res://actors/player/Male/Male_3_Run0.png" type="Texture" id=30]
+[ext_resource path="res://actors/player/Male/Male_3_Run4.png" type="Texture" id=31]
+[ext_resource path="res://actors/player/Male/Male_3_Run7.png" type="Texture" id=32]
+[ext_resource path="res://actors/player/Male/Male_3_Run5.png" type="Texture" id=33]
+[ext_resource path="res://actors/player/Male/Male_3_Run8.png" type="Texture" id=34]
+[ext_resource path="res://actors/player/Male/Male_7_Run7.png" type="Texture" id=35]
+[ext_resource path="res://actors/player/Male/Male_7_Run8.png" type="Texture" id=36]
+[ext_resource path="res://actors/player/Male/Male_3_Run9.png" type="Texture" id=37]
+[ext_resource path="res://actors/player/Male/Male_7_Run0.png" type="Texture" id=38]
+[ext_resource path="res://actors/player/Male/Male_7_Run1.png" type="Texture" id=39]
+[ext_resource path="res://actors/player/Male/Male_7_Run3.png" type="Texture" id=40]
+[ext_resource path="res://actors/player/Male/Male_7_Run2.png" type="Texture" id=41]
+[ext_resource path="res://actors/player/Male/Male_7_Run4.png" type="Texture" id=42]
+[ext_resource path="res://actors/player/Male/Male_7_Run5.png" type="Texture" id=43]
+[ext_resource path="res://actors/player/Male/Male_7_Run6.png" type="Texture" id=44]
+[ext_resource path="res://actors/player/Male/Male_1_Run2.png" type="Texture" id=45]
+[ext_resource path="res://actors/player/Male/Male_1_Run0.png" type="Texture" id=46]
+[ext_resource path="res://actors/player/Male/Male_1_Run1.png" type="Texture" id=47]
+[ext_resource path="res://actors/player/Male/Male_1_Run4.png" type="Texture" id=48]
+[ext_resource path="res://actors/player/Male/Male_1_Run3.png" type="Texture" id=49]
+[ext_resource path="res://actors/player/Male/Male_1_Run5.png" type="Texture" id=50]
+[ext_resource path="res://actors/player/Male/Male_1_Run6.png" type="Texture" id=51]
+[ext_resource path="res://actors/player/Male/Male_1_Run7.png" type="Texture" id=52]
+[ext_resource path="res://actors/player/Male/Male_1_Run8.png" type="Texture" id=53]
+[ext_resource path="res://actors/player/Male/Male_1_Run9.png" type="Texture" id=54]
+[ext_resource path="res://actors/player/Male/Male_4_Run0.png" type="Texture" id=55]
+[ext_resource path="res://actors/player/Male/Male_4_Run1.png" type="Texture" id=56]
+[ext_resource path="res://actors/player/Male/Male_4_Run4.png" type="Texture" id=57]
+[ext_resource path="res://actors/player/Male/Male_4_Run3.png" type="Texture" id=58]
+[ext_resource path="res://actors/player/Male/Male_4_Run2.png" type="Texture" id=59]
+[ext_resource path="res://actors/player/Male/Male_4_Run8.png" type="Texture" id=60]
+[ext_resource path="res://actors/player/Male/Male_4_Run9.png" type="Texture" id=61]
+[ext_resource path="res://actors/player/Male/Male_4_Run5.png" type="Texture" id=62]
+[ext_resource path="res://actors/player/Male/Male_4_Run6.png" type="Texture" id=63]
+[ext_resource path="res://actors/player/Male/Male_2_Run0.png" type="Texture" id=64]
+[ext_resource path="res://actors/player/Male/Male_4_Run7.png" type="Texture" id=65]
+[ext_resource path="res://actors/player/Male/Male_2_Run3.png" type="Texture" id=66]
+[ext_resource path="res://actors/player/Male/Male_2_Run4.png" type="Texture" id=67]
+[ext_resource path="res://actors/player/Male/Male_2_Run2.png" type="Texture" id=68]
+[ext_resource path="res://actors/player/Male/Male_2_Run1.png" type="Texture" id=69]
+[ext_resource path="res://actors/player/Male/Male_2_Run5.png" type="Texture" id=70]
+[ext_resource path="res://actors/player/Male/Male_2_Run6.png" type="Texture" id=71]
+[ext_resource path="res://actors/player/Male/Male_2_Run9.png" type="Texture" id=72]
+[ext_resource path="res://actors/player/Male/Male_0_Run0.png" type="Texture" id=73]
+[ext_resource path="res://actors/player/Male/Male_2_Run8.png" type="Texture" id=74]
+[ext_resource path="res://actors/player/Male/Male_0_Run1.png" type="Texture" id=75]
+[ext_resource path="res://actors/player/Male/Male_0_Run2.png" type="Texture" id=76]
+[ext_resource path="res://actors/player/Male/Male_2_Run7.png" type="Texture" id=77]
+[ext_resource path="res://actors/player/Male/Male_0_Run3.png" type="Texture" id=78]
+[ext_resource path="res://actors/player/Male/Male_0_Run4.png" type="Texture" id=79]
+[ext_resource path="res://actors/player/Male/Male_0_Run9.png" type="Texture" id=80]
+[ext_resource path="res://actors/player/Male/Male_0_Run5.png" type="Texture" id=81]
+[ext_resource path="res://actors/player/Male/Male_0_Run8.png" type="Texture" id=82]
+[ext_resource path="res://actors/player/Male/Male_0_Run7.png" type="Texture" id=83]
+[ext_resource path="res://actors/player/Male/Male_0_Run6.png" type="Texture" id=84]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup9.png" type="Texture" id=85]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup1.png" type="Texture" id=86]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup2.png" type="Texture" id=87]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup8.png" type="Texture" id=88]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup2.png" type="Texture" id=89]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup0.png" type="Texture" id=90]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup3.png" type="Texture" id=91]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup0.png" type="Texture" id=92]
+[ext_resource path="res://actors/player/Male/Male_6_Idle0.png" type="Texture" id=93]
+[ext_resource path="res://actors/player/Male/Male_5_Pickup1.png" type="Texture" id=94]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup3.png" type="Texture" id=95]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup4.png" type="Texture" id=96]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup6.png" type="Texture" id=97]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup5.png" type="Texture" id=98]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup7.png" type="Texture" id=99]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup8.png" type="Texture" id=100]
+[ext_resource path="res://actors/player/Male/Male_0_Pickup9.png" type="Texture" id=101]
+[ext_resource path="res://actors/player/Male/Male_2_Idle0.png" type="Texture" id=102]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup0.png" type="Texture" id=103]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup1.png" type="Texture" id=104]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup2.png" type="Texture" id=105]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup3.png" type="Texture" id=106]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup4.png" type="Texture" id=107]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup5.png" type="Texture" id=108]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup6.png" type="Texture" id=109]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup7.png" type="Texture" id=110]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup8.png" type="Texture" id=111]
+[ext_resource path="res://actors/player/Male/Male_6_Pickup9.png" type="Texture" id=112]
+[ext_resource path="res://actors/player/Male/Male_3_Idle0.png" type="Texture" id=113]
+[ext_resource path="res://actors/player/Male/Male_7_Idle0.png" type="Texture" id=114]
+[ext_resource path="res://actors/player/Male/Male_0_Idle0.png" type="Texture" id=115]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup0.png" type="Texture" id=116]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup1.png" type="Texture" id=117]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup2.png" type="Texture" id=118]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup3.png" type="Texture" id=119]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup4.png" type="Texture" id=120]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup5.png" type="Texture" id=121]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup6.png" type="Texture" id=122]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup7.png" type="Texture" id=123]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup8.png" type="Texture" id=124]
+[ext_resource path="res://actors/player/Male/Male_3_Pickup9.png" type="Texture" id=125]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup0.png" type="Texture" id=126]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup1.png" type="Texture" id=127]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup2.png" type="Texture" id=128]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup3.png" type="Texture" id=129]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup4.png" type="Texture" id=130]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup5.png" type="Texture" id=131]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup6.png" type="Texture" id=132]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup7.png" type="Texture" id=133]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup8.png" type="Texture" id=134]
+[ext_resource path="res://actors/player/Male/Male_2_Pickup9.png" type="Texture" id=135]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup0.png" type="Texture" id=136]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup1.png" type="Texture" id=137]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup2.png" type="Texture" id=138]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup3.png" type="Texture" id=139]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup4.png" type="Texture" id=140]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup5.png" type="Texture" id=141]
+[ext_resource path="res://actors/player/Male/Male_1_Idle0.png" type="Texture" id=142]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup0.png" type="Texture" id=143]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup6.png" type="Texture" id=144]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup7.png" type="Texture" id=145]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup8.png" type="Texture" id=146]
+[ext_resource path="res://actors/player/Male/Male_7_Pickup9.png" type="Texture" id=147]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup1.png" type="Texture" id=148]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup2.png" type="Texture" id=149]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup3.png" type="Texture" id=150]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup7.png" type="Texture" id=151]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup4.png" type="Texture" id=152]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup5.png" type="Texture" id=153]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup6.png" type="Texture" id=154]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup9.png" type="Texture" id=155]
+[ext_resource path="res://actors/player/Male/Male_1_Pickup8.png" type="Texture" id=156]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup0.png" type="Texture" id=157]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup4.png" type="Texture" id=158]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup3.png" type="Texture" id=159]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup1.png" type="Texture" id=160]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup2.png" type="Texture" id=161]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup6.png" type="Texture" id=162]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup5.png" type="Texture" id=163]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup7.png" type="Texture" id=164]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup8.png" type="Texture" id=165]
+[ext_resource path="res://actors/player/Male/Male_4_Pickup9.png" type="Texture" id=166]
+[ext_resource path="res://actors/player/Male/Male_4_Idle0.png" type="Texture" id=167]
+[ext_resource path="res://actors/player/Male/Male_5_Idle0.png" type="Texture" id=168]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 129 ), ExtResource( 130 ), ExtResource( 150 ), ExtResource( 152 ) ],
+"loop": true,
+"name": "ducking2",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 167 ), ExtResource( 157 ), ExtResource( 160 ), ExtResource( 161 ) ],
+"loop": false,
+"name": "duck4",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ) ],
+"loop": false,
+"name": "pickup6",
+"speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup3",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 90 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "duck5",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 24 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "run3",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 167 ) ],
+"loop": true,
+"name": "idle4",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ) ],
+"loop": false,
+"name": "duck3",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 168 ) ],
+"loop": true,
+"name": "idle5",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 150 ), ExtResource( 152 ), ExtResource( 95 ), ExtResource( 96 ) ],
+"loop": true,
+"name": "ducking1",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 143 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ) ],
+"loop": false,
+"name": "duck1",
+"speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup7",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 56 ), ExtResource( 59 ), ExtResource( 58 ), ExtResource( 57 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 60 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "run4",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ) ],
+"loop": false,
+"name": "duck2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 91 ), ExtResource( 4 ), ExtResource( 106 ), ExtResource( 107 ) ],
+"loop": true,
+"name": "ducking5",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "run7",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 95 ), ExtResource( 96 ), ExtResource( 150 ), ExtResource( 152 ) ],
+"loop": true,
+"name": "ducking",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 86 ), ExtResource( 89 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 98 ), ExtResource( 97 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ) ],
+"loop": false,
+"name": "pickup0",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ) ],
+"loop": false,
+"name": "pickup7",
+"speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 106 ), ExtResource( 107 ), ExtResource( 138 ), ExtResource( 139 ) ],
+"loop": true,
+"name": "ducking6",
+"speed": 3.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 102 ) ],
+"loop": true,
+"name": "idle2",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 115 ) ],
+"loop": true,
+"name": "idle0",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 142 ) ],
+"loop": true,
+"name": "idle1",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 113 ) ],
+"loop": true,
+"name": "idle3",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 45 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "run1",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 93 ) ],
+"loop": true,
+"name": "idle6",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 16 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "run5",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 21 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 20 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "run6",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 119 ), ExtResource( 120 ), ExtResource( 159 ), ExtResource( 158 ) ],
+"loop": true,
+"name": "ducking3",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 69 ), ExtResource( 68 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 77 ), ExtResource( 74 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "run2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ) ],
+"loop": false,
+"name": "pickup2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ) ],
+"loop": false,
+"name": "pickup3",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 81 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 80 ) ],
+"loop": true,
+"name": "run0",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 157 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 159 ), ExtResource( 158 ), ExtResource( 163 ), ExtResource( 162 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ) ],
+"loop": false,
+"name": "pickup4",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 86 ), ExtResource( 89 ), ExtResource( 95 ) ],
+"loop": false,
+"name": "duck0",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 114 ) ],
+"loop": true,
+"name": "idle7",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 139 ) ],
+"loop": false,
+"name": "duck7",
+"speed": 10.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup6",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup1",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "standup4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 139 ), ExtResource( 140 ), ExtResource( 106 ), ExtResource( 107 ) ],
+"loop": true,
+"name": "ducking7",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 143 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 151 ), ExtResource( 156 ), ExtResource( 155 ), ExtResource( 143 ), ExtResource( 143 ) ],
+"loop": false,
+"name": "pickup1",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 90 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 91 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 88 ), ExtResource( 85 ) ],
+"loop": false,
+"name": "pickup5",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 159 ), ExtResource( 158 ), ExtResource( 119 ), ExtResource( 120 ) ],
+"loop": true,
+"name": "ducking4",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ) ],
+"loop": false,
+"name": "duck6",
+"speed": 10.0
+} ]

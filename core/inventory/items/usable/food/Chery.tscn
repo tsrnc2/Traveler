@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/icons/food/chery.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=2]
+
+[node name="Chery" instance=ExtResource( 2 )]
+icon = ExtResource( 1 )
+display_name = "Chery"
+description = "Tasty frust snack"
+usable = true
+calories = 10

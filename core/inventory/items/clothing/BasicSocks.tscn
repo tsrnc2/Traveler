@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/clothing/BaseClothing.gd" type="Script" id=1]
+[ext_resource path="res://core/inventory/icons/clothing/BrownShirt.png" type="Texture" id=2]
+
+[node name="BasicSocks" type="Node"]
+script = ExtResource( 1 )
+icon = ExtResource( 2 )
+display_name = "Socks"
+description = "Basic Wool Socks"
+price = 25
+usable = false
+clothing_type = 5
+COLD_PROTECTION = 5
+HEAT_PROTECTION = 5
+WET_RESISTANCE = 1
+MATTERIALS = {
+"COTTON": 45,
+"NYLON": 5,
+"WOOL": 50
+}

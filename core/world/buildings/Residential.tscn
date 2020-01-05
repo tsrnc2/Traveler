@@ -1,0 +1,629 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/world/buildings/BuildingTileSetGrid2.png" type="Texture" id=1]
+[ext_resource path="res://core/world/buildings/BuildingTileSetGrid.png" type="Texture" id=2]
+[node name="Resedential" type="YSort"]
+z_index = 1
+
+[node name="House" type="Sprite" parent="."]
+position = Vector2( 643.11, 1906 )
+scale = Vector2( 1.24001, 1.24001 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House/StaticBody2D"]
+polygon = PoolVector2Array( -55.6218, 2.01465, -18.9157, -19.7882, 64.7079, 19.9537, 23.3101, 41.2047, -7.87628, 25.7495, -16.4318, 30.4412, -35.4748, 22.4376, -35.7508, 11.3982 )
+
+[node name="House2" type="Sprite" parent="."]
+position = Vector2( 459.637, 936.35 )
+scale = Vector2( 1.54911, 1.54911 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 0, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House2/StaticBody2D"]
+polygon = PoolVector2Array( -104.128, 17.2023, -23.2222, 57.2249, -4.28674, 46.8965, -3.85638, 29.2521, 8.19342, 22.7969, 16.3701, 27.1003, 37.4573, 17.2023, 28.8503, 9.88635, 54.6713, -2.59381, 15.079, -24.5417, -40.4362, 4.29175, -70.5607, -11.6312 )
+
+[node name="House3" type="Sprite" parent="."]
+position = Vector2( 443.888, 1815.23 )
+scale = Vector2( 1.24, 1.24 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 328, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House3/StaticBody2D"]
+position = Vector2( 0.415985, -0.375488 )
+polygon = PoolVector2Array( -96.4099, -5.57068, -74.7776, 6.49353, -55.6412, -4.32263, -30.2648, 6.07751, -39.0009, 13.1497, -14.4565, 26.4618, -7.80038, 21.8857, 16.328, 33.118, 2.38693, 44.0771, 22.9842, 55.1664, 104.938, 13.5656, 87.2379, -0.601074, 68.4897, 6.66577, -11.0544, -31.37, 4.67987, -42.1794, -14.8725, -52.9955 )
+
+[node name="House4" type="Sprite" parent="."]
+position = Vector2( 642.407, 2092.18 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House4"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House4/StaticBody2D"]
+polygon = PoolVector2Array( -69.675, 8.06543, 1.23474, 44.8477, 51.6679, 17.1663, -21.8962, -19.9951 )
+
+[node name="House5" type="Sprite" parent="."]
+position = Vector2( 440.972, 1184.89 )
+scale = Vector2( 1.58247, 1.58247 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 256, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House5"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House5/StaticBody2D"]
+polygon = PoolVector2Array( -119.311, 6.17719, -66.4829, -21.4376, -58.4786, -11.8325, -95.2983, 5.77686, -87.294, 13.381, -98.0998, 19.3842 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House5/StaticBody2D"]
+polygon = PoolVector2Array( -50.3329, 14.067, 20.237, -22.47, 70.5811, 3.47595, -0.0256348, 41.1328 )
+
+[node name="House6" type="Sprite" parent="."]
+position = Vector2( 240.543, 1291.64 )
+scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 328, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House6"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House6/StaticBody2D"]
+polygon = PoolVector2Array( -18.2903, -27.0307, 50.6027, 8.94299, -0.642883, 36.7717, -65.4634, 3.85242, -92.6133, 19.1243, -122.478, 3.513, -92.6133, -14.4738, -67.1603, -2.93506 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House6/StaticBody2D"]
+polygon = PoolVector2Array( 57.1543, -13.535, 97.2777, 4.8421, 87.7829, 10.3552, 97.2777, 15.8684, 119.024, 3.61694, 67.2617, -21.1921 )
+
+[node name="House7" type="Sprite" parent="."]
+position = Vector2( -159.246, 1498.66 )
+scale = Vector2( 1.60054, 1.60054 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 492, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House7"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House7/StaticBody2D"]
+polygon = PoolVector2Array( 58.3806, -18.7213, 97.572, 0.874268, 87.1618, 7.61023, 98.4905, 11.8969, 118.086, 0.874268, 69.4032, -26.0698 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House7/StaticBody2D"]
+polygon = PoolVector2Array( -126.325, 1.39685, -93.8781, 17.6205, -62.618, 1.7926, -25.0269, 19.2032, -43.2289, 32.6569, -0.0980606, 53.6287, 42.6371, 30.6784, 22.8523, 17.2247, 50.551, 5.35388, -16.3216, -33.0286, -63.8051, -7.30841, -92.691, -21.1578 )
+
+[node name="House8" type="Sprite" parent="."]
+position = Vector2( 40.9966, 1393.27 )
+scale = Vector2( 1.55131, 1.5466 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 656, 256, 148 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House8"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House8/StaticBody2D"]
+polygon = PoolVector2Array( -14.8186, -30.1354, 52.3514, 8.88849, 27.7446, 21.2294, 41.7106, 35.5715, -1.18511, 56.918, -41.0881, 37.9062, -17.8113, 21.8965, -64.6973, 1.55072, -93.2945, 19.8953, -123.887, 6.55359, -93.9595, -13.7922, -68.3551, -3.45264 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House8/StaticBody2D"]
+polygon = PoolVector2Array( 58.3687, -14.6928, 93.7209, 3.03711, 84.8829, 8.47052, 94.8415, 16.9883, 117.336, 4.15063, 65.7813, -21.556 )
+
+[node name="House9" type="Sprite" parent="."]
+position = Vector2( 241.005, 1706.99 )
+scale = Vector2( 1.18975, 1.18975 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House9"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House9/StaticBody2D"]
+polygon = PoolVector2Array( -7.00124, 22.6689, 29.3328, 44.0232, 60.5673, 28.0873, -28.3554, -24.8202, -60.8648, -3.46606, -33.7737, 10.8763, -53.2155, 25.5375, -34.7298, 35.4177 )
+
+[node name="House10" type="Sprite" parent="."]
+position = Vector2( 1519.83, 1470.92 )
+scale = Vector2( 1.24322, 1.2496 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 512, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House10"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House10/StaticBody2D"]
+polygon = PoolVector2Array( -78.5719, 24.5111, -41.7334, 45.792, 9.95911, 19.782, 42.6384, 38.6984, 59.8693, 31.0135, 28.3784, 9.73267, 64.0284, -8.59241, 26.5958, -33.42 )
+
+[node name="House11" type="Sprite" parent="."]
+position = Vector2( 804.726, 1232.52 )
+scale = Vector2( 1.25201, 1.25201 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 512, 328, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House11"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House11/StaticBody2D"]
+polygon = PoolVector2Array( -77.7809, 17.1815, 34.6418, -44.2314, 75.9194, -17.0486, 31.6215, 5.43585, 58.1331, 23.8934, 40.3468, 35.3035, 7.12335, 17.1815, -42.2083, 42.3508, -74.7606, 26.5781, -67.3776, 21.2087 )
+
+[node name="House12" type="Sprite" parent="."]
+position = Vector2( 1694.98, 1351 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 492, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House12"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House12/StaticBody2D"]
+polygon = PoolVector2Array( -77.0966, 11.1373, -29.561, 34.66, -57.0043, 50.3418, -37.402, 62.1031, -5.05823, 44.4612, 43.9475, 69.9441, 72.8608, 55.7324, 66, 50.3418, 76.7812, 44.9512, -32.9915, -17.7761 )
+
+[node name="House13" type="Sprite" parent="."]
+position = Vector2( -184.264, 910.907 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 768, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House13"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House13/StaticBody2D"]
+polygon = PoolVector2Array( -51.621, 10.9658, 8.901, 38.4335, 49.8697, 18.4147, -9.2556, -18.8296 )
+
+[node name="House14" type="Sprite" parent="."]
+position = Vector2( 895.392, 2054.17 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 768, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House14"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House14/StaticBody2D"]
+polygon = PoolVector2Array( -49.1711, 4.69019, -27.0573, 16.6316, -18.2117, 11.7666, -8.03937, 15.7471, -14.2313, 22.8235, 10.5362, 36.0918, 19.3818, 31.2268, 49.4565, 44.9373, 80.4158, 29.0154, -12.9044, -23.1732 )
+
+[node name="House15" type="Sprite" parent="."]
+position = Vector2( 776.7, 1444.92 )
+scale = Vector2( 1.28, 1.28 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 768, 328, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House15"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House15/StaticBody2D"]
+polygon = PoolVector2Array( -78.4125, 25.6879, -49.2201, 42.0157, -19.5328, 26.6774, -8.15283, 30.6356, 12.6283, 18.7609, 3.72211, 11.339, 17.5762, 5.89636, 28.4615, 11.339, 51.7165, 0.948486, 72.4975, 12.8234, 103.669, -3.50464, 39.8416, -42.5928 )
+
+[node name="House16" type="Sprite" parent="."]
+position = Vector2( 1303.34, 1155.03 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 768, 492, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House16"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House16/StaticBody2D"]
+polygon = PoolVector2Array( -102.661, 24.9802, -71.9265, 40.9464, -49.5739, 28.9717, -29.6161, 39.7489, -17.6415, 34.959, -4.07031, 41.3455, -13.65, 46.5345, 9.90015, 58.9083, 20.2782, 54.1184, 50.2147, 69.2863, 50.2147, 69.2863, 80.5504, 53.3202, -41.1917, -14.137 )
+
+[node name="House17" type="Sprite" parent="."]
+position = Vector2( 40.018, 1601.5 )
+scale = Vector2( 1.28, 1.28 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1024, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House17"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House17/StaticBody2D"]
+polygon = PoolVector2Array( -49.2551, 19.0078, -40.3242, 21.8281, -57.246, 33.1093, -41.7344, 43.4503, -19.6421, 34.0494, -7.42091, 39.6901, 21.722, 23.7084, 31.123, 28.8789, 48.0447, 18.5378, 41.4641, 11.4871, 52.7452, 5.84656, 16.5515, -19.0659 )
+
+[node name="House18" type="Sprite" parent="."]
+position = Vector2( 203.801, 1110.86 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1024, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House18"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House18/StaticBody2D"]
+polygon = PoolVector2Array( -48.1255, 14.6539, -39.9976, 19.5306, -57.2286, 29.6093, -41.6232, 38.3872, -19.5155, 27.9836, -9.11183, 33.1854, 6.49362, 41.3132, -9.11183, 54.6429, 6.49362, 63.7461, 28.6013, 54.968, 33.8032, 55.9434, 95.2496, 24.4073, 15.9219, -26.3103 )
+
+[node name="House19" type="Sprite" parent="."]
+position = Vector2( 1131.26, 2158.71 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 1024, 328, 256, 190 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House19"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House19/StaticBody2D"]
+polygon = PoolVector2Array( -7.276, 70.2405, 10.5463, 55.0728, -17.5143, 43.3176, -17.8934, 43.3176, -41.0244, 53.1768, -57.33, 43.3176, -39.1284, 32.3208, -49.746, 28.1497, -39.1119, 18.7551, -70.2225, 1.98511, -1.52759, -35.8867, 95.4863, 38.0088, 33.6772, 70.2405, 30.6437, 67.207, 26.8517, 69.8613, 6.75427, 77.4453 )
+
+[node name="House20" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1150.7, 1415.36 )
+scale = Vector2( 1.32, 1.32 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1024, 536, 256, 202 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House20"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House20/StaticBody2D"]
+polygon = PoolVector2Array( -97.4655, 46.3169, 5.03094, -33.2063, 71.0058, 9.79517, 51.5668, 20.3982, 48.6215, 38.0701, 42.1418, 41.6045, 57.4574, 53.9747, 39.1965, 62.8105, 18.5794, 53.9747, 7.38727, 58.6871, -0.270569, 65.1667, 6.79822, 79.3043, -5.57214, 89.3182, -29.7236, 79.8933, -35.0251, 80.4823 )
+
+[node name="House21" type="Sprite" parent="."]
+position = Vector2( 680.597, 1008.29 )
+scale = Vector2( 1.5801, 1.5801 )
+texture = ExtResource( 2 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 1024, 738, 256, 224 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House21"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House21/StaticBody2D"]
+polygon = PoolVector2Array( -95.561, 61.949, -28.7396, 94.5826, -4.39383, 98.2086, 6.48404, 91.9927, 1.82208, 74.8988, 11.664, 69.2009, 42.2257, 74.8988, 58.8015, 65.0569, 40.1537, 55.215, 50.5136, 50.035, 41.1897, 38.1212, 73.8234, 22.0634, 24.6139, -11.6063 )
+
+[node name="House22" type="Sprite" parent="."]
+position = Vector2( 2003.15, 2096.46 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 690, 256, 243 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House22"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House22/StaticBody2D"]
+polygon = PoolVector2Array( -75.12, 27.8781, -31.8051, 50.6754, -57.338, 68.9133, -40.468, 79.8561, -8.55164, 62.0741, 42.0586, 88.0631, 72.1512, 71.649, 65.7679, 66.6335, 74.8868, 62.53, -40.468, -4.49438 )
+
+[node name="House23" type="Sprite" parent="."]
+position = Vector2( 1286.81, 1803.53 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House23"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House23/StaticBody2D"]
+polygon = PoolVector2Array( -69.8796, -7.89929, -50.3337, 5.0011, -35.8697, 1.48279, -20.2329, 10.4739, -36.6515, 23.7651, -20.2329, 33.1471, -1.46887, 22.9833, 20.4225, 34.7108, 42.3141, 24.156, -17.4965, -17.6722, -49.1609, -25.8815 )
+
+[node name="House24" type="Sprite" parent="."]
+position = Vector2( 1126.84, 1268.8 )
+scale = Vector2( 1.28497, 1.28497 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 0, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House24"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House24/StaticBody2D"]
+polygon = PoolVector2Array( -42.4684, 19.2165, -19.2808, 30.448, 1.73309, 18.4919, 19.8483, 27.9119, 36.1522, 17.7673, 23.4715, 8.34735, 37.2391, 0.376587, 53.1807, -0.348083, 51.7314, 9.4342, 51.7314, 9.4342, 41.5868, 23.9265, 56.8037, 31.535, 73.1075, 22.8395, 81.4406, 26.4626, 103.179, 15.5934, 33.2538, -30.7818 )
+
+[node name="House25" type="Sprite" parent="."]
+position = Vector2( -175.165, 2969.92 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 328, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House25"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House25/StaticBody2D"]
+polygon = PoolVector2Array( -102.359, 11.8384, -79.4078, 24.1537, -72.6904, 18.5558, -56.4566, 25.833, -41.9023, 17.996, -21.1902, 24.7134, -2.71732, 14.6373, 21.3534, 25.833, 43.185, 11.8384, -41.3425, -40.2216 )
+
+[node name="House26" type="Sprite" parent="."]
+position = Vector2( -599.729, 2740.72 )
+scale = Vector2( 1.53731, 1.53731 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House26"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House26/StaticBody2D"]
+polygon = PoolVector2Array( -74.1163, 8.20398, 7.41058, 52.4366, 73.7596, 19.0454, -16.874, -32.9932 )
+
+[node name="House27" type="Sprite" parent="."]
+visible = false
+position = Vector2( 602.578, 1726.39 )
+scale = Vector2( 1.26548, 1.26548 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House27"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House27/StaticBody2D"]
+polygon = PoolVector2Array( -40.3489, 15.0236, 18.2014, 42.9371, 78.1135, 10.9387, 18.6696, -25.1915 )
+
+[node name="House28" type="Sprite" parent="."]
+visible = false
+position = Vector2( 183.359, 2111.48 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 512, 164, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House28"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House28/StaticBody2D"]
+polygon = PoolVector2Array( -79.8972, 8.62805, -16.5204, 41.4563, 41.8409, 9.53992, -27.4632, -30.1277 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House28/StaticBody2D"]
+polygon = PoolVector2Array( 55.5194, 7.71619, 84.2441, -8.24207, 115.249, 7.71619, 86.0679, 23.6743 )
+
+[node name="House29" type="Sprite" parent="."]
+position = Vector2( 1011.19, 2116.97 )
+scale = Vector2( 0.9001, 0.9001 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House29"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House29/StaticBody2D"]
+polygon = PoolVector2Array( -42.3545, 13.2361, 1.46155, 34.1917, 42.7377, 12.6011, -3.61853, -15.3396 )
+
+[node name="House30" type="Sprite" parent="."]
+position = Vector2( 800.28, 1825.55 )
+scale = Vector2( 1.27226, 1.27226 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House30"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House30/StaticBody2D"]
+polygon = PoolVector2Array( -42.6149, 10.8721, -2.89075, -13.2462, 41.0896, 12.7637, 0.419556, 33.0986 )
+
+[node name="House31" type="Sprite" parent="."]
+position = Vector2( 1128.58, 1660.26 )
+scale = Vector2( 1.27588, 1.27588 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1024, 0, 256, 164 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House31"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House31/StaticBody2D"]
+position = Vector2( 0.625732, 0 )
+polygon = PoolVector2Array( -82.3113, 13.6023, 0.280151, -30.509, 82.8714, 13.2894, 0.592896, 54.5851 )
+
+[node name="House32" type="Sprite" parent="."]
+position = Vector2( 761.021, 1646.26 )
+scale = Vector2( 1.15781, 1.15781 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 499, 256, 177 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House32"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House32/StaticBody2D"]
+polygon = PoolVector2Array( -100.586, 26.4612, -82.0784, 35.1705, -74.4576, 33.3561, -57.0388, 42.7913, -41.0714, 33.719, -33.8135, 29.7272, -21.1122, 37.3479, -2.60461, 27.5498, 18.4432, 40.2511, 39.854, 29.7272, -41.0714, -20.3522 )
+
+[node name="House33" type="Sprite" parent="."]
+position = Vector2( 204.015, 1498.18 )
+scale = Vector2( 1.2601, 1.2601 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 0, 695, 256, 204 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House33"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House33/StaticBody2D"]
+polygon = PoolVector2Array( -38.9527, 45.356, -22.3669, 55.4081, 2.76312, 44.3508, 23.8724, 55.9106, 41.966, 46.3613, 57.5466, 55.4081, 72.6246, 49.3768, 82.6767, 51.8899, 104.791, 38.8221, 30.9088, -8.42224 )
+
+[node name="House34" type="Sprite" parent="."]
+position = Vector2( 159.29, 1876.28 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 900, 256, 201 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House34"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House34/StaticBody2D"]
+polygon = PoolVector2Array( -87.6658, 34.9247, -44.8678, 56.6338, -6.41171, 34.9247, 33.9052, 56.0135, 76.7031, 31.8234, -5.79145, -25.2406 )
+
+[node name="House35" type="Sprite" parent="."]
+position = Vector2( 390.049, 1956.17 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 164, 256, 230 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House35"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House35/StaticBody2D"]
+polygon = PoolVector2Array( -73.9366, 35.6913, 7.67656, 78.7831, 74.2729, 45.4849, -13.2164, -4.13586 )
+
+[node name="House36" type="Sprite" parent="."]
+position = Vector2( 492.289, 1354.11 )
+scale = Vector2( 1.23672, 1.23672 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 407, 256, 204 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House36"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House36/StaticBody2D"]
+polygon = PoolVector2Array( -71.3019, 28.382, -11.9033, -7.55066, 73.8948, 38.6483, 10.0962, 68.7144 )
+
+[node name="House37" type="Sprite" parent="."]
+visible = false
+position = Vector2( -49.6158, 1124.75 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 256, 636, 256, 231 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House37"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House37/StaticBody2D"]
+polygon = PoolVector2Array( -73.6461, 52.4943, 14.1517, 4.17596, 76.6119, 44.834, -8.82894, 84.9029 )
+
+[node name="House38" type="Sprite" parent="."]
+position = Vector2( 905.195, 1518.51 )
+scale = Vector2( 1.2601, 1.2601 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( 256, 876, 256, 247 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House38"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House38/StaticBody2D"]
+polygon = PoolVector2Array( -72.6188, 60.8419, -10.3998, 92.9769, 75.0659, 50.5859, 11.4794, 8.87878 )
+
+[node name="House39" type="Sprite" parent="."]
+position = Vector2( 86.3605, 982.504 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 335, 256, 181 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House39"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House39/StaticBody2D"]
+polygon = PoolVector2Array( -116, 21.2847, -86.6977, 36.946, -54.8697, 20.2742, -88.2133, 1.07648 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House39/StaticBody2D"]
+polygon = PoolVector2Array( -41.7344, 21.2847, 19.9007, 51.597, 80.5254, 21.2847, 16.8695, -15.0901 )
+
+[node name="House40" type="Sprite" parent="."]
+position = Vector2( 1493.57, 1682.74 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 527, 256, 180 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House40"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House40/StaticBody2D"]
+polygon = PoolVector2Array( -115.595, 21.7562, -85.9586, 36.3466, -55.8661, 21.3003, -85.9586, 4.4303 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House40/StaticBody2D"]
+polygon = PoolVector2Array( -39.452, 24.036, 18.9094, 54.1285, 80.4625, 22.6682, 80.4625, 22.6682, 18.4535, -12.4399 )
+
+[node name="House41" type="Sprite" parent="."]
+position = Vector2( 465.935, 1566.61 )
+scale = Vector2( 1.21948, 1.21948 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 725, 256, 205 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House41"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House41/StaticBody2D"]
+polygon = PoolVector2Array( -117.801, 33.6516, -86.1515, 49.1887, -53.9264, 34.2271, -87.8779, 11.7845 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="House41/StaticBody2D"]
+polygon = PoolVector2Array( -41.2665, 35.9534, 19.731, -2.02625, 80.7285, 35.9534, 18.5801, 65.3013 )
+
+[node name="House42" type="Sprite" parent="."]
+position = Vector2( 623.672, 1505.22 )
+scale = Vector2( 1.20102, 1.20102 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 173, 256, 181 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House42"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House42/StaticBody2D"]
+polygon = PoolVector2Array( -40.863, 23.5436, -0.0758057, -1.05823, 40.064, 22.2488, 0.571594, 42.9661 )
+
+[node name="House43" type="Sprite" parent="."]
+position = Vector2( 1179.59, 1012.23 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 358, 256, 219 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House43"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House43/StaticBody2D"]
+polygon = PoolVector2Array( -41.6051, 42.2099, 1.33746, 18.9705, 41.2487, 43.2203, 0.832214, 63.9338 )
+
+[node name="House44" type="Sprite" parent="."]
+position = Vector2( 963.131, 1679.87 )
+scale = Vector2( 1.3001, 1.3001 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 576, 256, 258 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House44"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House44/StaticBody2D"]
+polygon = PoolVector2Array( -40.8167, 61.5038, 0.590027, 35.1984, 42.4838, 60.5294, 0.102844, 82.9377 )
+
+[node name="House45" type="Sprite" parent="."]
+position = Vector2( 1321.75, 1276.38 )
+scale = Vector2( 1.25141, 1.25141 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 768, 853, 256, 302 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House45"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House45/StaticBody2D"]
+polygon = PoolVector2Array( -41.5745, 82.4916, 0.284668, 54.3676, 41.4897, 82.4916, 0.938721, 105.383 )
+
+[node name="House46" type="Sprite" parent="."]
+position = Vector2( -345.896, 2609.78 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1024, 179, 256, 177 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House46"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House46/StaticBody2D"]
+polygon = PoolVector2Array( -78.7182, 19.9829, 0.755554, -20.4967, 84.3144, 19.9829, -0.729935, 61.5767 )
+
+[node name="House47" type="Sprite" parent="."]
+position = Vector2( 1706.7, 1557.41 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1024, 372, 256, 207 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House47"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House47/StaticBody2D"]
+polygon = PoolVector2Array( -77.6754, 37.3008, 3.32385, -5.14807, 86.922, 35.135, -1.8739, 79.7495 )
+
+[node name="House48" type="Sprite" parent="."]
+position = Vector2( 1567.56, 1215.13 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1024, 588, 256, 215 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House48"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House48/StaticBody2D"]
+polygon = PoolVector2Array( -81.5328, 40.0464, 4.67395, -5.29614, 85.8429, 39.4866, -0.923889, 82.0303 )
+
+[node name="House49" type="Sprite" parent="."]
+position = Vector2( 649.598, 1264.93 )
+scale = Vector2( 1.2201, 1.2201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1024, 803, 256, 224 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="House49"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="House49/StaticBody2D"]
+polygon = PoolVector2Array( -75.0553, 45.4889, -1.52789, 5.24292, 81.7966, 44.0807, -0.115662, 85.7429 )

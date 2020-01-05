@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/troll_03.ogg-5187fa57928a12d30b386a336cb851cf.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/troll_03.ogg"
+dest_files=[ "res://.import/troll_03.ogg-5187fa57928a12d30b386a336cb851cf.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

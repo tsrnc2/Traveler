@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/world/weather/rainmap2.png" type="Texture" id=2]
+[ext_resource path="res://vfx/shaders/rain.material" type="Material" id=3]
+
+[node name="Rain" type="TextureRect"]
+material = ExtResource( 3 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

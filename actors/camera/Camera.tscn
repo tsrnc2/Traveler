@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://actors/camera/ShakingCamera.gd" type="Script" id=1]
+
+[node name="Camera" type="Camera2D"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+amplitude = 8.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+[connection signal="timeout" from="Timer" to="." method="_on_ShakeTimer_timeout"]

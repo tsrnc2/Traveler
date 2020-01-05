@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/clothing/BaseClothing.gd" type="Script" id=1]
+[ext_resource path="res://core/inventory/icons/clothing/LeatherGloves.png" type="Texture" id=2]
+
+[node name="BasicGloves" type="Node"]
+script = ExtResource( 1 )
+icon = ExtResource( 2 )
+display_name = "Gloves"
+description = "Leather Gloves"
+price = 15
+usable = false
+clothing_type = 3
+COLD_PROTECTION = 10
+HEAT_PROTECTION = 10

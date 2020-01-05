@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://core/inventory/items/clothing/ClothBase.gd" type="Script" id=1]
+
+[node name="Nylon" type="Node"]
+script = ExtResource( 1 )
+type = "Nylon"
+HEAT_PROTECTION = 3
+HEAT_PROTECTION_WHEN_WET = 3
+COLD_PROTECTION_WHEN_WET = 3
+WETNESS_RESISTANCE = 10

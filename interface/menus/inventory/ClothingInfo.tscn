@@ -1,0 +1,184 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://interface/theme/panel/StonePanel.tres" type="StyleBox" id=1]
+[ext_resource path="res://interface/menus/inventory/ClothingInfoPanel.gd" type="Script" id=3]
+
+[node name="ClothingInfoPanel" type="Panel"]
+margin_right = 400.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 400, 200 )
+custom_styles/panel = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 20.0
+margin_right = -5.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBox"]
+margin_right = 390.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBox/HBoxContainer"]
+margin_right = 354.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Weight"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weight" type="Label" parent="VBox/HBoxContainer"]
+margin_left = 358.0
+margin_right = 390.0
+margin_bottom = 14.0
+text = "12 lb"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBox"]
+margin_top = 18.0
+margin_right = 390.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBox/HBoxContainer2"]
+margin_right = 323.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Size"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Size" type="Label" parent="VBox/HBoxContainer2"]
+margin_left = 327.0
+margin_right = 390.0
+margin_bottom = 14.0
+text = "500 cm^3"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBox"]
+margin_top = 36.0
+margin_right = 390.0
+margin_bottom = 50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBox/HBoxContainer3"]
+margin_right = 354.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Wetness"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Wetness" type="Label" parent="VBox/HBoxContainer3"]
+margin_left = 358.0
+margin_right = 390.0
+margin_bottom = 14.0
+text = "20 %"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Madeof" type="Label" parent="VBox"]
+margin_top = 54.0
+margin_right = 390.0
+margin_bottom = 68.0
+text = "Made of"
+align = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBox"]
+margin_top = 72.0
+margin_right = 390.0
+margin_bottom = 86.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Wool" type="Label" parent="VBox/HBoxContainer4"]
+margin_right = 354.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Wool"
+
+[node name="Percent" type="Label" parent="VBox/HBoxContainer4"]
+margin_left = 358.0
+margin_right = 390.0
+margin_bottom = 14.0
+text = "20 %"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBox"]
+margin_top = 90.0
+margin_right = 390.0
+margin_bottom = 104.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cotton" type="Label" parent="VBox/HBoxContainer5"]
+margin_right = 354.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Cotton"
+
+[node name="Percent" type="Label" parent="VBox/HBoxContainer5"]
+margin_left = 358.0
+margin_right = 390.0
+margin_bottom = 14.0
+text = "20 %"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBox"]
+margin_top = 108.0
+margin_right = 390.0
+margin_bottom = 122.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nylon" type="Label" parent="VBox/HBoxContainer6"]
+margin_right = 354.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Nylon"
+
+[node name="Percent" type="Label" parent="VBox/HBoxContainer6"]
+margin_left = 358.0
+margin_right = 390.0
+margin_bottom = 14.0
+text = "20 %"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

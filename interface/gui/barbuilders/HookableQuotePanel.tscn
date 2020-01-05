@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/theme/panel/QuoteBar.stylebox" type="StyleBox" id=1]
+[ext_resource path="res://interface/gui/barbuilders/Quotebar.gd" type="Script" id=2]
+[ext_resource path="res://interface/theme/fonts/Comfortaa_tips_small.tres" type="DynamicFont" id=3]
+
+[node name="QuoteBarPanel" type="RichTextLabel" groups=[
+"bars",
+]]
+margin_left = -59.4169
+margin_top = -68.2848
+margin_right = 60.5831
+margin_bottom = -28.2848
+grow_vertical = 0
+rect_min_size = Vector2( 75, 20 )
+rect_clip_content = false
+size_flags_horizontal = 2
+size_flags_vertical = 3
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 3 )
+bbcode_enabled = true
+bbcode_text = "This is a warning I dont want to see you here again"
+visible_characters = 80
+text = "This is a warning I dont want to see you here again"
+scroll_active = false
+scroll_following = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DEFAULTCOLOR = Color( 0.772549, 0, 0, 1 )

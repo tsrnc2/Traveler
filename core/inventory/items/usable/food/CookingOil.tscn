@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/icons/food/cookingoil.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=2]
+
+[node name="CookingOil" index="0" instance=ExtResource( 2 )]
+icon = ExtResource( 1 )
+display_name = "CookingOil"
+description = "Needed for fancy cooking"
+price = 15

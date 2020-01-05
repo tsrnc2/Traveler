@@ -1,0 +1,94 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0018.png" type="Texture" id=1]
+[ext_resource path="res://actors/HeadlightVisionCone.png" type="Texture" id=2]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0030.png" type="Texture" id=3]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0029.png" type="Texture" id=4]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0028.png" type="Texture" id=5]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0027.png" type="Texture" id=6]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0025.png" type="Texture" id=7]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0024.png" type="Texture" id=8]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0023.png" type="Texture" id=9]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0026.png" type="Texture" id=10]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0021.png" type="Texture" id=11]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0000.png" type="Texture" id=12]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0012.png" type="Texture" id=13]
+[ext_resource path="res://actors/resident/ResidentVehicle.gd" type="Script" id=14]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0031.png" type="Texture" id=15]
+[ext_resource path="res://core/shop/wallet/Wallet.tscn" type="PackedScene" id=16]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0003.png" type="Texture" id=17]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0002.png" type="Texture" id=18]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0006.png" type="Texture" id=19]
+[ext_resource path="res://actors/resident/DonationDesider.gd" type="Script" id=20]
+[ext_resource path="res://actors/resident/Vision.gd" type="Script" id=21]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0010.png" type="Texture" id=22]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0005.png" type="Texture" id=23]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0004.png" type="Texture" id=24]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0001.png" type="Texture" id=25]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0011.png" type="Texture" id=26]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0009.png" type="Texture" id=27]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0015.png" type="Texture" id=28]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0017.png" type="Texture" id=29]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0019.png" type="Texture" id=30]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0013.png" type="Texture" id=31]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0016.png" type="Texture" id=32]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0008.png" type="Texture" id=33]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0022.png" type="Texture" id=34]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0020.png" type="Texture" id=35]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0014.png" type="Texture" id=36]
+[ext_resource path="res://actors/resident/blue/blue rallyecar straight0007.png" type="Texture" id=37]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 25 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 37 ), ExtResource( 33 ), ExtResource( 27 ), ExtResource( 22 ), ExtResource( 26 ), ExtResource( 13 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 1 ), ExtResource( 30 ), ExtResource( 35 ), ExtResource( 11 ), ExtResource( 34 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "Driving",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 23.035
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 118.613
+
+[node name="ResidentVehicle" type="KinematicBody2D" groups=[
+"resident",
+"npc",
+"resident_vehicle",
+]]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource( 14 )
+
+[node name="DonationDesider" type="Node" parent="."]
+script = ExtResource( 20 )
+
+[node name="Wallet" parent="DonationDesider" instance=ExtResource( 16 )]
+coins = 500
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.37735, 0 )
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 1 )
+animation = "Driving"
+
+[node name="BumberSpace" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+disabled = true
+
+[node name="VisionPivot" type="Area2D" parent="."]
+z_index = 1
+script = ExtResource( 21 )
+
+[node name="Light2D" type="Light2D" parent="VisionPivot"]
+rotation = 1.5708
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -330 )
+energy = 0.7
+shadow_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VisionPivot"]
+shape = SubResource( 3 )
+[connection signal="body_entered" from="VisionPivot" to="VisionPivot" method="_on_Vision_body_entered"]

@@ -1,0 +1,457 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://actors/VisionConeCentered.png" type="Texture" id=1]
+[ext_resource path="res://interface/theme/panel/MetalOverlay.png" type="Texture" id=2]
+[ext_resource path="res://actors/body.png" type="Texture" id=3]
+[ext_resource path="res://minigame/Balance.gd" type="Script" id=4]
+[ext_resource path="res://interface/gui/bars/hb_01a.png" type="Texture" id=5]
+[ext_resource path="res://interface/gui/bars/hb_01c.png" type="Texture" id=6]
+[ext_resource path="res://minigame/Meter.gd" type="Script" id=7]
+[ext_resource path="res://minigame/Path2D.gd" type="Script" id=8]
+[ext_resource path="res://minigame/ColorRect.gd" type="Script" id=9]
+[ext_resource path="res://interface/menus/shared/PanelOverlay.tscn" type="PackedScene" id=10]
+
+[sub_resource type="Animation" id=1]
+resource_name = "spectum"
+length = 30.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.6, 15, 29.9 ),
+"transitions": PoolRealArray( 1, 0.732043, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.627451 ), Color( 0, 0, 0, 0.705882 ), Color( 1, 1, 1, 0.627451 ) ]
+}
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -539.285, -141.768, -537.385, 26.3805, -136.489, 29.2304, -137.439, -27.769, -482.285, -29.669, -481.335, -139.868 )
+
+[sub_resource type="OccluderPolygon2D" id=3]
+polygon = PoolVector2Array( 144.953, -32.2732, 144.953, 20.7128, 542.995, 27.1745, 536.533, -140.83, 483.547, -140.83, 488.716, -30.9809 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "leftfakeout"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.2, 2, 2.4, 5.7, 6 ),
+"transitions": PoolRealArray( 0.554785, 0.466516, 0.450625, 0.277392, 1, 3.73213, 4 ),
+"update": 0,
+"values": [ -35.0, -25.0, -35.0, 0.0, 0.0, -35.0, -35.0 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1, 2, 2.3, 4 ),
+"transitions": PoolRealArray( 1, 0.466516, 0.450625, 0.277392, 1 ),
+"update": 0,
+"values": [ -35.0, 35.0, 0.0, 5.0, -35.0 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "moving2"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1.2, 3.5, 4 ),
+"transitions": PoolRealArray( 1, 0.466516, 0.450625, 0.277392, 1 ),
+"update": 0,
+"values": [ -35.0, 35.0, 0.0, 5.0, -35.0 ]
+}
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 200.86, 28.1169 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 27.4732, 57.0841 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 112.838, 24.9647 )
+
+[sub_resource type="OccluderPolygon2D" id=10]
+polygon = PoolVector2Array( -229.537, -263.972, -230.612, -217.369, -0.043335, -215.947, -1.52637, -266.623 )
+
+[sub_resource type="OccluderPolygon2D" id=11]
+polygon = PoolVector2Array( -674.964, -269.853, -674.696, -219.456, -434.004, -220.212, -435.112, -268.965 )
+
+[sub_resource type="PhysicsMaterial" id=12]
+friction = 0.3
+bounce = 0.5
+absorbent = true
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 32.2125, 32.3137 )
+
+[sub_resource type="OccluderPolygon2D" id=15]
+polygon = PoolVector2Array( -32.1833, -30.3323, -31.5019, 23.1353, -25.3719, 27.903, 26.3929, 27.903, 32.8635, 22.7947, 32.8635, -29.6512, 28.0956, -35.1001, -26.053, -36.1218, -26.053, -36.1218 )
+
+[sub_resource type="Curve2D" id=16]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -460, -20, 0, 0, 0, 0, -138.247, 23.6873, 0, 0, 0, 0, 7.1181, 35.1196, 0, 0, 0, 0, 450, -20 )
+}
+
+[sub_resource type="Animation" id=17]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -35.0, 35.0, -35.0 ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 10.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5, 10 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -35.0, 35.0, -35.0 ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.8, 3, 3.5, 6 ),
+"transitions": PoolRealArray( 1, 1.62451, 0.517633, 1.18921, 0.812252, 0.68302 ),
+"update": 0,
+"values": [ -35.0, -25.0, -35.0, 0.0, 15.0, -35.0 ]
+}
+
+[sub_resource type="Animation" id=20]
+
+[sub_resource type="Animation" id=21]
+length = 15.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5.4, 15 ),
+"transitions": PoolRealArray( 1, 0.435275, 3.36359 ),
+"update": 0,
+"values": [ 0.0, 1.0, 0.0 ]
+}
+
+[node name="Balance" type="Control"]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelOverlay" parent="." instance=ExtResource( 10 )]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.0
+margin_bottom = 0.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+light_mask = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -6.39539
+margin_top = 11.4303
+margin_right = -6.39539
+margin_bottom = 11.4303
+color = Color( 0.74902, 0.74902, 0.74902, 0.172549 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="coloranimator" type="AnimationPlayer" parent="ColorRect"]
+anims/spectum = SubResource( 1 )
+
+[node name="Platform" type="KinematicBody2D" parent="."]
+light_mask = 2
+position = Vector2( 800, 550 )
+collision_layer = 8
+collision_mask = 8
+motion/sync_to_physics = true
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 0.0327148, 0.715729 )
+occluder = SubResource( 2 )
+light_mask = 2
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 0.0327148, 0.715729 )
+occluder = SubResource( 3 )
+light_mask = 2
+
+[node name="Sprite" type="NinePatchRect" parent="Platform"]
+light_mask = 2
+margin_left = -539.177
+margin_top = -27.8095
+margin_right = -139.177
+margin_bottom = 29.1905
+texture = ExtResource( 2 )
+region_rect = Rect2( -5.06708, -1.09017, 262.47, 258.369 )
+patch_margin_left = 28
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 22
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite2" type="NinePatchRect" parent="Platform"]
+light_mask = 2
+margin_left = 138.725
+margin_top = -29.7575
+margin_right = 538.725
+margin_bottom = 27.2425
+texture = ExtResource( 2 )
+region_rect = Rect2( -5.06708, -1.09017, 262.47, 258.369 )
+patch_margin_left = 28
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 22
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leftrailing" type="NinePatchRect" parent="Platform"]
+light_mask = 2
+margin_left = -536.774
+margin_top = -141.357
+margin_right = -484.774
+margin_bottom = -27.3574
+texture = ExtResource( 2 )
+region_rect = Rect2( -5.06708, -1.09017, 262.47, 258.369 )
+patch_margin_left = 28
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 22
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leftrailing2" type="NinePatchRect" parent="Platform"]
+light_mask = 2
+margin_left = 485.366
+margin_top = -142.781
+margin_right = 537.366
+margin_bottom = -28.7812
+texture = ExtResource( 2 )
+region_rect = Rect2( -5.06708, -1.09017, 262.47, 258.369 )
+patch_margin_left = 28
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 22
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leftrailing3" type="NinePatchRect" parent="Platform"]
+light_mask = 2
+margin_left = -324.0
+margin_top = -269.0
+margin_right = -91.0
+margin_bottom = -223.0
+texture = ExtResource( 2 )
+region_rect = Rect2( -5.06708, -1.09017, 262.47, 258.369 )
+patch_margin_left = 28
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 22
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leftrailing4" type="NinePatchRect" parent="Platform"]
+light_mask = 2
+margin_left = 112.0
+margin_top = -264.0
+margin_right = 340.0
+margin_bottom = -218.0
+texture = ExtResource( 2 )
+region_rect = Rect2( -5.06708, -1.09017, 262.47, 258.369 )
+patch_margin_left = 28
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 22
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlatformAnimator" type="AnimationPlayer" parent="Platform"]
+playback_process_mode = 0
+anims/leftfakeout = SubResource( 4 )
+anims/moving = SubResource( 5 )
+anims/moving2 = SubResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 344.488, -2.05054 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Platform"]
+light_mask = 2
+position = Vector2( -336.286, 0 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Platform"]
+light_mask = 2
+position = Vector2( -511.479, -83.9197 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 510.509, -85.9196 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 226.325, -239.113 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Platform"]
+light_mask = 2
+position = Vector2( -208.464, -246.56 )
+shape = SubResource( 9 )
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 341.064, 0.252686 )
+occluder = SubResource( 10 )
+light_mask = 2
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="Platform"]
+light_mask = 2
+position = Vector2( 344.885, 0.488586 )
+occluder = SubResource( 11 )
+light_mask = 2
+
+[node name="Meter" type="TextureProgress" parent="."]
+light_mask = 2
+margin_left = 672.739
+margin_top = 78.4081
+margin_right = 954.739
+margin_bottom = 124.408
+value = 100.0
+texture_under = ExtResource( 6 )
+texture_progress = ExtResource( 5 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" type="RigidBody2D" parent="."]
+light_mask = 2
+position = Vector2( 569.547, 382.472 )
+collision_layer = 8
+collision_mask = 8
+physics_material_override = SubResource( 12 )
+linear_damp = 1.0
+
+[node name="Sprite" type="AnimatedSprite" parent="Player"]
+light_mask = 2
+position = Vector2( -1.84113, 57.4212 )
+scale = Vector2( 1, 0.966274 )
+frames = SubResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+light_mask = 2
+position = Vector2( -2.94846, 56.6036 )
+shape = SubResource( 14 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Player"]
+light_mask = 2
+position = Vector2( -3.37393, 60.1235 )
+occluder = SubResource( 15 )
+light_mask = 2
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2( 800, 100 )
+curve = SubResource( 16 )
+script = ExtResource( 8 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( -460, -20 )
+rotation = 0.134953
+
+[node name="VisionPoint" type="Position2D" parent="Path2D/PathFollow2D"]
+light_mask = 2
+position = Vector2( -4.56635, -4.56334 )
+rotation = -0.0569878
+
+[node name="Light2D" type="Light2D" parent="Path2D/PathFollow2D/VisionPoint"]
+position = Vector2( -5.9068, 5.96532 )
+rotation = 3.14159
+scale = Vector2( 1, 1.33582 )
+texture = ExtResource( 1 )
+range_item_cull_mask = 2
+shadow_enabled = true
+shadow_item_cull_mask = 2
+
+[node name="Sprite" type="Sprite" parent="Path2D/PathFollow2D/VisionPoint"]
+light_mask = 2
+position = Vector2( -1.16635, 0 )
+texture = ExtResource( 3 )
+
+[node name="VisionAnimator" type="AnimationPlayer" parent="Path2D/PathFollow2D/VisionPoint"]
+playback_process_mode = 0
+anims/fastmoving = SubResource( 17 )
+anims/moving = SubResource( 18 )
+anims/moving2 = SubResource( 19 )
+
+[node name="VisionPathAnimator" type="AnimationPlayer" parent="Path2D/PathFollow2D"]
+playback_process_mode = 0
+anims/holding = SubResource( 20 )
+anims/moving = SubResource( 21 )

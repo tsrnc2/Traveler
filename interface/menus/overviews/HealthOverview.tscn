@@ -1,0 +1,193 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://interface/theme/panel/panel.stylebox" type="StyleBox" id=1]
+[ext_resource path="res://interface/menus/MenuTitle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/gui/bars/MetablolismBar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/gui/bars/HungerBar.tscn" type="PackedScene" id=4]
+
+[node name="HealthOverview" type="Panel"]
+margin_left = -1.50732
+margin_right = 448.493
+margin_bottom = 400.0
+rect_min_size = Vector2( 400, 400 )
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 15.8574
+margin_top = 15.0
+margin_right = -14.1426
+margin_bottom = -15.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitlePanel" parent="VBox" instance=ExtResource( 2 )]
+modulate = Color( 0.262745, 0.184314, 0.0352941, 1 )
+margin_right = 420.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 350, 40 )
+title = "Hunger"
+
+[node name="HungerBar" parent="VBox" instance=ExtResource( 4 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 44.0
+margin_right = 420.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 350, 20 )
+
+[node name="Breakdown" type="Label" parent="VBox"]
+margin_top = 68.0
+margin_right = 420.0
+margin_bottom = 82.0
+custom_colors/font_color = Color( 0.423529, 0.45098, 0.878431, 1 )
+text = "Elements affecting hunger"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Metabolism" type="Label" parent="VBox"]
+margin_top = 85.0
+margin_right = 420.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 350, 60 )
+text = "Metabolism Rate "
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MetabolismImpact" parent="VBox/Metabolism" instance=ExtResource( 3 )]
+margin_left = -283.335
+margin_top = -10.0
+margin_right = -183.335
+margin_bottom = 10.0
+rect_min_size = Vector2( 100, 20 )
+
+[node name="cost" type="Label" parent="VBox/Metabolism"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 280.0
+margin_top = 17.0
+margin_right = 10.0
+margin_bottom = -20.0
+rect_min_size = Vector2( 150, 23 )
+custom_colors/font_color = Color( 1, 0.607843, 0, 1 )
+text = "12 Calories per hour"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weather" type="Label" parent="VBox"]
+margin_top = 149.0
+margin_right = 420.0
+margin_bottom = 209.0
+rect_min_size = Vector2( 350, 60 )
+text = "Weather Effect"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WeatherImpact" parent="VBox/Weather" instance=ExtResource( 3 )]
+margin_left = -283.335
+margin_top = -10.8427
+margin_right = -183.335
+margin_bottom = 9.15733
+rect_min_size = Vector2( 100, 20 )
+
+[node name="cost" type="Label" parent="VBox/Weather"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 281.053
+margin_top = 18.2626
+margin_right = 11.0526
+margin_bottom = -18.7374
+rect_min_size = Vector2( 150, 23 )
+custom_colors/font_color = Color( 1, 0.607843, 0, 1 )
+text = "4 Calories per hour"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Actions" type="VBoxContainer" parent="VBox"]
+margin_top = 214.0
+margin_right = 420.0
+margin_bottom = 322.0
+
+[node name="Activity" type="Label" parent="VBox/Actions"]
+margin_top = -1.0
+margin_right = 420.0
+margin_bottom = 59.0
+rect_min_size = Vector2( 370, 60 )
+text = "Recent Activity List"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Action1" type="HBoxContainer" parent="VBox/Actions"]
+margin_top = 64.0
+margin_right = 420.0
+margin_bottom = 84.0
+
+[node name="Action" type="Label" parent="VBox/Actions/Action1"]
+margin_right = 200.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 200, 20 )
+text = "Running"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cost" type="Label" parent="VBox/Actions/Action1"]
+margin_left = 204.0
+margin_right = 404.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 200, 20 )
+custom_colors/font_color = Color( 1, 0.607843, 0, 1 )
+text = "36 Calories Burned"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Action2" type="HBoxContainer" parent="VBox/Actions"]
+margin_top = 88.0
+margin_right = 420.0
+margin_bottom = 108.0
+
+[node name="Action" type="Label" parent="VBox/Actions/Action2"]
+margin_right = 200.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 200, 20 )
+text = "Eating Apple"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cost" type="Label" parent="VBox/Actions/Action2"]
+margin_left = 204.0
+margin_right = 404.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 200, 20 )
+custom_colors/font_color = Color( 0.101961, 1, 0, 1 )
+text = "20 Calories Gained"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

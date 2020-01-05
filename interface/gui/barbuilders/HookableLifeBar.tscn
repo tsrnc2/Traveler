@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/gui/barbuilders/background.png" type="Texture" id=1]
+[ext_resource path="res://interface/gui/barbuilders/fill.png" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+onready var label := $Panel/RichTextLabel
+
+var text : String setget set_text
+
+var error :int = OK setget on_error
+
+func on_error(new_error:int)->void:
+	error = new_error
+	print(\"Error in HookableQuotePanel :\", error)
+
+func initialize(actor:Node):
+	print(\"loading QuotePanels\")
+	var hook = actor.get_node(\"InterfaceAnchor\")
+	global_position = hook.global_position
+	hook.remote_path = hook.get_path_to(self)
+	error = connect(\"died\", self, \"_on_Actor_died\")
+	error = connect(\"speaking\", self, \"_on_Actor_speaking\")
+
+func _on_Actor_died(_actor = null) ->void:
+	queue_free()
+
+func _on_Actor_speaking(new_text:String) -> void:
+	set_text(new_text)
+
+func set_text(new_text:String)->void:
+	print(\"seting text :\", text)
+	text = new_text
+	label.set_text(text)
+"
+
+[node name="HookableLifeBar" type="Node2D" groups=[
+"bars",
+]]
+script = SubResource( 1 )
+
+[node name="Background" type="TextureRect" parent="." index="0"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -95.0
+margin_top = -11.0
+margin_right = 97.0
+margin_bottom = 11.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 1 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="TextureProgress" type="TextureProgress" parent="." index="1"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -95.0
+margin_top = -11.0
+margin_right = 97.0
+margin_bottom = 11.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+min_value = 0.0
+max_value = 100.0
+step = 1.0
+page = 0.0
+value = 60.0
+exp_edit = false
+rounded = false
+texture_under = null
+texture_over = null
+texture_progress = ExtResource( 2 )
+radial_fill_degrees = 360.0
+radial_center_offset = Vector2( 0, 0 )
+nine_patch_stretch = false
+_sections_unfolded = [ "Rect" ]

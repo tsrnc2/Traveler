@@ -1,0 +1,522 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://actors/characters/portrait/Jacobmedium.png" type="Texture" id=1]
+[ext_resource path="res://interface/menus/PanelBorders.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/gui/bars/hb_01a.png" type="Texture" id=3]
+[ext_resource path="res://interface/gui/bars/hb_01c.png" type="Texture" id=4]
+[ext_resource path="res://interface/theme/fonts/comfort_24.tres" type="DynamicFont" id=5]
+[ext_resource path="res://interface/theme/panel/StonePanel.tres" type="StyleBox" id=6]
+[ext_resource path="res://actors/characters/portrait/Copmedium.png" type="Texture" id=7]
+[ext_resource path="res://interface/theme/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://vfx/shaders/FogofWarwithoffset.material" type="Material" id=11]
+[ext_resource path="res://interface/menus/PoliceStop/PoliceStop.gd" type="Script" id=12]
+
+[sub_resource type="Animation" id=1]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:anchor_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 1 ),
+"transitions": PoolRealArray( 1, 0.615572, 1 ),
+"update": 0,
+"values": [ 0.05, 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Police:anchor_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 0.5, 0.9 ),
+"transitions": PoolRealArray( 1, 0.840897, 1 ),
+"update": 0,
+"values": [ 0.05, 0.0, 1.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Player/HBox/VBox:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Police/HBox2/VBox/RichTextLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Police/HBox2/VBox/ArrestStrength:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Police/HBox2/VBox/RichTextLabel:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.04, 0.032, 0.032, 1 ), Color( 0.211765, 0.184314, 0.176471, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("PanelBorders:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath(".:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "init"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:anchor_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Police:anchor_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Player/HBox/VBox:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Police/HBox2/VBox/RichTextLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Police/HBox2/VBox/ArrestStrength:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Police/HBox2/VBox/RichTextLabel:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.211765, 0.184314, 0.176471, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("PanelBorders:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath(".:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:anchor_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.3 ),
+"transitions": PoolRealArray( 1, 0.615572, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0, 0.05 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Police:anchor_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 0.840897, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0, 0.05 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Player/HBox/VBox:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Police/HBox2/VBox/RichTextLabel:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Police/HBox2/VBox/ArrestStrength:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Police/HBox2/VBox/RichTextLabel:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.211765, 0.184314, 0.176471, 0 ), Color( 0.04, 0.032, 0.032, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("PanelBorders:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 1.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath(".:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 48
+use_filter = true
+font_data = ExtResource( 8 )
+
+[node name="PoliceStop" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+self_modulate = Color( 0.211765, 0.184314, 0.176471, 0 )
+light_mask = 8
+material = ExtResource( 11 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.211765, 0.184314, 0.176471, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelBorders" parent="." instance=ExtResource( 2 )]
+modulate = Color( 1, 1, 1, 0 )
+light_mask = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/close = SubResource( 1 )
+anims/init = SubResource( 2 )
+anims/open = SubResource( 3 )
+
+[node name="Police" type="VBoxContainer" parent="."]
+light_mask = 8
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1316.0
+margin_top = 45.0
+margin_right = -45.0
+margin_bottom = 512.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox2" type="HBoxContainer" parent="Police"]
+light_mask = 8
+margin_right = 1271.0
+margin_bottom = 467.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="Police/HBox2"]
+light_mask = 8
+margin_right = 800.0
+margin_bottom = 467.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArrestStrength" type="TextureProgress" parent="Police/HBox2/VBox"]
+self_modulate = Color( 1, 1, 1, 0 )
+light_mask = 8
+margin_right = 800.0
+margin_bottom = 46.0
+rect_min_size = Vector2( 800, 46 )
+size_flags_horizontal = 3
+value = 100.0
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Police/HBox2/VBox"]
+modulate = Color( 1, 1, 1, 0 )
+light_mask = 8
+margin_top = 50.0
+margin_right = 800.0
+margin_bottom = 467.0
+rect_min_size = Vector2( 800, 400 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/normal_font = SubResource( 4 )
+text = "Lets see some ID."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Portate" type="TextureRect" parent="Police/HBox2"]
+light_mask = 8
+margin_left = 804.0
+margin_right = 1271.0
+margin_bottom = 467.0
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" type="VBoxContainer" parent="."]
+light_mask = 8
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 96.0
+margin_top = -510.0
+margin_right = 1224.0
+margin_bottom = -43.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="Player"]
+light_mask = 8
+margin_right = 1179.0
+margin_bottom = 467.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Portate" type="TextureRect" parent="Player/HBox"]
+light_mask = 8
+margin_right = 375.0
+margin_bottom = 467.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="Player/HBox"]
+light_mask = 8
+margin_left = 379.0
+margin_right = 1179.0
+margin_bottom = 467.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArrestMeter" type="TextureProgress" parent="Player/HBox/VBox"]
+light_mask = 8
+margin_right = 800.0
+margin_bottom = 46.0
+rect_min_size = Vector2( 800, 46 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+value = 100.0
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="Player/HBox/VBox"]
+light_mask = 8
+margin_top = 50.0
+margin_right = 800.0
+margin_bottom = 467.0
+rect_min_size = Vector2( 800, 400 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/bg = ExtResource( 6 )
+custom_fonts/font = ExtResource( 5 )
+items = [ "Hand over ID", null, false, "Ask Question", null, false, "Pretend Scratch", null, false, "Run", null, false ]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="item_selected" from="Player/HBox/VBox/ItemList" to="." method="_on_ItemList_item_selected"]

@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/Player.gd" type="Script" id=1]
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/field_of_view.gd" type="Script" id=2]
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/img/block-blue.jpg" type="Texture" id=3]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.7552, 11.9218 )
+
+[node name="Player" type="KinematicBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.001
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+speed = 200
+danger_text_path = null
+warn_text_path = null
+
+[node name="field_of_view" type="Node2D" parent="." index="0"]
+
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+field_of_view = 60
+radius_warn = 500
+radius_danger = 200
+show_circle = false
+show_fov = true
+show_target_line = true
+circle_color = Color( 0.0941176, 0.360784, 0.0431373, 0.623529 )
+fov_color = Color( 0.239216, 0.498039, 0.0431373, 0.698039 )
+fov_warn_color = Color( 0.933333, 0.87451, 0.0431373, 0.694118 )
+fov_danger_color = Color( 0.984314, 0.196078, 0.0431373, 0.615686 )
+view_detail = 60
+enemy_groups = [ "Enemy" ]
+
+[node name="Player" type="Sprite" parent="." index="1"]
+
+position = Vector2( -0.343942, -1.19024 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, 0.5 )
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+
+scale = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+

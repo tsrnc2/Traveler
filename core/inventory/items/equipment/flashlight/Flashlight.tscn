@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/equipment/Equipment.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/theme/icons/sword.png" type="Texture" id=2]
+
+[node name="Flashlight" instance=ExtResource( 1 )]
+icon = ExtResource( 2 )
+display_name = "Flashlight"
+description = "A portable light. This one works forever without batteries but you will want to upgrade."
+price = 25

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://vfx/lightning/lightning.tres" type="Texture" id=1]
+[ext_resource path="res://core/world/weather/storm.gd" type="Script" id=2]
+[ext_resource path="res://vfx/shaders/rain.material" type="Material" id=4]
+
+[node name="Lightning" type="Light2D"]
+visible = false
+material = ExtResource( 4 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+Flash_Percent = 0.5
+
+[node name="Tween" type="Tween" parent="."]

@@ -1,0 +1,65 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://core/world/buildings/Mill.gd" type="Script" id=2]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite1.png" type="Texture" id=3]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite3.png" type="Texture" id=4]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite0.png" type="Texture" id=5]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite2.png" type="Texture" id=6]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/normal.png" type="Texture" id=7]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite4.png" type="Texture" id=8]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite5.png" type="Texture" id=9]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite4.png" type="Texture" id=10]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite3.png" type="Texture" id=11]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite2.png" type="Texture" id=12]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite1.png" type="Texture" id=13]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite0.png" type="Texture" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Close",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "Open",
+"speed": 5.0
+} ]
+
+[sub_resource type="OccluderPolygon2D" id=3]
+cull_mode = 1
+polygon = PoolVector2Array( -302.037, 210.583, -298.33, 17.8539, -326.128, 27.1198, -333.541, 4.88181, 133.457, -245.295, 137.163, -297.184, 124.191, -317.569, 124.191, -337.954, 185.346, -369.457, 233.528, -339.807, 235.381, -321.275, 222.409, -308.303, 226.115, -282.359, 300.242, -319.422, 496.677, -47.0068, 474.439, -32.1815, 483.705, 62.3299, 520.768, 79.0084, 539.3, 138.31, 518.915, 219.849, 478.146, 240.234, 420.698, 217.996, 439.229, 162.401, 442.935, 101.246, 381.673, 130.973, 334.678, 194.235, 314.796, 243.941, 344.718, 297.682, 307.654, 319.92, 239.785, 295.454, 217.192, 226.77, 266.885, 77.1552, 237.234, 60.4767, -3.67725, 173.52, -1.8241, 349.57, -24.062, 166.107, -183.434, -56.2726, -279.799, 4.88181 )
+
+[node name="Mill" type="Sprite"]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 7 )
+script = ExtResource( 2 )
+
+[node name="Wheel" type="AnimatedSprite" parent="."]
+position = Vector2( 360.671, 181.13 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+
+[node name="Door" type="AnimatedSprite" parent="."]
+position = Vector2( -249.044, 193.782 )
+frames = SubResource( 2 )
+animation = "Open"
+
+[node name="CollisionShape" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CollisionShape"]
+position = Vector2( 0, 1.47018 )
+polygon = PoolVector2Array( -300.979, 210.529, -295.979, 13.1289, 200.656, -153.257, 472.924, 30.7761, 480.487, 108.927, 523.538, 237.774, 289.805, 358.225, 216.674, 316.641, 199.467, 247.811, -14.1903, 356.791 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource( 3 )

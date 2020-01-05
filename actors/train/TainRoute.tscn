@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://actors/train/Train.tscn" type="PackedScene" id=1]
+[ext_resource path="res://core/world/TrainRoute.gd" type="Script" id=3]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -2760.82, -1371.84, 0, 0, 0, 0, 3065.22, 1549.85 )
+}
+
+[node name="TrainRoute" type="Path2D" groups=[
+"train_route",
+]]
+position = Vector2( -1299.81, 3128.64 )
+curve = SubResource( 1 )
+script = ExtResource( 3 )
+WAIT_TIME = 180.0
+
+[node name="TrainPosition" type="PathFollow2D" parent="."]
+position = Vector2( -2760.82, -1371.84 )
+rotation = 0.464766
+lookahead = 1.0
+
+[node name="Train" parent="TrainPosition" instance=ExtResource( 1 )]
+position = Vector2( 0, -3 )
+rotation = -0.464812
+z_index = 1
+
+[node name="Tween" type="Tween" parent="."]

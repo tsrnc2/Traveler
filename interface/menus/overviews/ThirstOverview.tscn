@@ -1,0 +1,139 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/fonts/source_code_pro_explanations_bold_32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://interface/menus/overviews/ThirstOverview.gd" type="Script" id=2]
+[ext_resource path="res://interface/gui/bars/MetablolismBar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/gui/bars/ThirstBar.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interface/gui/player/Exhausted.tscn" type="PackedScene" id=5]
+
+[node name="VBox" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1920.0
+margin_bottom = 41.0
+custom_fonts/font = ExtResource( 1 )
+text = "Thurst"
+align = 1
+
+[node name="ThurstBar" parent="." instance=ExtResource( 4 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 45.0
+margin_right = 1920.0
+margin_bottom = 67.0
+rect_min_size = Vector2( 580, 22 )
+
+[node name="Breakdown" type="Label" parent="."]
+margin_top = 71.0
+margin_right = 1920.0
+margin_bottom = 85.0
+text = "Elements affecting thirst"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exhausted" parent="." instance=ExtResource( 5 )]
+visible = false
+margin_top = 89.0
+margin_bottom = 103.0
+
+[node name="Metablolsim" type="HBoxContainer" parent="."]
+margin_top = 89.0
+margin_right = 1920.0
+margin_bottom = 119.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Metablolsim"]
+margin_right = 180.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 180, 30 )
+text = "Metabolism Rate "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImpactBar" parent="Metablolsim" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 184.0
+margin_top = 0.0
+margin_right = 284.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 20 )
+max_value = 2.0
+step = 0.01
+value = 1.0
+
+[node name="cost" type="Label" parent="Metablolsim"]
+margin_left = 288.0
+margin_top = 3.0
+margin_right = 438.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 150, 23 )
+custom_colors/font_color = Color( 1, 0.0235294, 0, 1 )
+text = "0.5 ml per hour"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weather" type="HBoxContainer" parent="."]
+margin_top = 123.0
+margin_right = 1920.0
+margin_bottom = 153.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Weather"]
+margin_right = 180.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 180, 30 )
+text = "Weather Effect"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WeatherImpact" parent="Weather" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 184.0
+margin_top = 0.0
+margin_right = 284.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 20 )
+
+[node name="cost" type="Label" parent="Weather"]
+margin_left = 288.0
+margin_top = 3.0
+margin_right = 438.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 150, 23 )
+custom_colors/font_color = Color( 1, 0.0235294, 0, 1 )
+text = "0.25 ml per hour"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://actors/player/WantedHitbox.gd" type="Script" id=1]
+[ext_resource path="res://actors/hit_box/hitbox_default.tres" type="Shape2D" id=2]
+
+[node name="WantedLevelHitbox" type="Area2D"]
+monitorable = false
+collision_layer = 4
+collision_mask = 32
+script = ExtResource( 1 )
+__meta__ = {
+
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -8.42273 )
+shape = ExtResource( 2 )
+__meta__ = {
+
+}
+[connection signal="body_entered" from="." to="." method="_on_HitBox_body_entered"]

@@ -1,0 +1,140 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/world/tiles/world/ground/GroundTileMap.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, -20, 41, 0, 0, 20, -41, 0 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Dirt" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 533, 82, 41 )
+
+[node name="Dirt2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 533, 82, 41 )
+
+[node name="Dirt3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 451, 82, 41 )
+
+[node name="Dirt4" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 451, 82, 41 )
+
+[node name="Sand" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 533, 82, 41 )
+
+[node name="Sand2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 451, 82, 41 )
+
+[node name="Grass" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 779, 82, 41 )
+
+[node name="Grass2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 779, 82, 41 )
+
+[node name="Grass3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 779, 82, 41 )
+
+[node name="Grass4" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 779, 82, 41 )
+
+[node name="Grass5" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 779, 82, 41 )
+
+[node name="Grass6" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 779, 82, 41 )
+
+[node name="Gravel" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 779, 82, 41 )
+
+[node name="Gravel2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 779, 82, 41 )
+
+[node name="Gravel3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 779, 82, 41 )
+
+[node name="Gravel4" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 41, 82, 41 )
+
+[node name="Gravel5" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 451, 82, 41 )
+
+[node name="Snow" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 451, 82, 41 )
+
+[node name="Snow2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 533, 82, 41 )
+
+[node name="Snow3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 533, 82, 41 )
+
+[node name="Snow4" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 533, 82, 41 )
+
+[node name="CobleStone" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 533, 82, 41 )
+
+[node name="CobleStone2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 451, 82, 41 )
+
+[node name="CobleStone3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 369, 82, 41 )
+
+[node name="Water" type="Sprite" parent="."]
+position = Vector2( 82, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 615, 82, 41 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Water"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Water/StaticBody2D"]
+shape = SubResource( 1 )
+

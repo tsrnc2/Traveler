@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/gui/barbuilders/background.png" type="Texture" id=1]
+[ext_resource path="res://interface/gui/barbuilders/fill_white.png" type="Texture" id=2]
+[ext_resource path="res://interface/gui/player/TextureProgress.gd" type="Script" id=3]
+
+
+[node name="WantedLevel" type="TextureProgress"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -46.0
+margin_top = -15.0
+margin_right = -6.00001
+margin_bottom = 15.0
+rect_min_size = Vector2( 40, 22 )
+value = 25.0
+texture_under = ExtResource( 1 )
+texture_progress = ExtResource( 2 )
+tint_progress = Color( 1, 0.984314, 0, 1 )
+nine_patch_stretch = true
+stretch_margin_left = 6
+stretch_margin_top = 3
+stretch_margin_right = 6
+stretch_margin_bottom = 3
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+COLOR_FULL = Color( 1, 0, 0, 1 )
+COLOR_NORMAL = Color( 1, 0.984314, 0, 1 )
+COLOR_LOW = Color( 0.054902, 1, 0, 1 )
+COLOR_CRITICAL = Color( 0, 0.619608, 0.227451, 1 )
+COLOR_REGENARATION = Color( 0.101961, 0, 0.823529, 1 )
+
+[node name="Tween" type="Tween" parent="."]

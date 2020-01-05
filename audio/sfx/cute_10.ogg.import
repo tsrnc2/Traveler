@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cute_10.ogg-f77217cd79c009d89f7992498ad2189c.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/cute_10.ogg"
+dest_files=[ "res://.import/cute_10.ogg-f77217cd79c009d89f7992498ad2189c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

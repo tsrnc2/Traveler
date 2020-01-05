@@ -1,0 +1,1419 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://core/world/tiles/decor/DecorTileMap.png" type="Texture" id=1]
+
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.08801
+height = 9.42662
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 8.63547
+height = 20.7291
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 6.92087
+height = 28.2223
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 7.31712
+height = 4.69654
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 9.0
+height = 1.9374
+
+[sub_resource type="CapsuleShape2D" id=6]
+height = 1.48658
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 6.08276
+
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 14.8128
+
+[sub_resource type="CircleShape2D" id=9]
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 6.08276
+
+[sub_resource type="CircleShape2D" id=11]
+
+[sub_resource type="CapsuleShape2D" id=12]
+radius = 6.0
+height = 10.0
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( -22, 1, 15, -15, 15, 2, -22, 20 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( -35, 10, 0, 30, 0, 15, -35, -5 )
+
+[sub_resource type="CircleShape2D" id=15]
+radius = 26.0
+
+[sub_resource type="CircleShape2D" id=16]
+radius = 35.0143
+
+[sub_resource type="CircleShape2D" id=17]
+radius = 20.0
+
+[sub_resource type="CircleShape2D" id=18]
+
+[sub_resource type="CircleShape2D" id=19]
+radius = 15.1327
+
+[sub_resource type="CapsuleShape2D" id=20]
+radius = 17.0
+height = 14.0
+
+[sub_resource type="CircleShape2D" id=21]
+radius = 21.0
+
+[sub_resource type="CircleShape2D" id=22]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Tree" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 164, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree/StaticBody2D"]
+position = Vector2( 0, 3 )
+shape = SubResource( 1 )
+
+[node name="Tree2" type="Sprite" parent="."]
+position = Vector2( 0, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 164, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree2/StaticBody2D"]
+position = Vector2( 20, 8 )
+shape = SubResource( 1 )
+
+[node name="Tree3" type="Sprite" parent="."]
+position = Vector2( 0, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1230, 164, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree3/StaticBody2D"]
+position = Vector2( -14, 16 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree3/StaticBody2D"]
+position = Vector2( 19, 21 )
+shape = SubResource( 1 )
+
+[node name="Tree4" type="Sprite" parent="."]
+position = Vector2( 0, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 164, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree4"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree4/StaticBody2D"]
+position = Vector2( -1, 18 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Tree4/StaticBody2D"]
+position = Vector2( -20, 21 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Tree4/StaticBody2D"]
+position = Vector2( 20, 21 )
+shape = SubResource( 1 )
+
+[node name="Tree5" type="Sprite" parent="."]
+position = Vector2( 82, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 164, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree5"]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Tree5/StaticBody2D"]
+position = Vector2( -20, 15 )
+shape = SubResource( 1 )
+
+[node name="Tree6" type="Sprite" parent="."]
+position = Vector2( 82, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 246, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree6/StaticBody2D"]
+position = Vector2( 20, 15 )
+shape = SubResource( 4 )
+
+[node name="Tree7" type="Sprite" parent="."]
+position = Vector2( 82, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 246, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree7/StaticBody2D"]
+position = Vector2( -3.57628e-07, 17 )
+shape = SubResource( 5 )
+
+[node name="Tree8" type="Sprite" parent="."]
+position = Vector2( 82, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 246, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree8/StaticBody2D"]
+position = Vector2( -1.19209e-06, 19 )
+shape = SubResource( 5 )
+
+[node name="Tree9" type="Sprite" parent="."]
+position = Vector2( 164, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 984, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree9/StaticBody2D"]
+position = Vector2( 11, 23 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree9/StaticBody2D"]
+position = Vector2( -7, 22 )
+shape = SubResource( 7 )
+
+[node name="Tree10" type="Sprite" parent="."]
+position = Vector2( 164, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 984, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree10/StaticBody2D"]
+position = Vector2( -4.19962, 15.4889 )
+shape = SubResource( 8 )
+
+[node name="Tree11" type="Sprite" parent="."]
+position = Vector2( 164, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 984, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree11"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree11/StaticBody2D"]
+position = Vector2( -2.3089, 3.44684 )
+shape = SubResource( 8 )
+
+[node name="Tree12" type="Sprite" parent="."]
+position = Vector2( 164, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 1066, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree12/StaticBody2D"]
+position = Vector2( -5, 21 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree12/StaticBody2D"]
+position = Vector2( 11, 21 )
+shape = SubResource( 9 )
+
+[node name="Tree13" type="Sprite" parent="."]
+position = Vector2( 246, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 1148, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree13/StaticBody2D"]
+position = Vector2( -5, 21 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tree13/StaticBody2D"]
+position = Vector2( 11, 22 )
+shape = SubResource( 11 )
+
+[node name="Tree14" type="Sprite" parent="."]
+position = Vector2( 246, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 1148, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree14/StaticBody2D"]
+position = Vector2( -5, 17 )
+shape = SubResource( 12 )
+
+[node name="Tree15" type="Sprite" parent="."]
+position = Vector2( 246, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 1148, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree15/StaticBody2D"]
+position = Vector2( -1, 21 )
+shape = SubResource( 5 )
+
+[node name="Tree16" type="Sprite" parent="."]
+position = Vector2( 246, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 902, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree16/StaticBody2D"]
+position = Vector2( 3.57628e-07, 23 )
+shape = SubResource( 5 )
+
+[node name="Tree17" type="Sprite" parent="."]
+position = Vector2( 338, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 902, 82, 82 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Tree17"]
+position = Vector2( -92, 164 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree17/StaticBody2D2"]
+position = Vector2( 92, -143 )
+shape = SubResource( 5 )
+
+[node name="Tree18" type="Sprite" parent="."]
+position = Vector2( 338, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 902, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree18/StaticBody2D"]
+position = Vector2( 3.57628e-07, 23 )
+shape = SubResource( 5 )
+
+[node name="Tree19" type="Sprite" parent="."]
+position = Vector2( 338, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 902, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree19/StaticBody2D"]
+position = Vector2( 3.57628e-07, 18 )
+shape = SubResource( 5 )
+
+[node name="Tree20" type="Sprite" parent="."]
+position = Vector2( 420, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 902, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree20"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree20/StaticBody2D"]
+position = Vector2( 3.57628e-07, 22 )
+shape = SubResource( 5 )
+
+[node name="Tree21" type="Sprite" parent="."]
+position = Vector2( 420, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 902, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree21"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree21/StaticBody2D"]
+position = Vector2( -2, 24 )
+shape = SubResource( 5 )
+
+[node name="Tree22" type="Sprite" parent="."]
+position = Vector2( 420, 338 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 902, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree22"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree22/StaticBody2D"]
+position = Vector2( 1, 18 )
+shape = SubResource( 5 )
+
+[node name="Tree23" type="Sprite" parent="."]
+position = Vector2( 338, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 820, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree23"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree23/StaticBody2D"]
+position = Vector2( 4.76837e-07, 24 )
+shape = SubResource( 5 )
+
+[node name="Tree24" type="Sprite" parent="."]
+position = Vector2( 420, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 820, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tree24"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree24/StaticBody2D"]
+position = Vector2( -2, 20 )
+shape = SubResource( 5 )
+
+[node name="Tree25" type="Sprite" parent="."]
+position = Vector2( 420, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 820, 82, 82 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Tree25"]
+position = Vector2( 5, -3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree25/StaticBody2D2"]
+position = Vector2( -3, 23 )
+shape = SubResource( 5 )
+
+[node name="Fence" type="Sprite" parent="."]
+position = Vector2( 0, 338 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 1312, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence/StaticBody2D"]
+position = Vector2( -12.572, 4.1745 )
+shape = SubResource( 13 )
+
+[node name="Fence2" type="Sprite" parent="."]
+position = Vector2( 82, 340 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 1312, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence2"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Fence2/StaticBody2D"]
+position = Vector2( -12, 3 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence2/StaticBody2D"]
+position = Vector2( -1, 10 )
+shape = SubResource( 14 )
+
+[node name="Fence3" type="Sprite" parent="."]
+position = Vector2( 164, 340 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 1312, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence3/StaticBody2D"]
+position = Vector2( -1, 10 )
+shape = SubResource( 14 )
+
+[node name="Fence4" type="Sprite" parent="."]
+position = Vector2( 246, 340 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 1312, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence4/StaticBody2D"]
+position = Vector2( 35, -5 )
+shape = SubResource( 14 )
+
+[node name="Fence5" type="Sprite" parent="."]
+position = Vector2( 338, 339 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 1394, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence5/StaticBody2D"]
+position = Vector2( 35, -6 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Fence5/StaticBody2D"]
+position = Vector2( -14, 3 )
+shape = SubResource( 13 )
+
+[node name="Fence6" type="Sprite" parent="."]
+position = Vector2( 0, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 1394, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence6/StaticBody2D"]
+position = Vector2( 35, -6 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Fence6/StaticBody2D"]
+position = Vector2( 23, 18 )
+shape = SubResource( 13 )
+
+[node name="Fence7" type="Sprite" parent="."]
+position = Vector2( 82, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 1476, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence7"]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Fence7/StaticBody2D"]
+position = Vector2( 23, 18 )
+shape = SubResource( 13 )
+
+[node name="Fence8" type="Sprite" parent="."]
+position = Vector2( 164, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 1476, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Fence8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fence8/StaticBody2D"]
+position = Vector2( 1, 10 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Fence8/StaticBody2D"]
+position = Vector2( 23, 18 )
+shape = SubResource( 13 )
+
+[node name="Rock" type="Sprite" parent="."]
+position = Vector2( 246, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 656, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Rock"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock/StaticBody2D"]
+position = Vector2( 4, 8 )
+shape = SubResource( 15 )
+
+[node name="Rock2" type="Sprite" parent="."]
+position = Vector2( 338, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 820, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Rock2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock2/StaticBody2D"]
+position = Vector2( 3, -1 )
+shape = SubResource( 16 )
+
+[node name="Rock3" type="Sprite" parent="."]
+position = Vector2( 0, 502 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 1230, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Rock3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock3/StaticBody2D"]
+position = Vector2( 3, -1 )
+shape = SubResource( 16 )
+
+[node name="Rock4" type="Sprite" parent="."]
+position = Vector2( 82, 502 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 1312, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Rock4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock4/StaticBody2D"]
+position = Vector2( 3, -1 )
+shape = SubResource( 16 )
+
+[node name="Rock5" type="Sprite" parent="."]
+position = Vector2( 164, 502 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 1148, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Rock5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock5/StaticBody2D"]
+position = Vector2( -9, 14 )
+shape = SubResource( 17 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Rock5/StaticBody2D"]
+position = Vector2( 20, 16 )
+shape = SubResource( 18 )
+
+[node name="Baricade" type="Sprite" parent="."]
+position = Vector2( 420, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 492, 82, 82 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Baricade"]
+position = Vector2( -174, -80 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Baricade/StaticBody2D2"]
+position = Vector2( 211, 70 )
+shape = SubResource( 14 )
+
+[node name="Baricade2" type="Sprite" parent="."]
+position = Vector2( 420, 501 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 902, 82, 82 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Baricade2"]
+position = Vector2( -174, -80 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Baricade2/StaticBody2D2"]
+position = Vector2( 170, 89 )
+shape = SubResource( 14 )
+
+[node name="Baricade3" type="Sprite" parent="."]
+position = Vector2( 338, 502 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 1066, 82, 82 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Baricade3"]
+position = Vector2( -256, -82 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Baricade3/StaticBody2D2"]
+position = Vector2( 279, 102 )
+shape = SubResource( 13 )
+
+[node name="Baricade4" type="Sprite" parent="."]
+position = Vector2( 246, 502 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 1148, 82, 82 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Baricade4"]
+position = Vector2( -296, -102 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Baricade4/StaticBody2D3"]
+position = Vector2( 279, 102 )
+shape = SubResource( 13 )
+
+[node name="Stump" type="Sprite" parent="."]
+position = Vector2( 502, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 574, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stump"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stump/StaticBody2D"]
+position = Vector2( 14, 9 )
+shape = SubResource( 19 )
+
+[node name="Stump2" type="Sprite" parent="."]
+position = Vector2( 502, 82 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 656, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stump2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stump2/StaticBody2D"]
+position = Vector2( -2, 13 )
+shape = SubResource( 20 )
+
+[node name="Log" type="Sprite" parent="."]
+position = Vector2( 502, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1230, 1394, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Log"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Log/StaticBody2D"]
+position = Vector2( 2, 14 )
+shape = SubResource( 21 )
+
+[node name="Log2" type="Sprite" parent="."]
+position = Vector2( 502, 164 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 1476, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Log2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Log2/StaticBody2D"]
+position = Vector2( 2, 14 )
+shape = SubResource( 21 )
+
+[node name="TreeDecor1" type="Sprite" parent="."]
+position = Vector2( 502, 246 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 1148, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TreeDecor1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TreeDecor1/StaticBody2D"]
+position = Vector2( -3, 14 )
+shape = SubResource( 21 )
+
+[node name="TreeDecor2" type="Sprite" parent="."]
+position = Vector2( 502, 338 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 1148, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TreeDecor2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TreeDecor2/StaticBody2D"]
+position = Vector2( -3, 14 )
+shape = SubResource( 21 )
+
+[node name="TreeDecor3" type="Sprite" parent="."]
+position = Vector2( 502, 420 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 1230, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TreeDecor3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TreeDecor3/StaticBody2D"]
+position = Vector2( 14, 11 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TreeDecor3/StaticBody2D"]
+position = Vector2( -18, 14 )
+shape = SubResource( 22 )
+
+[node name="TreeDecor4" type="Sprite" parent="."]
+position = Vector2( 502, 502 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 1230, 82, 82 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TreeDecor4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TreeDecor4/StaticBody2D"]
+position = Vector2( 1, 11 )
+shape = SubResource( 21 )
+
+[node name="Flowers" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 82, 82 )
+
+[node name="Flowers2" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 0, 82, 82 )
+
+[node name="Flowers3" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 0, 82, 82 )
+
+[node name="Flowers4" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 0, 82, 82 )
+
+[node name="Flowers5" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 82, 82, 82 )
+
+[node name="Flowers6" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 82, 82, 82 )
+
+[node name="Flowers7" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 82, 82, 82 )
+
+[node name="Flowers8" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 82, 82, 82 )
+
+[node name="Flowers9" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 164, 82, 82 )
+
+[node name="Flowers10" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 164, 82, 82 )
+
+[node name="Flowers11" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 164, 82, 82 )
+
+[node name="Flowers12" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 164, 82, 82 )
+
+[node name="Flowers13" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 164, 82, 82 )
+
+[node name="Flowers14" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 164, 82, 82 )
+
+[node name="Flowers15" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 164, 82, 82 )
+
+[node name="Flowers16" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 164, 82, 82 )
+
+[node name="Flowers17" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1230, 246, 82, 82 )
+
+[node name="Flowers18" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 328, 82, 82 )
+
+[node name="Flowers19" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 328, 82, 82 )
+
+[node name="Flowers20" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 328, 82, 82 )
+
+[node name="Flowers21" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 328, 82, 82 )
+
+[node name="Flowers22" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 410, 82, 82 )
+
+[node name="Flowers23" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 410, 82, 82 )
+
+[node name="Flowers24" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 410, 82, 82 )
+
+[node name="Flowers25" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 410, 82, 82 )
+
+[node name="Flowers26" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 410, 82, 82 )
+
+[node name="Flowers27" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 410, 82, 82 )
+
+[node name="Flowers28" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 410, 82, 82 )
+
+[node name="Flowers29" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 492, 82, 82 )
+
+[node name="Flowers30" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 574, 82, 82 )
+
+[node name="Flowers31" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 574, 82, 82 )
+
+[node name="Flowers32" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 656, 82, 82 )
+
+[node name="Flowers33" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 656, 82, 82 )
+
+[node name="Flowers34" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 656, 82, 82 )
+
+[node name="Flowers35" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 656, 82, 82 )
+
+[node name="Flowers36" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 656, 82, 82 )
+
+[node name="Flowers37" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 656, 82, 82 )
+
+[node name="Flowers38" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 656, 82, 82 )
+
+[node name="Flowers39" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 656, 82, 82 )
+
+[node name="Flowers40" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1558, 984, 0, 0 )
+
+[node name="Flowers41" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 738, 82, 82 )
+
+[node name="Flowers42" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 820, 82, 82 )
+
+[node name="Flowers43" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 820, 82, 82 )
+
+[node name="Flowers44" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 738, 82, 82 )
+
+[node name="Flowers45" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 1066, 82, 82 )
+
+[node name="Flowers46" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 1066, 82, 82 )
+
+[node name="Flowers47" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 1066, 82, 82 )
+
+[node name="Flowers48" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 1066, 82, 82 )
+
+[node name="Flowers49" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 1066, 82, 82 )
+
+[node name="Flowers50" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 1066, 82, 82 )
+
+[node name="Flowers51" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 1066, 82, 82 )
+
+[node name="Flowers52" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 1066, 82, 82 )
+
+[node name="Flowers53" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 1066, 82, 82 )
+
+[node name="Flowers54" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 1066, 82, 82 )
+
+[node name="Flowers55" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 1066, 82, 82 )
+
+[node name="Flowers56" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 1066, 82, 82 )
+
+[node name="Flowers57" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1230, 1066, 82, 82 )
+
+[node name="Flowers58" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 1066, 82, 82 )
+
+[node name="Flowers59" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 1148, 82, 82 )
+
+[node name="Flowers60" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 1148, 82, 82 )
+
+[node name="Flowers61" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 1148, 82, 82 )
+
+[node name="Flowers62" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 1230, 82, 82 )
+
+[node name="Flowers63" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 1230, 82, 82 )
+
+[node name="Flowers64" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 1230, 82, 82 )
+
+[node name="Flowers65" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 1312, 82, 82 )
+
+[node name="Flowers66" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 1312, 82, 82 )
+
+[node name="Flowers67" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 1312, 82, 82 )
+
+[node name="Flowers68" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 1312, 82, 82 )
+
+[node name="Flowers69" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 1394, 82, 82 )
+
+[node name="Flowers70" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 1394, 82, 82 )
+
+[node name="Flowers71" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 1394, 82, 82 )
+
+[node name="Flowers72" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 1394, 82, 82 )
+
+[node name="Flowers73" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 1394, 82, 82 )
+
+[node name="Flowers74" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 1476, 82, 82 )
+
+[node name="Flowers75" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 1476, 82, 82 )
+
+[node name="Plant" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 82, 82, 82 )
+
+[node name="Plant2" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 82, 82, 82 )
+
+[node name="Plant3" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 82, 82, 82 )
+
+[node name="Plant4" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 0, 82, 82 )
+
+[node name="Plant5" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1230, 0, 82, 82 )
+
+[node name="Plant6" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 0, 82, 82 )
+
+[node name="Plant7" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 82, 82, 82 )
+
+[node name="Plant8" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 164, 82, 82 )
+
+[node name="Plant9" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1230, 82, 82, 82 )
+
+[node name="Plant10" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1312, 82, 82, 82 )
+
+[node name="Plant11" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 82, 82, 82 )
+
+[node name="Plant12" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 574, 82, 82 )
+
+[node name="Plant13" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 820, 82, 82 )
+
+[node name="Plant14" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 492, 82, 82 )
+
+[node name="Plant15" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 492, 82, 82 )
+
+[node name="Plant16" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 656, 82, 82 )
+
+[node name="Plant17" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 984, 82, 82 )
+
+[node name="Plant18" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 984, 82, 82 )
+
+[node name="Plant19" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 984, 82, 82 )
+
+[node name="Plant20" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 984, 82, 82 )
+
+[node name="Plant21" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 984, 82, 82 )
+
+[node name="Plant22" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 1066, 82, 82 )
+
+[node name="Plant23" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 984, 82, 82 )
+
+[node name="Plant24" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 984, 82, 82 )
+
+[node name="Plant25" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 1312, 82, 82 )
+
+[node name="Plant26" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 902, 1312, 82, 82 )
+
+[node name="Plant27" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 1312, 82, 82 )
+
+[node name="Plant28" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 1394, 82, 82 )
+
+[node name="Rubble" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 820, 82, 82 )
+
+[node name="Rubble2" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 902, 82, 82 )
+
+[node name="Rubble3" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 984, 82, 82 )
+
+[node name="Rubble4" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 984, 82, 82 )
+
+[node name="Rubble5" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 984, 82, 82 )
+
+[node name="Rubble6" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 984, 984, 82, 82 )
+
+[node name="Rubble7" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1148, 1312, 82, 82 )
+
+[node name="Rubble8" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 1476, 82, 82 )
+
+[node name="Rubble9" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1066, 1394, 82, 82 )
+
+[node name="Rubble10" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1394, 1066, 82, 82 )
+
+[node name="Rubble11" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 1066, 82, 82 )
+
+[node name="Rubble12" type="Sprite" parent="."]
+position = Vector2( 584, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1476, 1230, 82, 82 )
+

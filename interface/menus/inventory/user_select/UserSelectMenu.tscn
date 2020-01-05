@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://interface/menus/inventory/user_select/UserSelectMenu.gd" type="Script" id=1]
+[ext_resource path="res://interface/menus/inventory/user_select/ActorButton.tscn" type="PackedScene" id=2]
+
+[node name="UserSelectMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+ActorButton = ExtResource( 2 )
+
+[node name="BlackOverlay" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.313726 )
+
+[node name="ActorsList" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -210.0
+margin_right = 210.0
+alignment = 1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/barking_01.ogg-f42c6daee5b2f5f94d6e3ded1977ec95.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/barking_01.ogg"
+dest_files=[ "res://.import/barking_01.ogg-f42c6daee5b2f5f94d6e3ded1977ec95.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

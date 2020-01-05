@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://interface/menus/MenuTitle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/default.theme" type="Theme" id=3]
+[ext_resource path="res://interface/menus/inventory/BackpackList.gd" type="Script" id=4]
+[ext_resource path="res://interface/menus/inventory/BackPack.gd" type="Script" id=5]
+[ext_resource path="res://interface/menus/shared/Buffer.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interface/menus/inventory/InventoryUnderlay.png" type="Texture" id=7]
+
+[node name="BackPack" type="VBoxContainer"]
+margin_left = 914.0
+margin_right = 1514.0
+margin_bottom = 460.0
+theme = ExtResource( 3 )
+custom_constants/separation = 0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="." instance=ExtResource( 2 )]
+margin_right = 600.0
+margin_bottom = 120.0
+title = "BackPack"
+
+[node name="Buffer" parent="." instance=ExtResource( 6 )]
+margin_top = 120.0
+margin_bottom = 170.0
+
+[node name="Backpack" type="Control" parent="."]
+margin_top = 170.0
+margin_right = 600.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 600, 330 )
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Backpack"]
+position = Vector2( 302.589, 164.768 )
+texture = ExtResource( 7 )
+
+[node name="Grid" type="GridContainer" parent="Backpack"]
+margin_left = 14.0
+margin_top = 28.0
+margin_right = 594.0
+margin_bottom = 318.0
+rect_min_size = Vector2( 580, 290 )
+columns = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}

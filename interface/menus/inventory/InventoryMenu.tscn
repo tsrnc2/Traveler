@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://interface/menus/Menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/menus/inventory/InventoryMenu.gd" type="Script" id=2]
+[ext_resource path="res://interface/menus/inventory/BackPack.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/menus/inventory/EquipmentPanel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interface/menus/inventory/Stats.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interface/menus/shared/Button.tscn" type="PackedScene" id=6]
+
+[node name="InventoryMenu" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="HBox" type="HBoxContainer" parent="." index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 75.0
+margin_right = -48.0
+margin_bottom = -400.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EquipmentPanel" parent="HBox" index="0" instance=ExtResource( 4 )]
+margin_left = 0.0
+margin_right = 600.0
+margin_bottom = 680.0
+
+[node name="BackPack" parent="HBox" index="1" instance=ExtResource( 3 )]
+margin_left = 616.0
+margin_right = 1216.0
+margin_bottom = 680.0
+
+[node name="CloseButton" parent="HBox/BackPack" index="3" instance=ExtResource( 6 )]
+margin_left = 270.0
+margin_top = 500.0
+margin_right = 330.0
+margin_bottom = 530.0
+text = "Close"
+
+[node name="Stats" parent="HBox" index="2" instance=ExtResource( 5 )]
+margin_left = 1232.0
+margin_right = 1832.0
+margin_bottom = 680.0
+[connection signal="pressed" from="HBox/BackPack/CloseButton" to="." method="_on_Button_pressed"]

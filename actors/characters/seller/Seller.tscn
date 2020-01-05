@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://actors/characters/seller/Seller.gd" type="Script" id=1]
+[ext_resource path="res://core/shop/Shop.tscn" type="PackedScene" id=2]
+[ext_resource path="res://actors/body.png" type="Texture" id=3]
+[ext_resource path="res://utils/ActionMenu/ActionMenu.tscn" type="PackedScene" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 49.2988
+
+[node name="Seller" type="Area2D" groups=[
+"seller",
+]]
+script = ExtResource( 1 )
+
+[node name="Shop" parent="." instance=ExtResource( 2 )]
+
+[node name="ActionMenu" parent="." instance=ExtResource( 4 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Body" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -20 )
+texture = ExtResource( 3 )
+[connection signal="input_event" from="." to="." method="_on_Seller_input_event"]

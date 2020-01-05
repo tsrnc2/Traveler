@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bottle-close-04.ogg-228efcf74e8e59c6d78db2b6e7068f86.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/Water/bottle-close-04.ogg"
+dest_files=[ "res://.import/bottle-close-04.ogg-228efcf74e8e59c6d78db2b6e7068f86.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

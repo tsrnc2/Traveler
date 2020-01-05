@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/theme/fonts/source_code_pro_26.tres" type="DynamicFont" id=1]
+[ext_resource path="res://interface/gui/Panel2.png" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "tool
+extends Control
+
+export(String) var title = \"Title\" setget set_title
+
+onready var label = $Label
+func _ready():
+	set_title(title)
+
+func set_title(string):
+	title = string
+	if not label:
+		return
+	label.text = string
+"
+
+[node name="TitlePanel" type="NinePatchRect"]
+margin_right = 1920.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 120 )
+texture = ExtResource( 2 )
+region_rect = Rect2( -0.369881, 0.626439, 200.224, 70.9116 )
+patch_margin_left = 14
+patch_margin_top = 21
+patch_margin_right = 14
+patch_margin_bottom = 7
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 45.0
+margin_right = 10.0
+custom_fonts/font = ExtResource( 1 )
+text = "Title"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

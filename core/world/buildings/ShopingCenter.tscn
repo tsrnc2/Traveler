@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://core/world/buildings/ShopingCenter.png" type="Texture" id=1]
+[ext_resource path="res://actors/characters/seller/Seller.tscn" type="PackedScene" id=2]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -339.774, 3.26172, -339.072, -65.51, -282.932, -35.3347, -282.23, 32.7356, -276.616, 31.332, -280.125, -36.7383, -259.072, -47.9663, -228.195, -31.8259, -251.353, -18.4927, -250.651, 54.49, -247.844, -14.9839, -217.669, 1.8584, -212.757, 72.0337, -212.757, 1.8584, -187.493, -10.7732, -158.02, 5.36719, -159.423, 75.5425, -153.809, 2.56006, -94.8618, -29.0188, -84.3356, -21.2996, -85.0372, 48.1741, -80.8268, -22.7031, -33.8092, -50.7732, -35.2128, -14.9839, -25.3882, -10.0715, 21.6294, -33.9312, 11.8048, -40.9487, 11.8048, -73.9312, 39.875, -90.7732, 44.7873, -88.668, 88.9978, -113.229, 90.4014, -47.9663, 93.2084, -125.861, 110.752, -135.686, 112.156, -71.1243, 113.559, -144.107, -45.7396, -229.019, -124.336, -185.51, -154.512, -201.65, -228.898, -159.545, -203.634, -143.405, -339.775, -67.615 )
+
+[node name="ShopingCenter" type="Sprite"]
+position = Vector2( -1140.81, 2690.14 )
+texture = ExtResource( 1 )
+
+[node name="Seller" parent="." instance=ExtResource( 2 )]
+position = Vector2( 133.836, 86.7691 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
+"enviroment",
+]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -212.295, 65.5613, -83.8743, 137.842, -58.6111, 126.614, -29.1375, 143.456, 31.9153, 106.965, 41.7397, 117.491, 92.2661, 81, 139.985, 57.1404, 175.073, 42.4036, 215.775, 19.2456, 238.933, -4.61401, 251.564, -20.0527, 234.867, -72.2759, 174.278, -108.629, 77.5293, -116.895, -2.94385, -81.3643, -34.7528, -102.57, -93.8268, -73.7905, -86.2533, -49.5552, -211.975, -1.08423 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="StaticBody2D"]
+position = Vector2( 127.777, 65.563 )
+occluder = SubResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 22.4581
+margin_top = 29.6433
+margin_right = 242.458
+margin_bottom = 60.6433
+text = "MEGA MEGA MART PLACE HOLDER
+CLICK TO SHOP"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

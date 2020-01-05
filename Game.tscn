@@ -1,0 +1,224 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://core/Game.gd" type="Script" id=1]
+[ext_resource path="res://interface/gui/GameOverlay.png" type="Texture" id=2]
+[ext_resource path="res://vfx/shaders/HeartBeat.tres" type="Shader" id=3]
+[ext_resource path="res://core/world/FogofWar.tscn" type="PackedScene" id=4]
+[ext_resource path="res://core/LevelLoader.gd" type="Script" id=5]
+[ext_resource path="res://core/world/weather/RainOverlay.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interface/menus/shop/panels/DescriptionPanel.tscn" type="PackedScene" id=7]
+[ext_resource path="res://audio/MusicPlayer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://core/clock/clock.tscn" type="PackedScene" id=9]
+[ext_resource path="res://interface/Interface.gd" type="Script" id=10]
+[ext_resource path="res://utils/Astar/MapAstar.tscn" type="PackedScene" id=11]
+[ext_resource path="res://interface/menus/map/MapPanel.tscn" type="PackedScene" id=12]
+[ext_resource path="res://actors/player/Player.tscn" type="PackedScene" id=13]
+[ext_resource path="res://vfx/TransitionColor.tscn" type="PackedScene" id=14]
+[ext_resource path="res://interface/menus/inventory/InventoryHUD.tscn" type="PackedScene" id=15]
+[ext_resource path="res://core/world/weather/Weather.tscn" type="PackedScene" id=16]
+[ext_resource path="res://interface/gui/player/PlayerGUI.tscn" type="PackedScene" id=17]
+[ext_resource path="res://core/world/timeofday/WorldTimeOfDay.gd" type="Script" id=18]
+[ext_resource path="res://interface/gui/clock/Clock.tscn" type="PackedScene" id=19]
+[ext_resource path="res://core/world/weather/WeatherHUD.tscn" type="PackedScene" id=20]
+[ext_resource path="res://utils/ActionMenu/NPCInentoryHUD.tscn" type="PackedScene" id=21]
+[ext_resource path="res://interface/menus/shop/ShopMenu.tscn" type="PackedScene" id=22]
+[ext_resource path="res://minigame/Balance.tscn" type="PackedScene" id=23]
+[ext_resource path="res://interface/menus/overviews/PlayerOverview.tscn" type="PackedScene" id=24]
+[ext_resource path="res://minigame/Minigames.gd" type="Script" id=25]
+[ext_resource path="res://interface/menus/pause/PauseMenu.tscn" type="PackedScene" id=26]
+[ext_resource path="res://interface/menus/sign_painter/SignDesigner.tscn" type="PackedScene" id=27]
+[ext_resource path="res://interface/gui/barbuilders/QuoteBarBuilder.tscn" type="PackedScene" id=28]
+[ext_resource path="res://interface/menus/combat/Combat.tscn" type="PackedScene" id=29]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+
+[node name="Game" type="Node"]
+pause_mode = 1
+script = ExtResource( 1 )
+
+[node name="GameClock" parent="." groups=[
+"clock",
+] instance=ExtResource( 9 )]
+minute = 45
+
+[node name="MusicPlayer" parent="." instance=ExtResource( 8 )]
+
+[node name="LevelLoader" type="Control" parent="."]
+pause_mode = 1
+mouse_default_cursor_shape = 13
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+LEVEL_START = "res://levels/CityTestHandMadeDesert.tscn"
+
+[node name="MapAstar" parent="LevelLoader" instance=ExtResource( 11 )]
+DEFAULT_LOCATION = Vector2( 10, 100 )
+
+[node name="Player" parent="LevelLoader" groups=[
+"player",
+] instance=ExtResource( 13 )]
+position = Vector2( 1002.31, 545.52 )
+scale = Vector2( 0.15, 0.15 )
+
+[node name="FogOfWar" parent="LevelLoader" groups=[
+"fogofwar",
+] instance=ExtResource( 4 )]
+z_index = 3
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+tile_data = PoolIntArray( -655342, 0, 0, -655341, 0, 0, -655340, 0, 0, -655339, 0, 0, -655338, 0, 0, -655337, 0, 0, -655336, 0, 0, -655335, 0, 0, -655334, 0, 0, -655333, 0, 0, -655332, 0, 0, -655331, 0, 0, -655330, 0, 0, -655329, 0, 0, -655328, 0, 0, -655327, 0, 0, -655326, 0, 0, -655325, 0, 0, -655324, 0, 0, -655323, 0, 0, -589806, 0, 0, -589805, 0, 0, -589804, 0, 0, -589803, 0, 0, -589802, 0, 0, -589801, 0, 0, -589800, 0, 0, -589799, 0, 0, -589798, 0, 0, -589797, 0, 0, -589796, 0, 0, -589795, 0, 0, -589794, 0, 0, -589793, 0, 0, -589792, 0, 0, -589791, 0, 0, -589790, 0, 0, -589789, 0, 0, -589788, 0, 0, -589787, 0, 0, -524270, 0, 0, -524269, 0, 0, -524268, 0, 0, -524267, 0, 0, -524266, 0, 0, -524265, 0, 0, -524264, 0, 0, -524263, 0, 0, -524262, 0, 0, -524261, 0, 0, -524260, 0, 0, -524259, 0, 0, -524258, 0, 0, -524257, 0, 0, -524256, 0, 0, -524255, 0, 0, -524254, 0, 0, -524253, 0, 0, -524252, 0, 0, -524251, 0, 0, -458734, 0, 0, -458733, 0, 0, -458732, 0, 0, -458731, 0, 0, -458730, 0, 0, -458729, 0, 0, -458728, 0, 0, -458727, 0, 0, -458726, 0, 0, -458725, 0, 0, -458724, 0, 0, -458723, 0, 0, -458722, 0, 0, -458721, 0, 0, -458720, 0, 0, -458719, 0, 0, -458718, 0, 0, -458717, 0, 0, -458716, 0, 0, -458715, 0, 0, -393198, 0, 0, -393197, 0, 0, -393196, 0, 0, -393195, 0, 0, -393194, 0, 0, -393193, 0, 0, -393192, 0, 0, -393191, 0, 0, -393190, 0, 0, -393189, 0, 0, -393188, 0, 0, -393187, 0, 0, -393186, 0, 0, -393185, 0, 0, -393184, 0, 0, -393183, 0, 0, -393182, 0, 0, -393181, 0, 0, -393180, 0, 0, -393179, 0, 0, -327662, 0, 0, -327661, 0, 0, -327660, 0, 0, -327659, 0, 0, -327658, 0, 0, -327657, 0, 0, -327656, 0, 0, -327655, 0, 0, -327654, 0, 0, -327653, 0, 0, -327652, 0, 0, -327651, 0, 0, -327650, 0, 0, -327649, 0, 0, -327648, 0, 0, -327647, 0, 0, -327646, 0, 0, -327645, 0, 0, -327644, 0, 0, -327643, 0, 0, -262126, 0, 0, -262125, 0, 0, -262124, 0, 0, -262123, 0, 0, -262122, 0, 0, -262121, 0, 0, -262120, 0, 0, -262119, 0, 0, -262118, 0, 0, -262117, 0, 0, -262116, 0, 0, -262115, 0, 0, -262114, 0, 0, -262113, 0, 0, -262112, 0, 0, -262111, 0, 0, -262110, 0, 0, -262109, 0, 0, -262108, 0, 0, -262107, 0, 0, -196590, 0, 0, -196589, 0, 0, -196588, 0, 0, -196587, 0, 0, -196586, 0, 0, -196585, 0, 0, -196584, 0, 0, -196583, 0, 0, -196582, 0, 0, -196581, 0, 0, -196580, 0, 0, -196579, 0, 0, -196578, 0, 0, -196577, 0, 0, -196576, 0, 0, -196575, 0, 0, -196574, 0, 0, -196573, 0, 0, -196572, 0, 0, -196571, 0, 0, -131054, 0, 0, -131053, 0, 0, -131052, 0, 0, -131051, 0, 0, -131050, 0, 0, -131049, 0, 0, -131048, 0, 0, -131047, 0, 0, -131046, 0, 0, -131045, 0, 0, -131044, 0, 0, -131043, 0, 0, -131042, 0, 0, -131041, 0, 0, -131040, 0, 0, -131039, 0, 0, -131038, 0, 0, -131037, 0, 0, -131036, 0, 0, -131035, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, -65503, 0, 0, -65502, 0, 0, -65501, 0, 0, -65500, 0, 0, -65499, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 30, 0, 0, 31, 0, 0, 32, 0, 0, 33, 0, 0, 34, 0, 0, 35, 0, 0, 36, 0, 0, 37, 0, 0, 65554, 0, 0, 65555, 0, 0, 65556, 0, 0, 65557, 0, 0, 65558, 0, 0, 65559, 0, 0, 65560, 0, 0, 65561, 0, 0, 65562, 0, 0, 65563, 0, 0, 65564, 0, 0, 65565, 0, 0, 65566, 0, 0, 65567, 0, 0, 65568, 0, 0, 65569, 0, 0, 65570, 0, 0, 65571, 0, 0, 65572, 0, 0, 65573, 0, 0, 131090, 0, 0, 131091, 0, 0, 131092, 0, 0, 131093, 0, 0, 131094, 0, 0, 131095, 0, 0, 131096, 0, 0, 131097, 0, 0, 131098, 0, 0, 131099, 0, 0, 131100, 0, 0, 131101, 0, 0, 131102, 0, 0, 131103, 0, 0, 131104, 0, 0, 131105, 0, 0, 131106, 0, 0, 131107, 0, 0, 131108, 0, 0, 131109, 0, 0, 196626, 0, 0, 196627, 0, 0, 196628, 0, 0, 196629, 0, 0, 196630, 0, 0, 196631, 0, 0, 196632, 0, 0, 196633, 0, 0, 196634, 0, 0, 196635, 0, 0, 196636, 0, 0, 196637, 0, 0, 196638, 0, 0, 196639, 0, 0, 196640, 0, 0, 196641, 0, 0, 196642, 0, 0, 196643, 0, 0, 196644, 0, 0, 196645, 0, 0, 262162, 0, 0, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 262166, 0, 0, 262167, 0, 0, 262168, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 262174, 0, 0, 262175, 0, 0, 262176, 0, 0, 262177, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 262181, 0, 0, 327698, 0, 0, 327699, 0, 0, 327700, 0, 0, 327701, 0, 0, 327702, 0, 0, 327703, 0, 0, 327704, 0, 0, 327705, 0, 0, 327706, 0, 0, 327707, 0, 0, 327708, 0, 0, 327709, 0, 0, 327710, 0, 0, 327711, 0, 0, 327712, 0, 0, 327713, 0, 0, 327714, 0, 0, 327715, 0, 0, 327716, 0, 0, 327717, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 0, 0, 393239, 0, 0, 393240, 0, 0, 393241, 0, 0, 393242, 0, 0, 393243, 0, 0, 393244, 0, 0, 393245, 0, 0, 393246, 0, 0, 393247, 0, 0, 393248, 0, 0, 393249, 0, 0, 393250, 0, 0, 393251, 0, 0, 393252, 0, 0, 393253, 0, 0, 458770, 0, 0, 458771, 0, 0, 458772, 0, 0, 458773, 0, 0, 458774, 0, 0, 458775, 0, 0, 458776, 0, 0, 458777, 0, 0, 458778, 0, 0, 458779, 0, 0, 458780, 0, 0, 458781, 0, 0, 458782, 0, 0, 458783, 0, 0, 458784, 0, 0, 458785, 0, 0, 458786, 0, 0, 458787, 0, 0, 458788, 0, 0, 458789, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589861, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 655381, 0, 0, 655382, 0, 0, 655383, 0, 0, 655384, 0, 0, 655385, 0, 0, 655386, 0, 0, 655387, 0, 0, 655388, 0, 0, 655389, 0, 0, 655390, 0, 0, 655391, 0, 0, 655392, 0, 0, 655393, 0, 0, 655394, 0, 0, 655395, 0, 0, 655396, 0, 0, 655397, 0, 0 )
+PADDING = 40
+
+[node name="Weather" parent="." instance=ExtResource( 16 )]
+
+[node name="Rain" parent="Weather" instance=ExtResource( 6 )]
+visible = false
+
+[node name="Overlays" type="CanvasLayer" parent="."]
+pause_mode = 2
+
+[node name="TransitionColor" parent="Overlays" instance=ExtResource( 14 )]
+visible = false
+anchor_left = 0.00112419
+anchor_right = 1.00112
+margin_left = 0.60486
+margin_top = 2.90411
+margin_right = 0.604858
+margin_bottom = 2.90405
+mouse_filter = 2
+
+[node name="WorldTimeOfDay" type="ColorRect" parent="Overlays" groups=[
+"SunOverlay",
+]]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.941176 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+NIGHT_COLOR = Color( 0, 0, 0, 0.941176 )
+MESSAGE_COLOR = Color( 0.247059, 0.909804, 0.254902, 1 )
+
+[node name="MasterOverlay" type="TextureRect" parent="Overlays"]
+modulate = Color( 1, 1, 1, 0.784314 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="Overlays/MasterOverlay"]
+material = SubResource( 1 )
+position = Vector2( -293.616, 42.6393 )
+points = PoolVector2Array( 710.341, 985.749, 795.863, 985.749, 834.958, 959.685, 843.103, 983.306, 923.738, 983.306, 949.802, 968.645, 961.205, 982.491, 983.196, 982.491, 1012.52, 881.494, 1028.81, 1019.96, 1047.54, 982.491, 1111.07, 982.491 )
+width = 4.0
+default_color = Color( 0.905882, 0.0901961, 0.0705882, 1 )
+
+[node name="Interface" type="CanvasLayer" parent="."]
+pause_mode = 2
+layer = 100
+script = ExtResource( 10 )
+
+[node name="MapPanel" parent="Interface" instance=ExtResource( 12 )]
+visible = false
+
+[node name="InfoHUDPanel" parent="Interface" groups=[
+"InfoHUD",
+] instance=ExtResource( 7 )]
+mouse_filter = 2
+DEFAULT_COLOR = Color( 0.235294, 0.235294, 0.235294, 1 )
+
+[node name="PlayerHUD" parent="Interface" instance=ExtResource( 17 )]
+pause_mode = 0
+margin_left = -26.9998
+margin_top = -45.825
+margin_right = -26.9998
+margin_bottom = -23.825
+rect_min_size = Vector2( 200, 22 )
+
+[node name="EnviromentHUD" type="HBoxContainer" parent="Interface"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = -49.0
+margin_right = 206.0
+margin_bottom = 1.0
+rect_min_size = Vector2( 200, 50 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClockHUD" parent="Interface/EnviromentHUD" instance=ExtResource( 19 )]
+anchor_top = 0.0
+anchor_bottom = 0.0
+margin_top = 0.0
+margin_bottom = 50.0
+
+[node name="WeatherHUD" parent="Interface/EnviromentHUD" instance=ExtResource( 20 )]
+margin_left = 84.0
+margin_right = 169.0
+margin_bottom = 50.0
+
+[node name="InventoryHUD" parent="Interface" instance=ExtResource( 15 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 861.48
+margin_top = 998.308
+margin_right = 1301.48
+margin_bottom = 1078.31
+grow_vertical = 1
+rect_min_size = Vector2( 440, 80 )
+
+[node name="NPCInventory" parent="Interface" instance=ExtResource( 21 )]
+margin_left = -1070.0
+margin_top = -480.0
+margin_right = -470.0
+margin_bottom = -200.0
+
+[node name="ShopMenu" parent="Interface" instance=ExtResource( 22 )]
+pause_mode = 2
+visible = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+
+[node name="PauseLayer" type="CanvasLayer" parent="Interface"]
+layer = 128
+
+[node name="PauseMenu" parent="Interface/PauseLayer" instance=ExtResource( 26 )]
+visible = false
+
+[node name="SignDesigner" parent="Interface" instance=ExtResource( 27 )]
+visible = false
+
+[node name="QuoteBarBuilder" parent="Interface" instance=ExtResource( 28 )]
+
+[node name="PlayerOverview" parent="Interface" instance=ExtResource( 24 )]
+visible = false
+mouse_filter = 0
+
+[node name="Minigames" type="CanvasLayer" parent="."]
+pause_mode = 1
+layer = 100
+script = ExtResource( 25 )
+
+[node name="Balance" parent="Minigames" instance=ExtResource( 23 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 228.755
+margin_top = 100.7
+margin_right = 1756.75
+margin_bottom = 754.7
+
+[node name="Combat" parent="." instance=ExtResource( 29 )]
+[connection signal="loaded" from="LevelLoader" to="LevelLoader/FogOfWar" method="_on_LevelLoader_loaded"]
+[connection signal="loaded" from="LevelLoader" to="Interface" method="_on_Level_loaded"]
+[connection signal="parts_of_day" from="Overlays/WorldTimeOfDay" to="Weather" method="_on_WorldTimeOfDay_parts_of_day"]

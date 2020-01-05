@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://core/world/tiles/ground/seasons_tiles.png" type="Texture" id=1]
+[ext_resource path="res://core/world/tiles/ground/iso-64x64-outside.png" type="Texture" id=2]
+[ext_resource path="res://core/world/tiles/ground/GroundTileSet.png" type="Texture" id=3]
+[ext_resource path="res://core/world/tiles/ground/Shoreline.png" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Seasons" type="Sprite" parent="."]
+position = Vector2( 799.996, 1288.27 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 656, 492 )
+
+[node name="Terain" type="Sprite" parent="."]
+position = Vector2( 1680, 1280 )
+texture = ExtResource( 2 )
+
+[node name="Ground" type="Sprite" parent="."]
+position = Vector2( 610.027, 1855.72 )
+texture = ExtResource( 3 )
+
+[node name="Shoreline" type="Sprite" parent="."]
+position = Vector2( 1832.14, 1970.21 )
+texture = ExtResource( 4 )

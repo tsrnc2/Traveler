@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/Item.gd" type="Script" id=1]
+[ext_resource path="res://Icon.png" type="Texture" id=2]
+
+[node name="Item" type="Node"]
+script = ExtResource( 1 )
+icon = ExtResource( 2 )
+usable = false

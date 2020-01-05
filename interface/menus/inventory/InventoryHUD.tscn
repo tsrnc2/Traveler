@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://interface/gui/InventoryHudOverlay.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/InventoryHUD.gd" type="Script" id=2]
+
+[node name="InventoryHUD" type="NinePatchRect"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -960.0
+margin_top = -1078.64
+margin_right = -520.0
+margin_bottom = -998.64
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 1, 439, 80 )
+patch_margin_left = 8
+patch_margin_top = 11
+patch_margin_right = 7
+patch_margin_bottom = 11
+axis_stretch_horizontal = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Row" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

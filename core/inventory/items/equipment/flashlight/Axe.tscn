@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/icons/equipment/axe.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/items/equipment/Equipment.tscn" type="PackedScene" id=2]
+
+[node name="Axe" instance=ExtResource( 2 )]
+icon = ExtResource( 1 )
+display_name = "Axe"
+description = "Tool typically used for chopping wood"
+price = 25

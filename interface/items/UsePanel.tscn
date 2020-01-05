@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://interface/theme/panel/panel.stylebox" type="StyleBox" id=1]
+[ext_resource path="res://interface/items/UsePanel.gd" type="Script" id=2]
+
+[node name="UsePanel" type="Panel"]
+self_modulate = Color( 1, 1, 1, 0.392157 )
+margin_left = 1.31604
+margin_top = 1.60805
+margin_right = 46.316
+margin_bottom = 21.6081
+rect_min_size = Vector2( 45, 20 )
+custom_styles/panel = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 11.003
+margin_top = 3.96106
+margin_right = 89.003
+margin_bottom = 17.9611
+text = "USE"

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/KOBUGE-games.CircularContainer/CircularContainer.gd" type="Script" id=1]
+[ext_resource path="res://utils/ActionMenu/ActionMenu.gd" type="Script" id=2]
+
+[node name="ActionMenu" type="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1920.0
+margin_bottom = -1080.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CircularContainer" type="Container" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 99.0784
+margin_bottom = 72.0784
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+arrange/force_squares = false
+arrange/force_expand = false
+arrange/start_angle = 0.0
+arrange/start_empty = false
+arrange/allow_node2d = false
+animate/percent_visible = 1.0
+animate/all_at_once = false

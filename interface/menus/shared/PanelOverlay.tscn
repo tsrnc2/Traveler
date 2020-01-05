@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://interface/theme/panel/Overlay.png" type="Texture" id=1]
+
+
+[node name="PanelOverlay" type="NinePatchRect"]
+margin_right = 600.0
+margin_bottom = 53.0
+texture = ExtResource( 1 )
+region_rect = Rect2( -0.335739, -0.542282, 601.591, 334.856 )
+patch_margin_left = 15
+patch_margin_top = 32
+patch_margin_right = 13
+patch_margin_bottom = 21
+__meta__ = {
+"_edit_use_anchors_": false
+}

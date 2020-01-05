@@ -1,0 +1,213 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://core/world/tiles/objects/campfire/CampFire.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://vfx/masks/spherelightmap.png" type="Texture" id=2]
+[ext_resource path="res://vfx/particles/dust_puffs/SmokePuffs.tscn" type="PackedScene" id=3]
+[ext_resource path="res://utils/ActionMenu/ActionProgress.tscn" type="PackedScene" id=4]
+[ext_resource path="res://core/inventory/BlankInventory.tscn" type="PackedScene" id=5]
+[ext_resource path="res://audio/Objects/Fire/fire-1.ogg" type="AudioStream" id=12]
+[ext_resource path="res://core/world/tiles/objects/campfire/CampFire.gd" type="Script" id=13]
+[ext_resource path="res://interface/menus/shared/Button.tscn" type="PackedScene" id=14]
+[ext_resource path="res://addons/KOBUGE-games.CircularContainer/CircularContainer.gd" type="Script" id=15]
+
+[sub_resource type="Animation" id=3]
+resource_name = "off"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light2D:enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SmokeStacks:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "on"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light2D:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.960784, 0.619608, 0.219608, 1 ), Color( 0.960784, 0.462745, 0.219608, 1 ), Color( 0.960784, 0.862745, 0.219608, 1 ), Color( 0.960784, 0.392157, 0.219608, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Light2D:energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.3, 0.4, 0.5, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.5, 0.6, 0.8, 0.6, 0.5, 0.6, 0.4 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Light2D:enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Light2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 17.1982, -13.4997 ), Vector2( 17.1982, -13.4997 ), Vector2( 17.1982, -13.4997 ), Vector2( 17.1982, -13.4997 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Light2D:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.1, 1.1 ), Vector2( 0.9, 0.9 ), Vector2( 1.1, 1.1 ), Vector2( 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("SmokeStacks:emitting")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 13.7092
+
+[node name="CampFire" type="Area2D" groups=[
+"npc_inventory",
+]]
+collision_layer = 17
+collision_mask = 17
+script = ExtResource( 13 )
+
+[node name="BlankInventory" parent="." instance=ExtResource( 5 )]
+
+[node name="CampFireSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 16.4668, -32.2303 )
+scale = Vector2( 0.5, 0.5 )
+frames = ExtResource( 1 )
+animation = "Idle"
+playing = true
+
+[node name="Menu" type="Container" parent="."]
+visible = false
+light_mask = 8
+anchor_left = 0.5
+anchor_top = 0.711
+anchor_right = 0.5
+anchor_bottom = 0.711
+margin_left = -75.0
+margin_top = -50.0
+margin_right = 63.0
+margin_bottom = 58.0
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+arrange/force_squares = false
+arrange/force_expand = false
+arrange/start_angle = 0.0
+arrange/start_empty = false
+arrange/allow_node2d = false
+animate/percent_visible = 1.0
+animate/all_at_once = false
+
+[node name="Close" parent="Menu" instance=ExtResource( 14 )]
+margin_left = 48.0896
+margin_right = 108.09
+text = "Close"
+
+[node name="Inventory" parent="Menu" instance=ExtResource( 14 )]
+margin_left = 7.6666
+margin_top = 65.6504
+margin_right = 80.6666
+margin_bottom = 95.6504
+text = "Inventory"
+
+[node name="Ignite" parent="Menu" instance=ExtResource( 14 )]
+margin_left = 87.3405
+margin_top = 55.3392
+margin_right = 147.341
+margin_bottom = 85.3392
+text = "Ignite"
+
+[node name="ActionProgress" parent="." instance=ExtResource( 4 )]
+visible = false
+margin_left = 136.038
+margin_top = -47.1598
+margin_right = 136.038
+margin_bottom = -47.1598
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
+stream = ExtResource( 12 )
+volume_db = 4.0
+max_distance = 500.0
+attenuation = 0.287175
+bus = "Sounds"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/off = SubResource( 3 )
+anims/on = SubResource( 4 )
+
+[node name="Light2D" type="Light2D" parent="."]
+light_mask = 5
+position = Vector2( 0.137962, -14.0267 )
+enabled = false
+texture = ExtResource( 2 )
+color = Color( 0.960784, 0.619608, 0.219608, 1 )
+shadow_enabled = true
+
+[node name="SmokeStacks" parent="." instance=ExtResource( 3 )]
+position = Vector2( 16.3, -27.3444 )
+emitting = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 17.083, -14.2032 )
+shape = SubResource( 1 )
+[connection signal="input_event" from="." to="." method="_on_CampFire_input_event"]
+[connection signal="pressed" from="Menu/Close" to="." method="_on_Close_pressed"]
+[connection signal="pressed" from="Menu/Inventory" to="." method="_on_Inventory_pressed"]
+[connection signal="pressed" from="Menu/Ignite" to="." method="_on_Ignite_pressed"]

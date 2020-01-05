@@ -1,0 +1,290 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://core/world/tiles/world/ground/RoadTileMap.png" type="Texture" id=1]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( -42, 0, 0, -21, 42, 0, 0, 22 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( -42, 0, 0, -21, 42, 0, 0, 22 ) ]
+
+[sub_resource type="SegmentShape2D" id=8]
+a = Vector2( -41, 0 )
+b = Vector2( 0, 20 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( 41, 0 )
+b = Vector2( 0, 20 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( 0, 20 )
+b = Vector2( -14.6382, 12.0712 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( -41, 0 )
+b = Vector2( -24.144, 8.83892 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( 14.1205, 11.7032 )
+b = Vector2( -0.187004, 19.0029 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( 40.309, -0.596985 )
+b = Vector2( 23.0816, 8.4547 )
+
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( 38.9387, 0.227158 )
+b = Vector2( 22.1149, 8.31551 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="4Way" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 41, 82, 41 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="4Way"]
+navpoly = SubResource( 1 )
+
+[node name="3Way" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance2" type="NavigationPolygonInstance" parent="3Way"]
+navpoly = SubResource( 1 )
+
+[node name="3Way2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance4" type="NavigationPolygonInstance" parent="3Way2"]
+navpoly = SubResource( 1 )
+
+[node name="3Way3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance3" type="NavigationPolygonInstance" parent="3Way3"]
+navpoly = SubResource( 1 )
+
+[node name="3Way4" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 820, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance4" type="NavigationPolygonInstance" parent="3Way4"]
+navpoly = SubResource( 1 )
+
+[node name="EndStop" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 41, 82, 41 )
+
+[node name="NavigationPolygonInstance5" type="NavigationPolygonInstance" parent="EndStop"]
+navpoly = SubResource( 1 )
+
+[node name="EndStop2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 41, 82, 41 )
+
+[node name="NavigationPolygonInstance6" type="NavigationPolygonInstance" parent="EndStop2"]
+navpoly = SubResource( 1 )
+
+[node name="EndStop3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 246, 41, 82, 41 )
+
+[node name="NavigationPolygonInstance7" type="NavigationPolygonInstance" parent="EndStop3"]
+navpoly = SubResource( 1 )
+
+[node name="Corner" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 82, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance8" type="NavigationPolygonInstance" parent="Corner"]
+navpoly = SubResource( 1 )
+
+[node name="Corner2" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 164, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance9" type="NavigationPolygonInstance" parent="Corner2"]
+navpoly = SubResource( 1 )
+
+[node name="Corner3" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 328, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance10" type="NavigationPolygonInstance" parent="Corner3"]
+navpoly = SubResource( 1 )
+
+[node name="Corner4" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance11" type="NavigationPolygonInstance" parent="Corner4"]
+navpoly = SubResource( 1 )
+
+[node name="stright" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance12" type="NavigationPolygonInstance" parent="stright"]
+navpoly = SubResource( 1 )
+
+[node name="stright2" type="Sprite" parent="."]
+position = Vector2( 0, 1.37222 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 123, 82, 41 )
+
+[node name="NavigationPolygonInstance13" type="NavigationPolygonInstance" parent="stright2"]
+position = Vector2( 0, -1.37222 )
+navpoly = SubResource( 1 )
+
+[node name="strightWater" type="Sprite" parent="."]
+position = Vector2( 38.6571, 277.535 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 410, 41, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="strightWater"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strightWater/RigidBody2D"]
+position = Vector2( 0.291992, 0 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strightWater/RigidBody2D"]
+position = Vector2( 40.4102, -19.7356 )
+shape = SubResource( 8 )
+
+[node name="NavigationPolygonInstance14" type="NavigationPolygonInstance" parent="strightWater"]
+position = Vector2( -38.6571, -277.535 )
+navpoly = SubResource( 1 )
+
+[node name="strightWater2" type="Sprite" parent="."]
+position = Vector2( 42.0357, 333.45 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 492, 41, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="strightWater2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strightWater2/RigidBody2D"]
+position = Vector2( -0.35849, -1.43396 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strightWater2/RigidBody2D"]
+position = Vector2( -39.8297, -20.5225 )
+shape = SubResource( 2 )
+
+[node name="NavigationPolygonInstance15" type="NavigationPolygonInstance" parent="strightWater2"]
+position = Vector2( -42.0357, -333.45 )
+navpoly = SubResource( 1 )
+
+[node name="strightRaiseWater1" type="Sprite" parent="."]
+position = Vector2( 152.467, 85.9746 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 574, 41, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="strightRaiseWater1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strightRaiseWater1/RigidBody2D"]
+position = Vector2( -0.214645, -0.214638 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strightRaiseWater1/RigidBody2D"]
+position = Vector2( 39.4522, -20.1867 )
+shape = SubResource( 3 )
+
+[node name="NavigationPolygonInstance16" type="NavigationPolygonInstance" parent="strightRaiseWater1"]
+position = Vector2( -152.467, -85.9746 )
+navpoly = SubResource( 1 )
+
+[node name="strightRaiseWater2" type="Sprite" parent="."]
+position = Vector2( 47.9102, 77.6681 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 656, 41, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="strightRaiseWater2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strightRaiseWater2/RigidBody2D"]
+position = Vector2( 37.2725, -23.0964 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strightRaiseWater2/RigidBody2D"]
+position = Vector2( 0.138199, -0.941116 )
+shape = SubResource( 4 )
+
+[node name="NavigationPolygonInstance17" type="NavigationPolygonInstance" parent="strightRaiseWater2"]
+position = Vector2( -47.9102, -77.6681 )
+navpoly = SubResource( 1 )
+
+[node name="strightRaiseWater3" type="Sprite" parent="."]
+position = Vector2( 59.0139, 129.485 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 41, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="strightRaiseWater3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strightRaiseWater3/RigidBody2D"]
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strightRaiseWater3/RigidBody2D"]
+position = Vector2( -40.2946, -20.1473 )
+shape = SubResource( 5 )
+
+[node name="NavigationPolygonInstance18" type="NavigationPolygonInstance" parent="strightRaiseWater3"]
+position = Vector2( -59.0139, -129.485 )
+navpoly = SubResource( 1 )
+
+[node name="strightRaiseWater4" type="Sprite" parent="."]
+position = Vector2( 49.7608, 179.452 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 123, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="strightRaiseWater4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strightRaiseWater4/RigidBody2D"]
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strightRaiseWater4/RigidBody2D"]
+position = Vector2( -37.3747, -24.2351 )
+shape = SubResource( 6 )
+
+[node name="NavigationPolygonInstance19" type="NavigationPolygonInstance" parent="strightRaiseWater4"]
+position = Vector2( -49.7608, -179.452 )
+navpoly = SubResource( 1 )
+
+[node name="4wayRaiseWater" type="Sprite" parent="."]
+position = Vector2( 42.3583, 227.568 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 738, 123, 82, 41 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="4wayRaiseWater"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="4wayRaiseWater/RigidBody2D"]
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="4wayRaiseWater/RigidBody2D"]
+position = Vector2( -39.7947, -24.2651 )
+shape = SubResource( 7 )
+
+[node name="NavigationPolygonInstance20" type="NavigationPolygonInstance" parent="4wayRaiseWater"]
+position = Vector2( -42.3583, -227.568 )
+navpoly = SubResource( 1 )
+

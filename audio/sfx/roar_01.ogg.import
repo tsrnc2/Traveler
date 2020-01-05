@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/roar_01.ogg-8c40c8af603cec49f7686d47c25cb67f.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/roar_01.ogg"
+dest_files=[ "res://.import/roar_01.ogg-8c40c8af603cec49f7686d47c25cb67f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

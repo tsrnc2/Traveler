@@ -1,0 +1,636 @@
+[gd_scene load_steps=367 format=2]
+
+[ext_resource path="res://actors/Flashlight.tscn" type="PackedScene" id=1]
+[ext_resource path="res://enemies/exclamation-mark.png" type="Texture" id=2]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70002.png" type="Texture" id=3]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00014.png" type="Texture" id=4]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70000.png" type="Texture" id=5]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40006.png" type="Texture" id=6]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00002.png" type="Texture" id=7]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40010.png" type="Texture" id=8]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50009.png" type="Texture" id=9]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40003.png" type="Texture" id=10]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10004.png" type="Texture" id=11]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50000.png" type="Texture" id=12]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50007.png" type="Texture" id=13]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00004.png" type="Texture" id=14]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00012.png" type="Texture" id=15]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50008.png" type="Texture" id=16]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60001.png" type="Texture" id=17]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60014.png" type="Texture" id=18]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60012.png" type="Texture" id=19]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10014.png" type="Texture" id=20]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40007.png" type="Texture" id=21]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10002.png" type="Texture" id=22]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40009.png" type="Texture" id=23]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30012.png" type="Texture" id=24]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40005.png" type="Texture" id=25]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70014.png" type="Texture" id=26]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10006.png" type="Texture" id=27]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10010.png" type="Texture" id=28]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30000.png" type="Texture" id=29]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20013.png" type="Texture" id=30]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500003.png" type="Texture" id=31]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50011.png" type="Texture" id=32]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40008.png" type="Texture" id=33]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00013.png" type="Texture" id=34]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50003.png" type="Texture" id=35]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20001.png" type="Texture" id=36]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00005.png" type="Texture" id=37]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10015.png" type="Texture" id=38]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20014.png" type="Texture" id=39]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20012.png" type="Texture" id=40]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10005.png" type="Texture" id=41]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20015.png" type="Texture" id=42]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30002.png" type="Texture" id=43]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10007.png" type="Texture" id=44]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20009.png" type="Texture" id=45]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70005.png" type="Texture" id=46]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00000.png" type="Texture" id=47]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20004.png" type="Texture" id=48]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20008.png" type="Texture" id=49]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30008.png" type="Texture" id=50]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00015.png" type="Texture" id=51]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10012.png" type="Texture" id=52]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30006.png" type="Texture" id=53]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30004.png" type="Texture" id=54]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70012.png" type="Texture" id=55]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10008.png" type="Texture" id=56]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20007.png" type="Texture" id=57]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20003.png" type="Texture" id=58]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20011.png" type="Texture" id=59]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30005.png" type="Texture" id=60]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10013.png" type="Texture" id=61]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20000.png" type="Texture" id=62]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30009.png" type="Texture" id=63]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30003.png" type="Texture" id=64]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10000.png" type="Texture" id=65]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10011.png" type="Texture" id=66]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20006.png" type="Texture" id=67]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30001.png" type="Texture" id=68]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20002.png" type="Texture" id=69]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20010.png" type="Texture" id=70]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_20005.png" type="Texture" id=71]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30007.png" type="Texture" id=72]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30010.png" type="Texture" id=73]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10009.png" type="Texture" id=74]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10001.png" type="Texture" id=75]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30014.png" type="Texture" id=76]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40001.png" type="Texture" id=77]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40000.png" type="Texture" id=78]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70013.png" type="Texture" id=79]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40014.png" type="Texture" id=80]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70015.png" type="Texture" id=81]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30015.png" type="Texture" id=82]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30011.png" type="Texture" id=83]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00008.png" type="Texture" id=84]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_30013.png" type="Texture" id=85]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_10003.png" type="Texture" id=86]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00007.png" type="Texture" id=87]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40004.png" type="Texture" id=88]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40002.png" type="Texture" id=89]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00009.png" type="Texture" id=90]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00011.png" type="Texture" id=91]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500039.png" type="Texture" id=92]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50002.png" type="Texture" id=93]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50010.png" type="Texture" id=94]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50001.png" type="Texture" id=95]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40012.png" type="Texture" id=96]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40015.png" type="Texture" id=97]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00006.png" type="Texture" id=98]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70008.png" type="Texture" id=99]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70004.png" type="Texture" id=100]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70003.png" type="Texture" id=101]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60013.png" type="Texture" id=102]
+[ext_resource path="res://enemies/polceman/PoliceMan.gd" type="Script" id=103]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00010.png" type="Texture" id=104]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70001.png" type="Texture" id=105]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70006.png" type="Texture" id=106]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60015.png" type="Texture" id=107]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50015.png" type="Texture" id=108]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60010.png" type="Texture" id=109]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50013.png" type="Texture" id=110]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50014.png" type="Texture" id=111]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40013.png" type="Texture" id=112]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70009.png" type="Texture" id=113]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60011.png" type="Texture" id=114]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60008.png" type="Texture" id=115]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60009.png" type="Texture" id=116]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60004.png" type="Texture" id=117]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70010.png" type="Texture" id=118]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60000.png" type="Texture" id=119]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70011.png" type="Texture" id=120]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50005.png" type="Texture" id=121]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60005.png" type="Texture" id=122]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60006.png" type="Texture" id=123]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_70007.png" type="Texture" id=124]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60002.png" type="Texture" id=125]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60003.png" type="Texture" id=126]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_60007.png" type="Texture" id=127]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50012.png" type="Texture" id=128]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00003.png" type="Texture" id=129]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50006.png" type="Texture" id=130]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_00001.png" type="Texture" id=131]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_50004.png" type="Texture" id=132]
+[ext_resource path="res://enemies/polceman/_idle/cop_idle_40011.png" type="Texture" id=133]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100029.png" type="Texture" id=134]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600024.png" type="Texture" id=135]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20000.png" type="Texture" id=136]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000018.png" type="Texture" id=137]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600003.png" type="Texture" id=138]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500009.png" type="Texture" id=139]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000003.png" type="Texture" id=140]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600018.png" type="Texture" id=141]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600020.png" type="Texture" id=142]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600015.png" type="Texture" id=143]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600027.png" type="Texture" id=144]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000011.png" type="Texture" id=145]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000000.png" type="Texture" id=146]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700018.png" type="Texture" id=147]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000009.png" type="Texture" id=148]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000015.png" type="Texture" id=149]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200000.png" type="Texture" id=150]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600033.png" type="Texture" id=151]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200011.png" type="Texture" id=152]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600029.png" type="Texture" id=153]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700024.png" type="Texture" id=154]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700020.png" type="Texture" id=155]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000027.png" type="Texture" id=156]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200018.png" type="Texture" id=157]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500020.png" type="Texture" id=158]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300029.png" type="Texture" id=159]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400000.png" type="Texture" id=160]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000029.png" type="Texture" id=161]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500015.png" type="Texture" id=162]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400015.png" type="Texture" id=164]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500006.png" type="Texture" id=165]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700039.png" type="Texture" id=166]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600011.png" type="Texture" id=167]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300033.png" type="Texture" id=168]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100036.png" type="Texture" id=169]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500024.png" type="Texture" id=170]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400003.png" type="Texture" id=171]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400006.png" type="Texture" id=172]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600006.png" type="Texture" id=173]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600039.png" type="Texture" id=174]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000020.png" type="Texture" id=175]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300024.png" type="Texture" id=176]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300020.png" type="Texture" id=177]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400018.png" type="Texture" id=178]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600009.png" type="Texture" id=179]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100009.png" type="Texture" id=180]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100000.png" type="Texture" id=181]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100018.png" type="Texture" id=182]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300018.png" type="Texture" id=183]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500027.png" type="Texture" id=184]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700036.png" type="Texture" id=185]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100011.png" type="Texture" id=186]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100015.png" type="Texture" id=187]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700033.png" type="Texture" id=188]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200006.png" type="Texture" id=189]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100006.png" type="Texture" id=190]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200009.png" type="Texture" id=191]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100027.png" type="Texture" id=192]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500036.png" type="Texture" id=193]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200024.png" type="Texture" id=194]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700003.png" type="Texture" id=195]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500029.png" type="Texture" id=196]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000033.png" type="Texture" id=197]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400020.png" type="Texture" id=198]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100024.png" type="Texture" id=199]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200033.png" type="Texture" id=200]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200027.png" type="Texture" id=201]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500011.png" type="Texture" id=202]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200029.png" type="Texture" id=203]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400033.png" type="Texture" id=204]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400011.png" type="Texture" id=205]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400029.png" type="Texture" id=206]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400027.png" type="Texture" id=207]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700029.png" type="Texture" id=208]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300009.png" type="Texture" id=209]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300006.png" type="Texture" id=210]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300015.png" type="Texture" id=211]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200036.png" type="Texture" id=212]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700006.png" type="Texture" id=213]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500000.png" type="Texture" id=214]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700011.png" type="Texture" id=215]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400039.png" type="Texture" id=216]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700015.png" type="Texture" id=217]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200003.png" type="Texture" id=218]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100033.png" type="Texture" id=219]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000024.png" type="Texture" id=220]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300003.png" type="Texture" id=221]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700027.png" type="Texture" id=222]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300039.png" type="Texture" id=223]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400009.png" type="Texture" id=224]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600036.png" type="Texture" id=225]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400024.png" type="Texture" id=226]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300000.png" type="Texture" id=227]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200039.png" type="Texture" id=228]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500033.png" type="Texture" id=229]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300036.png" type="Texture" id=230]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100020.png" type="Texture" id=231]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000036.png" type="Texture" id=232]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700009.png" type="Texture" id=233]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_500018.png" type="Texture" id=234]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100039.png" type="Texture" id=235]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300027.png" type="Texture" id=236]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_400036.png" type="Texture" id=237]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_600000.png" type="Texture" id=238]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200015.png" type="Texture" id=239]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_300011.png" type="Texture" id=240]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000006.png" type="Texture" id=241]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_700000.png" type="Texture" id=242]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_200020.png" type="Texture" id=243]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_000039.png" type="Texture" id=244]
+[ext_resource path="res://enemies/polceman/_shoot/cop_shoot_100003.png" type="Texture" id=245]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00006.png" type="Texture" id=246]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00007.png" type="Texture" id=247]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30009.png" type="Texture" id=248]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20012.png" type="Texture" id=249]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10011.png" type="Texture" id=250]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10012.png" type="Texture" id=251]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30010.png" type="Texture" id=252]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30007.png" type="Texture" id=253]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20003.png" type="Texture" id=254]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10004.png" type="Texture" id=255]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20010.png" type="Texture" id=256]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30008.png" type="Texture" id=257]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10013.png" type="Texture" id=258]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20008.png" type="Texture" id=259]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30000.png" type="Texture" id=260]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30003.png" type="Texture" id=261]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00008.png" type="Texture" id=262]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00013.png" type="Texture" id=263]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20013.png" type="Texture" id=264]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30011.png" type="Texture" id=265]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30001.png" type="Texture" id=266]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40002.png" type="Texture" id=267]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20007.png" type="Texture" id=268]
+[ext_resource path="res://actors/Vision.gd" type="Script" id=269]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00003.png" type="Texture" id=270]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00012.png" type="Texture" id=271]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30006.png" type="Texture" id=272]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30012.png" type="Texture" id=273]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10002.png" type="Texture" id=274]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30005.png" type="Texture" id=275]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10005.png" type="Texture" id=276]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30002.png" type="Texture" id=277]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00002.png" type="Texture" id=278]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00011.png" type="Texture" id=279]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00009.png" type="Texture" id=280]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30004.png" type="Texture" id=281]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00004.png" type="Texture" id=282]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10007.png" type="Texture" id=283]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70000.png" type="Texture" id=284]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50006.png" type="Texture" id=285]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50008.png" type="Texture" id=286]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60000.png" type="Texture" id=287]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10006.png" type="Texture" id=288]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10001.png" type="Texture" id=289]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60009.png" type="Texture" id=290]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00010.png" type="Texture" id=291]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70008.png" type="Texture" id=292]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40000.png" type="Texture" id=293]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60010.png" type="Texture" id=294]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20005.png" type="Texture" id=295]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20002.png" type="Texture" id=296]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60008.png" type="Texture" id=297]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70004.png" type="Texture" id=298]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40003.png" type="Texture" id=299]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40006.png" type="Texture" id=300]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50001.png" type="Texture" id=301]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10003.png" type="Texture" id=302]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40004.png" type="Texture" id=303]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70007.png" type="Texture" id=304]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20004.png" type="Texture" id=305]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10008.png" type="Texture" id=306]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50005.png" type="Texture" id=307]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60006.png" type="Texture" id=308]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70005.png" type="Texture" id=309]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60003.png" type="Texture" id=310]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60002.png" type="Texture" id=311]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20009.png" type="Texture" id=312]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40005.png" type="Texture" id=313]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60004.png" type="Texture" id=314]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50004.png" type="Texture" id=315]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40001.png" type="Texture" id=316]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70006.png" type="Texture" id=317]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00005.png" type="Texture" id=318]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50007.png" type="Texture" id=319]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60012.png" type="Texture" id=320]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70001.png" type="Texture" id=321]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60005.png" type="Texture" id=322]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60013.png" type="Texture" id=323]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70009.png" type="Texture" id=324]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50009.png" type="Texture" id=325]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50003.png" type="Texture" id=326]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20001.png" type="Texture" id=327]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00001.png" type="Texture" id=328]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70013.png" type="Texture" id=329]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60011.png" type="Texture" id=330]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70010.png" type="Texture" id=331]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70011.png" type="Texture" id=332]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70003.png" type="Texture" id=333]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40013.png" type="Texture" id=334]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60007.png" type="Texture" id=335]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50002.png" type="Texture" id=336]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40012.png" type="Texture" id=337]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20006.png" type="Texture" id=338]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_20011.png" type="Texture" id=339]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10009.png" type="Texture" id=340]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40007.png" type="Texture" id=341]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50000.png" type="Texture" id=342]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10010.png" type="Texture" id=343]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_00000.png" type="Texture" id=344]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_30013.png" type="Texture" id=345]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_60001.png" type="Texture" id=346]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_10000.png" type="Texture" id=347]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40008.png" type="Texture" id=348]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40009.png" type="Texture" id=349]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40010.png" type="Texture" id=350]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_40011.png" type="Texture" id=351]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70012.png" type="Texture" id=352]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50010.png" type="Texture" id=353]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50011.png" type="Texture" id=354]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50012.png" type="Texture" id=355]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_50013.png" type="Texture" id=356]
+[ext_resource path="res://enemies/polceman/_walk/cop_walk_70002.png" type="Texture" id=357]
+[ext_resource path="res://vfx/particles/dust_puffs/PoliceLights.tscn" type="PackedScene" id=358]
+
+[sub_resource type="Animation" id=1]
+resource_name = "SETUP"
+length = 0.01
+
+[sub_resource type="Animation" id=2]
+resource_name = "bumb"
+length = 0.2
+step = 0.05
+
+[sub_resource type="Animation" id=3]
+length = 0.7
+step = 0.05
+
+[sub_resource type="Animation" id=4]
+length = 0.1
+
+[sub_resource type="Animation" id=5]
+length = 0.9
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("exclamation_mark:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("exclamation_mark:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.25 ),
+"transitions": PoolRealArray( 0.382544, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 54.0852, -65 ), Vector2( 74.1273, -90 ), Vector2( 74.8139, -90 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("exclamation_mark:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.25 ),
+"transitions": PoolRealArray( 0.382544, 1, 1 ),
+"update": 0,
+"values": [ 3.97992, 12.3991, 14.5039 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("exclamation_mark:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.25 ),
+"transitions": PoolRealArray( 0.382544, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.315916, 0.315916 ), Vector2( 1.05264, 1.05264 ), Vector2( 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("exclamation_mark:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.5
+step = 0.05
+
+[sub_resource type="Animation" id=7]
+length = 0.3
+loop = true
+step = 0.05
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 284 ), ExtResource( 321 ), ExtResource( 357 ), ExtResource( 333 ), ExtResource( 298 ), ExtResource( 309 ), ExtResource( 317 ), ExtResource( 304 ), ExtResource( 292 ), ExtResource( 324 ), ExtResource( 331 ), ExtResource( 332 ), ExtResource( 352 ), ExtResource( 329 ) ],
+"loop": true,
+"name": "Walk7",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 119 ), ExtResource( 17 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 117 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 127 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 109 ), ExtResource( 114 ), ExtResource( 19 ), ExtResource( 102 ), ExtResource( 18 ), ExtResource( 107 ) ],
+"loop": true,
+"name": "Idle6",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 342 ), ExtResource( 301 ), ExtResource( 336 ), ExtResource( 326 ), ExtResource( 315 ), ExtResource( 307 ), ExtResource( 285 ), ExtResource( 319 ), ExtResource( 286 ), ExtResource( 325 ), ExtResource( 353 ), ExtResource( 354 ), ExtResource( 355 ), ExtResource( 356 ) ],
+"loop": true,
+"name": "Walk5",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 181 ), ExtResource( 245 ), ExtResource( 190 ), ExtResource( 180 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 182 ), ExtResource( 231 ), ExtResource( 199 ), ExtResource( 192 ), ExtResource( 134 ), ExtResource( 219 ), ExtResource( 169 ), ExtResource( 235 ) ],
+"loop": true,
+"name": "Shot1",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 344 ), ExtResource( 328 ), ExtResource( 278 ), ExtResource( 270 ), ExtResource( 282 ), ExtResource( 318 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 262 ), ExtResource( 280 ), ExtResource( 291 ), ExtResource( 279 ), ExtResource( 271 ), ExtResource( 263 ) ],
+"loop": true,
+"name": "Walk0",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 160 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 224 ), ExtResource( 205 ), ExtResource( 164 ), ExtResource( 178 ), ExtResource( 198 ), ExtResource( 226 ), ExtResource( 207 ), ExtResource( 206 ), ExtResource( 204 ), ExtResource( 237 ), ExtResource( 216 ) ],
+"loop": true,
+"name": "Shot4",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 227 ), ExtResource( 221 ), ExtResource( 210 ), ExtResource( 209 ), ExtResource( 240 ), ExtResource( 211 ), ExtResource( 183 ), ExtResource( 177 ), ExtResource( 176 ), ExtResource( 236 ), ExtResource( 159 ), ExtResource( 168 ), ExtResource( 230 ), ExtResource( 223 ) ],
+"loop": true,
+"name": "Shot3",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 75 ), ExtResource( 22 ), ExtResource( 86 ), ExtResource( 11 ), ExtResource( 41 ), ExtResource( 27 ), ExtResource( 44 ), ExtResource( 56 ), ExtResource( 74 ), ExtResource( 28 ), ExtResource( 66 ), ExtResource( 52 ), ExtResource( 61 ), ExtResource( 20 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "Idle1",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 293 ), ExtResource( 316 ), ExtResource( 267 ), ExtResource( 299 ), ExtResource( 303 ), ExtResource( 313 ), ExtResource( 300 ), ExtResource( 341 ), ExtResource( 348 ), ExtResource( 349 ), ExtResource( 350 ), ExtResource( 351 ), ExtResource( 337 ), ExtResource( 334 ) ],
+"loop": true,
+"name": "Walk4",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 136 ), ExtResource( 327 ), ExtResource( 296 ), ExtResource( 254 ), ExtResource( 305 ), ExtResource( 295 ), ExtResource( 338 ), ExtResource( 268 ), ExtResource( 259 ), ExtResource( 312 ), ExtResource( 256 ), ExtResource( 339 ), ExtResource( 249 ), ExtResource( 264 ) ],
+"loop": true,
+"name": "Walk2",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 242 ), ExtResource( 195 ), ExtResource( 213 ), ExtResource( 233 ), ExtResource( 215 ), ExtResource( 217 ), ExtResource( 147 ), ExtResource( 155 ), ExtResource( 154 ), ExtResource( 222 ), ExtResource( 208 ), ExtResource( 188 ), ExtResource( 185 ), ExtResource( 166 ) ],
+"loop": true,
+"name": "Shot7",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 214 ), ExtResource( 31 ), ExtResource( 165 ), ExtResource( 139 ), ExtResource( 202 ), ExtResource( 162 ), ExtResource( 234 ), ExtResource( 158 ), ExtResource( 170 ), ExtResource( 184 ), ExtResource( 196 ), ExtResource( 229 ), ExtResource( 193 ), ExtResource( 92 ) ],
+"loop": true,
+"name": "Shot5",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 105 ), ExtResource( 3 ), ExtResource( 101 ), ExtResource( 100 ), ExtResource( 46 ), ExtResource( 106 ), ExtResource( 124 ), ExtResource( 99 ), ExtResource( 113 ), ExtResource( 118 ), ExtResource( 120 ), ExtResource( 55 ), ExtResource( 79 ), ExtResource( 26 ), ExtResource( 81 ) ],
+"loop": true,
+"name": "Idle7",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 95 ), ExtResource( 93 ), ExtResource( 35 ), ExtResource( 132 ), ExtResource( 121 ), ExtResource( 130 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 9 ), ExtResource( 94 ), ExtResource( 32 ), ExtResource( 128 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 108 ) ],
+"loop": true,
+"name": "Idle5",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 347 ), ExtResource( 289 ), ExtResource( 274 ), ExtResource( 302 ), ExtResource( 255 ), ExtResource( 276 ), ExtResource( 288 ), ExtResource( 283 ), ExtResource( 306 ), ExtResource( 340 ), ExtResource( 343 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 258 ) ],
+"loop": true,
+"name": "Walk1",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 150 ), ExtResource( 218 ), ExtResource( 189 ), ExtResource( 191 ), ExtResource( 152 ), ExtResource( 239 ), ExtResource( 157 ), ExtResource( 243 ), ExtResource( 194 ), ExtResource( 201 ), ExtResource( 203 ), ExtResource( 200 ), ExtResource( 212 ), ExtResource( 228 ) ],
+"loop": true,
+"name": "Shot2",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 68 ), ExtResource( 43 ), ExtResource( 64 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 53 ), ExtResource( 72 ), ExtResource( 50 ), ExtResource( 63 ), ExtResource( 73 ), ExtResource( 83 ), ExtResource( 24 ), ExtResource( 85 ), ExtResource( 76 ), ExtResource( 82 ) ],
+"loop": true,
+"name": "Idle3",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 131 ), ExtResource( 7 ), ExtResource( 129 ), ExtResource( 14 ), ExtResource( 37 ), ExtResource( 98 ), ExtResource( 87 ), ExtResource( 84 ), ExtResource( 90 ), ExtResource( 104 ), ExtResource( 91 ), ExtResource( 15 ), ExtResource( 34 ), ExtResource( 4 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "Idle0",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 77 ), ExtResource( 89 ), ExtResource( 10 ), ExtResource( 88 ), ExtResource( 25 ), ExtResource( 6 ), ExtResource( 21 ), ExtResource( 33 ), ExtResource( 23 ), ExtResource( 8 ), ExtResource( 133 ), ExtResource( 96 ), ExtResource( 112 ), ExtResource( 80 ), ExtResource( 97 ) ],
+"loop": true,
+"name": "Idle4",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 287 ), ExtResource( 346 ), ExtResource( 311 ), ExtResource( 310 ), ExtResource( 314 ), ExtResource( 322 ), ExtResource( 308 ), ExtResource( 335 ), ExtResource( 297 ), ExtResource( 290 ), ExtResource( 294 ), ExtResource( 330 ), ExtResource( 320 ), ExtResource( 323 ) ],
+"loop": true,
+"name": "Walk6",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 36 ), ExtResource( 69 ), ExtResource( 58 ), ExtResource( 48 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 57 ), ExtResource( 49 ), ExtResource( 45 ), ExtResource( 70 ), ExtResource( 59 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 39 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "Idle2",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 146 ), ExtResource( 140 ), ExtResource( 241 ), ExtResource( 148 ), ExtResource( 145 ), ExtResource( 149 ), ExtResource( 137 ), ExtResource( 175 ), ExtResource( 220 ), ExtResource( 156 ), ExtResource( 161 ), ExtResource( 197 ), ExtResource( 232 ), ExtResource( 244 ) ],
+"loop": true,
+"name": "Shot0",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 238 ), ExtResource( 138 ), ExtResource( 173 ), ExtResource( 179 ), ExtResource( 167 ), ExtResource( 143 ), ExtResource( 141 ), ExtResource( 142 ), ExtResource( 135 ), ExtResource( 144 ), ExtResource( 153 ), ExtResource( 151 ), ExtResource( 225 ), ExtResource( 174 ) ],
+"loop": true,
+"name": "Shot6",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 260 ), ExtResource( 266 ), ExtResource( 277 ), ExtResource( 261 ), ExtResource( 281 ), ExtResource( 275 ), ExtResource( 272 ), ExtResource( 253 ), ExtResource( 257 ), ExtResource( 248 ), ExtResource( 252 ), ExtResource( 265 ), ExtResource( 273 ), ExtResource( 345 ) ],
+"loop": true,
+"name": "Walk3",
+"speed": 24.0
+} ]
+
+[sub_resource type="OccluderPolygon2D" id=9]
+polygon = PoolVector2Array( 2.68044, -5.16522, -0.722292, -1.69304, 0.527691, 3.23744, 5.18041, 3.93188, 9.13868, -0.512504, 6.91649, -4.40134 )
+
+[node name="PoliceMan" type="KinematicBody2D" groups=[
+"security",
+"police",
+"npc",
+]]
+position = Vector2( -1.98642, 0.817726 )
+collision_layer = 2
+collision_mask = 7
+script = ExtResource( 103 )
+MAX_CHARGE_SPEED = 150.0
+SPOT_RANGE = 100.0
+FOLLOW_RANGE = 250.0
+BUMP_RANGE = 5.0
+CHARGE_RANGE = 50.0
+ROAM_RADIUS = 70.0
+BUMP_DISTANCE = 8.0
+BUMP_DURATION = 0.5
+MAX_BUMP_HEIGHT = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/SETUP = SubResource( 1 )
+anims/bumb = SubResource( 2 )
+anims/die = SubResource( 3 )
+anims/idle = SubResource( 4 )
+anims/spot = SubResource( 5 )
+anims/stagger = SubResource( 6 )
+anims/walk = SubResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 3.66581, 0.204781, -1.81339, 5.77845, -0.585294, 11.1632, 6.97222, 14.0917, 14.2463, 9.08486, 13.4906, 2.5665 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.15, 0.15 )
+frames = SubResource( 8 )
+animation = "Walk0"
+frame = 2
+playing = true
+
+[node name="exclamation_mark" type="Sprite" parent="."]
+visible = false
+position = Vector2( 5.60213, -31.9815 )
+rotation = 0.0576637
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+
+[node name="BodyPivot" type="Area2D" parent="."]
+z_index = 2
+script = ExtResource( 269 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="BodyPivot"]
+occluder = SubResource( 9 )
+
+[node name="Flashlight" parent="BodyPivot" instance=ExtResource( 1 )]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BodyPivot"]
+polygon = PoolVector2Array( -7.87489, -7.8295, -6.85535, 14.3965, 286.033, 102.568, 279.516, -97.8021 )
+
+[node name="PoliceLights" parent="." instance=ExtResource( 358 )]
+position = Vector2( 2.17278, -13.0162 )
+scale = Vector2( 0.15, 0.15 )

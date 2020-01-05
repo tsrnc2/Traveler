@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/menus/Menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/menus/shop/ShopMenu.gd" type="Script" id=2]
+[ext_resource path="res://interface/menus/MenuTitle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/theme/panel/panel.stylebox" type="StyleBox" id=4]
+[ext_resource path="res://interface/default.theme" type="Theme" id=5]
+
+[node name="ShopMenu" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 40.0
+margin_top = 40.0
+margin_right = 600.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 600, 200 )
+script = ExtResource( 2 )
+
+[node name="Column" type="VBoxContainer" parent="." index="1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.58667
+margin_right = 1.58667
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitlePanel" parent="Column" index="0" instance=ExtResource( 3 )]
+margin_right = 600.0
+margin_bottom = 84.0
+title = "MegaMega Mart"
+
+[node name="Buttons" type="HBoxContainer" parent="Column" index="1"]
+margin_top = 100.0
+margin_right = 600.0
+margin_bottom = 140.0
+
+[node name="Equipment" type="Button" parent="Column/Buttons" index="0"]
+margin_right = 138.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 45, 40 )
+size_flags_horizontal = 3
+theme = ExtResource( 5 )
+custom_styles/normal = ExtResource( 4 )
+text = "Equipment"
+
+[node name="Food" type="Button" parent="Column/Buttons" index="1"]
+margin_left = 154.0
+margin_right = 292.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 45, 40 )
+size_flags_horizontal = 3
+custom_styles/normal = ExtResource( 4 )
+text = "Food"
+
+[node name="Clothing" type="Button" parent="Column/Buttons" index="2"]
+margin_left = 308.0
+margin_right = 446.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 45, 40 )
+size_flags_horizontal = 3
+custom_styles/normal = ExtResource( 4 )
+text = "Clothing"
+
+[node name="SellButton" type="Button" parent="Column/Buttons" index="3"]
+visible = false
+margin_left = 205.0
+margin_right = 394.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+size_flags_horizontal = 3
+text = "Sell"
+
+[node name="QuitButton" type="Button" parent="Column/Buttons" index="4"]
+margin_left = 462.0
+margin_right = 600.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 59, 40 )
+size_flags_horizontal = 3
+custom_styles/normal = ExtResource( 4 )
+text = "Close"
+
+[node name="Menu" type="Control" parent="Column" index="2"]
+margin_top = 156.0
+margin_right = 600.0
+margin_bottom = 200.0
+size_flags_vertical = 3
+[connection signal="pressed" from="Column/Buttons/QuitButton" to="." method="_on_QuitButton_pressed"]

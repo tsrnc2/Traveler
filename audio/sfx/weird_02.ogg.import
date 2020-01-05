@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/weird_02.ogg-db7ce847a665a4d763a5d2046d7cdbae.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/weird_02.ogg"
+dest_files=[ "res://.import/weird_02.ogg-db7ce847a665a4d763a5d2046d7cdbae.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

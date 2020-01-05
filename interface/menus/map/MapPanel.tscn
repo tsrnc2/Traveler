@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://vfx/BackgroundFog.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/theme/panel/OverlayTransparent.png" type="Texture" id=2]
+[ext_resource path="res://vfx/fog_foreground.material" type="Material" id=3]
+[ext_resource path="res://interface/menus/map/MapPanel.gd" type="Script" id=4]
+[ext_resource path="res://interface/menus/map/Mapbook.png" type="Texture" id=5]
+[ext_resource path="res://interface/menus/MenuTitle.tscn" type="PackedScene" id=6]
+
+[node name="MapPanel" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitlePanel" parent="." instance=ExtResource( 6 )]
+title = "Crew Change"
+
+[node name="BackgroundFog" parent="." instance=ExtResource( 1 )]
+material = ExtResource( 3 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+region_rect = Rect2( -0.584747, -0.190742, 599.292, 337.031 )
+patch_margin_left = 19
+patch_margin_top = 37
+patch_margin_right = 21
+patch_margin_bottom = 31
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
+visible = false
+margin_left = 500.0
+margin_top = 250.0
+margin_right = 1524.0
+margin_bottom = 827.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Map" type="CanvasLayer" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Map"]
+format = 1

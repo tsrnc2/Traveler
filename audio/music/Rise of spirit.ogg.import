@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Rise of spirit.ogg-be322697371eda34a93764710c9ad7f3.oggstr"
+
+[deps]
+
+source_file="res://audio/music/Rise of spirit.ogg"
+dest_files=[ "res://.import/Rise of spirit.ogg-be322697371eda34a93764710c9ad7f3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://core/inventory/icons/resources/bar.png" type="Texture" id=1]
+[ext_resource path="res://interface/items/ItemIcon.gd" type="Script" id=3]
+[ext_resource path="res://interface/default.theme" type="Theme" id=4]
+
+[node name="ItemIcon" type="Button"]
+margin_right = 68.0
+margin_bottom = 68.0
+rect_min_size = Vector2( 68, 68 )
+hint_tooltip = "All About The Item"
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 4 )
+button_mask = 3
+icon = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 68.0
+margin_bottom = 68.0
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="." to="." method="_on_ItemIcon_gui_input"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bottle-shake-05.ogg-eccd7202eeb641c32ce799d11471461a.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/Water/bottle-shake-05.ogg"
+dest_files=[ "res://.import/bottle-shake-05.ogg-eccd7202eeb641c32ce799d11471461a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

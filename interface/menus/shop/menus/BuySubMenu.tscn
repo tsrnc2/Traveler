@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://interface/menus/shop/menus/ShopSubMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://audio/sfx/menu_confirm.wav" type="AudioStream" id=2]
+[ext_resource path="res://audio/sfx/menu_navigate_01.wav" type="AudioStream" id=3]
+[ext_resource path="res://audio/sfx/menu_popup_open.wav" type="AudioStream" id=4]
+
+[node name="BuySubMenu" instance=ExtResource( 1 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+ACTION = "sell_to"
+
+[node name="Sfx" type="Node" parent="." index="0"]
+
+[node name="Confirm" type="AudioStreamPlayer" parent="Sfx" index="0"]
+stream = ExtResource( 2 )
+bus = "Interface"
+
+[node name="Navigate" type="AudioStreamPlayer" parent="Sfx" index="1"]
+stream = ExtResource( 3 )
+bus = "Interface"
+
+[node name="Open" type="AudioStreamPlayer" parent="Sfx" index="2"]
+stream = ExtResource( 4 )
+bus = "Interface"

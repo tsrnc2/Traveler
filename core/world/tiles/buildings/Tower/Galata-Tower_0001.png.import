@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Galata-Tower_0001.png-15e5365dab7aca7990e96c028d6bb91d.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://core/world/tiles/buildings/Tower/Galata-Tower_0001.png"
+dest_files=[ "res://.import/Galata-Tower_0001.png-15e5365dab7aca7990e96c028d6bb91d.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

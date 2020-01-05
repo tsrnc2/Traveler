@@ -1,0 +1,68 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://core/world/tiles/buildings/Watermill/normal.png" type="Texture" id=1]
+[ext_resource path="res://levels/scripts/Mill.gd" type="Script" id=2]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite0.png" type="Texture" id=3]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite1.png" type="Texture" id=4]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite2.png" type="Texture" id=5]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite3.png" type="Texture" id=6]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Wheel/sprite4.png" type="Texture" id=7]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite5.png" type="Texture" id=8]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite4.png" type="Texture" id=9]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite3.png" type="Texture" id=10]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite2.png" type="Texture" id=11]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite1.png" type="Texture" id=12]
+[ext_resource path="res://core/world/tiles/buildings/Watermill/Door_Normal/sprite0.png" type="Texture" id=13]
+[ext_resource path="res://actors/characters/seller/Seller.tscn" type="PackedScene" id=14]
+
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "Close",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "Open",
+"speed": 5.0
+} ]
+
+[node name="Mill" type="Sprite" groups=[
+"environment",
+]]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Seller" parent="." instance=ExtResource( 14 )]
+position = Vector2( -222.642, 256.109 )
+
+[node name="Wheel" type="AnimatedSprite" parent="."]
+position = Vector2( 316.596, 219.035 )
+frames = SubResource( 1 )
+frame = 3
+playing = true
+
+[node name="Door" type="AnimatedSprite" parent="."]
+position = Vector2( -247.817, 191.307 )
+frames = SubResource( 2 )
+animation = "Open"
+
+[node name="CollisionShape" type="StaticBody2D" parent="."]
+position = Vector2( -2.52448, -9.05145 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CollisionShape"]
+position = Vector2( 0, 13.2317 )
+polygon = PoolVector2Array( -300.979, 210.529, -295.979, 13.1289, 200.656, -153.257, 472.924, 30.7761, 480.487, 108.927, 523.538, 237.774, 289.805, 358.225, 216.674, 316.641, 199.467, 247.811, -14.1903, 356.791 )
+[connection signal="body_entered" from="Seller" to="." method="_on_Seller_body_entered"]
+[connection signal="body_exited" from="Seller" to="." method="_on_Seller_body_exited"]

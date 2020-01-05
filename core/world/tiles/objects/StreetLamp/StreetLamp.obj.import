@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/StreetLamp.obj-d62b1af7ff5f47b323049ee92c3ceed3.mesh"
+
+[deps]
+
+files=[ "res://.import/StreetLamp.obj-d62b1af7ff5f47b323049ee92c3ceed3.mesh" ]
+
+source_file="res://core/world/tiles/objects/StreetLamp/StreetLamp.obj"
+dest_files=[ "res://.import/StreetLamp.obj-d62b1af7ff5f47b323049ee92c3ceed3.mesh", "res://.import/StreetLamp.obj-d62b1af7ff5f47b323049ee92c3ceed3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,117 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://core/world/buildings/BuildingTileSetGrid2.png" type="Texture" id=1]
+[ext_resource path="res://core/world/buildings/BuildingTileSetGrid.png" type="Texture" id=2]
+[ext_resource path="res://actors/Mill.tscn" type="PackedScene" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 8.00176
+
+[node name="Work" type="YSort"]
+
+[node name="PowerPlant" type="Sprite" parent="."]
+position = Vector2( 252.624, 2939.62 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 808, 256, 186 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PowerPlant"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PowerPlant/StaticBody2D"]
+polygon = PoolVector2Array( -84.8079, 20.8134, -70.3752, 34.5588, -51.819, 37.3079, -54.5681, 55.1769, -25.0155, 67.5477, -18.1428, 63.4241, 4.53706, 73.0458, 29.2788, 72.3585, 45.0859, 62.7368, 44.3987, 37.9951, 71.8894, 31.1224, 82.1984, 17.3771, 76.013, -9.42639, 33.4024, -16.9865, -7.05792, -20.0171, -40.8227, -8.05188, -71.7498, -1.1792 )
+
+[node name="PowerPlant2" type="Sprite" parent="."]
+position = Vector2( 2413.58, 2996.43 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 937, 256, 199 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PowerPlant2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PowerPlant2/StaticBody2D"]
+polygon = PoolVector2Array( -75.6329, 33.6938, -67.0443, 45.3136, -49.8674, 50.8707, -30.6697, 51.376, -17.5342, 44.8083, -6.92493, 51.376, 6.21045, 46.8291, 5.7052, 40.2615, 22.8823, 24.0948, 39.0488, 32.6833, 57.2363, 23.5897, 4.1897, -12.28 )
+
+[node name="PowerPlant3" type="Sprite" parent="."]
+position = Vector2( 2680.21, 2878.07 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 768, 868, 256, 178 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="PowerPlant3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PowerPlant3/StaticBody2D"]
+polygon = PoolVector2Array( -72.4803, 38.0422, -61.3658, 48.6515, -31.5586, 52.6932, -3.77234, 39.5577, 16.9412, 48.1464, 56.8524, 28.9486, 44.2222, 14.2976, 59.3784, 7.22473, 45.2325, -15.5096, 16.4359, -17.5305 )
+
+[node name="Factory" type="Sprite" parent="."]
+position = Vector2( 638.895, 2656.47 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 844, 256, 182 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Factory"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Factory/StaticBody2D"]
+polygon = PoolVector2Array( -101.926, 28.1227, -70.6526, 44.1503, -48.3701, 31.25, -16.7058, 45.714, -37.8154, 59.0051, -3.02362, 76.9874, 19.6497, 64.8689, 25.5135, 69.1691, 88.0605, 37.8956, 80.633, 34.3773, 103.306, 22.2588, -3.80545, -36.3789 )
+
+[node name="WindMill" type="Sprite" parent="."]
+position = Vector2( -2366.26, 2638.34 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 1026, 256, 253 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="WindMill"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WindMill/StaticBody2D"]
+polygon = PoolVector2Array( -109.988, 62.5516, -90.1399, 71.8556, -71.5319, 70.615, -51.0634, 60.6909, -47.962, 50.7667, -70.9116, 34.0197 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WindMill/StaticBody2D"]
+position = Vector2( 0.866333, 51.545 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WindMill/StaticBody2D"]
+position = Vector2( 55.8765, 82.2987 )
+shape = SubResource( 1 )
+
+[node name="SolarPlant" type="Sprite" parent="."]
+position = Vector2( 1617.31, 3752.03 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 995, 256, 134 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SolarPlant"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="SolarPlant/StaticBody2D"]
+polygon = PoolVector2Array( -92.9004, -1.7229, 5.37903, -58.7664, 109.157, 1.71338, 85.1023, 12.7097, 64.4841, 10.6479, -0.11908, 47.7605 )
+
+[node name="Stadium" type="Sprite" parent="."]
+position = Vector2( 1523.04, 2307.75 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 768, 1046, 256, 173 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stadium"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Stadium/StaticBody2D"]
+polygon = PoolVector2Array( -88.7275, 6.43494, -70.9636, 36.353, -27.9562, 55.9869, 28.1403, 58.7917, 64.6031, 45.7025, 85.1718, 15.7844, 79.5622, -13.1989, 23.4656, -41.2473, -42.9153, -37.5074 )
+
+[node name="Stadium3" type="Sprite" parent="."]
+position = Vector2( 1763.86, 2428.86 )
+scale = Vector2( 1.6201, 1.6201 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 1107, 256, 175 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stadium3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Stadium3/StaticBody2D"]
+polygon = PoolVector2Array( -81.7919, 7.51086, -65.0385, 32.6409, -25.4397, 53.2018, 35.4817, 57.0094, 60.6117, 50.1559, 76.6035, 31.8794, 75.0806, -1.62744, 34.7202, -44.2723, -28.4857, -51.126, -65.8, -36.6571 )
+
+[node name="Mill" parent="." instance=ExtResource( 5 )]
+position = Vector2( -460, 2330 )

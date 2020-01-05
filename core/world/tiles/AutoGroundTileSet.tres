@@ -1,0 +1,297 @@
+[gd_resource type="TileSet" load_steps=26 format=2]
+
+[ext_resource path="res://core/world/tiles/ground/seasons_tiles.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 34.6037, 5.39948, 47.1624, 3.72498, 55.5348, 11.5393, 65.3027, 27.4469, 57.7675, 26.0515, 45.2088, 28.2842, 37.6736, 36.6566, 32.371, 25.4933, 20.6496, 25.7724, 26.7894, 9.86478 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 28.5139, 11.8183, 30.1884, 20.4699, 23.2113, 24.6561, 14.5598, 19.3535, 17.9088, 15.7255 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 51.6777, 9.30661, 47.2123, 16.8418, 31.3047, 16.0046, 36.0491, 5.67856 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 37.4445, 25.2143, 45.5378, 19.6326, 57.8174, 23.5398, 52.794, 30.2377, 44.9797, 29.1214 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 49.4652, 7.9112, 61.4657, 19.9117, 61.1866, 29.6796, 52.8142, 33.0286, 29.6504, 31.9122, 25.4642, 22.9816, 28.5341, 7.63213 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 31.0958, 8.19029, 45.608, 4.00406, 62.9111, 11.8183, 67.3764, 20.4699, 61.2366, 25.7724, 32.7703, 24.6561, 16.0254, 20.1908, 18.2581, 14.051 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 29.9795, 5.3349, 55.3759, 7.0094, 67.0973, 18.7308, 64.8647, 24.5915, 18.8162, 22.0798, 17.979, 15.3818 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 22.6733, 22.638, 27.976, 5.61398, 49.4652, 5.05583, 60.9075, 20.9635, 53.0933, 28.7778, 40.5346, 31.0104 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 12.4728, 19.4285, 24.7524, 11.6142, 29.2177, 15.8005, 30.0549, 23.3357, 24.1942, 25.8474 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 42.8927, 4.91629, 51.8233, 9.38159, 49.0325, 15.5214, 38.9856, 18.5913, 31.4504, 13.0096, 34.7993, 5.47444 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 37.5901, 26.1265, 41.7764, 19.1494, 50.1488, 19.4285, 57.9631, 27.2428, 51.5443, 30.0336, 44.009, 28.9173 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 19.679, 25.5683, 27.4932, 9.93976, 38.9356, 4.07904, 54.2851, 6.86986, 57.355, 16.0795, 64.0529, 25.8474, 54.006, 23.0566, 43.959, 28.08, 43.959, 38.6852, 35.3075, 27.2428 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 38.9356, 3.63074, 54.8432, 7.81696, 57.355, 14.794, 66.8438, 25.6782, 60.983, 26.7945, 45.6335, 28.7481, 42.5637, 32.6552, 37.8193, 34.3297, 34.1912, 27.0736, 16.8881, 29.3062, 24.9815, 18.4221, 26.0978, 12.8405 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 40.381, 4.1889, 49.0325, 8.65421, 49.8698, 15.6313, 43.1718, 18.4221, 32.5667, 14.5149, 34.7993, 5.58432 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 30.9958, 14.7591, 29.0423, 20.6198, 23.7397, 24.2479, 15.0882, 19.5035, 15.9254, 16.1545, 26.2515, 12.2474 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 49.4152, 18.1081, 55.2759, 25.6433, 46.3453, 29.8295, 37.1356, 25.3642, 41.3218, 21.178 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 46.3953, 4.15402, 55.3259, 8.89841, 60.3494, 19.5035, 56.7213, 30.9459, 40.8137, 32.0622, 24.906, 21.7361, 29.3713, 5.82849 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 47.8407, 5.54944, 61.5157, 13.3637, 62.353, 26.2015, 33.3285, 24.527, 16.5836, 22.5734, 17.979, 14.201, 26.3514, 9.45657 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 41.7009, 3.83521, 63.4693, 14.7194, 64.5856, 25.3245, 40.5846, 26.999, 16.3045, 23.0918, 17.7, 14.1612 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 45.8372, 3.83521, 58.1168, 15.8357, 57.5586, 29.5107, 38.8601, 29.7898, 24.0688, 25.0454, 26.8596, 9.13776 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 16.7627, 15.8357, 27.0887, 11.9286, 31.8331, 19.4638, 25.4142, 24.2082, 15.3673, 23.0918 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 49.6943, 8.85867, 52.4851, 13.8821, 44.9499, 17.7893, 31.8331, 12.7658, 34.903, 4.39337 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 39.9265, 23.65, 48.0198, 19.1847, 60.2994, 23.9291, 50.5316, 29.2316 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 33.1785, 4.39337, 48.528, 4.67242, 54.9469, 14.4403, 65.2729, 26.7199, 47.9698, 26.1617, 37.0856, 34.2551, 31.504, 23.65, 24.527, 28.1153, 19.2244, 25.3245, 26.4805, 20.8592, 26.4805, 11.3704 )
+
+[resource]
+10/name = "seasons_tiles.png 10"
+10/texture = ExtResource( 1 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 656, 123 )
+10/tile_mode = 1
+10/autotile/bitmask_mode = 0
+10/autotile/bitmask_flags = [ Vector2( 0, 0 ), 325, Vector2( 0, 1 ), 65, Vector2( 0, 2 ), 324, Vector2( 0, 3 ), 325, Vector2( 1, 0 ), 325, Vector2( 1, 1 ), 320, Vector2( 1, 2 ), 69, Vector2( 1, 3 ), 325, Vector2( 2, 0 ), 325, Vector2( 2, 1 ), 260, Vector2( 2, 2 ), 321, Vector2( 2, 3 ), 325, Vector2( 3, 0 ), 325, Vector2( 3, 1 ), 5, Vector2( 3, 2 ), 261, Vector2( 3, 3 ), 325, Vector2( 4, 0 ), 325, Vector2( 4, 1 ), 64, Vector2( 4, 2 ), 325, Vector2( 4, 3 ), 325, Vector2( 5, 0 ), 325, Vector2( 5, 1 ), 4, Vector2( 5, 2 ), 325, Vector2( 5, 3 ), 325, Vector2( 6, 0 ), 325, Vector2( 6, 1 ), 1, Vector2( 6, 2 ), 325, Vector2( 6, 3 ), 325, Vector2( 7, 0 ), 325, Vector2( 7, 1 ), 256, Vector2( 7, 2 ), 325, Vector2( 7, 3 ), 325 ]
+10/autotile/icon_coordinate = Vector2( 0, 0 )
+10/autotile/tile_size = Vector2( 82, 41 )
+10/autotile/spacing = 0
+10/autotile/occluder_map = [  ]
+10/autotile/navpoly_map = [  ]
+10/autotile/priority_map = [ Vector3( 0, 0, 7 ), Vector3( 1, 0, 4 ), Vector3( 2, 0, 3 ), Vector3( 3, 0, 2 ), Vector3( 4, 0, 4 ), Vector3( 5, 0, 4 ), Vector3( 6, 0, 4 ), Vector3( 7, 0, 4 ) ]
+10/autotile/z_index_map = [  ]
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shapes = [ {
+"autotile_coord": Vector2( 4, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "seasons_tiles.png 11"
+11/texture = ExtResource( 1 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 123, 656, 123 )
+11/tile_mode = 1
+11/autotile/bitmask_mode = 0
+11/autotile/bitmask_flags = [ Vector2( 0, 0 ), 325, Vector2( 0, 1 ), 65, Vector2( 0, 2 ), 324, Vector2( 1, 0 ), 325, Vector2( 1, 1 ), 320, Vector2( 1, 2 ), 69, Vector2( 2, 0 ), 325, Vector2( 2, 1 ), 260, Vector2( 2, 2 ), 321, Vector2( 3, 0 ), 325, Vector2( 3, 1 ), 5, Vector2( 3, 2 ), 261, Vector2( 4, 0 ), 325, Vector2( 4, 1 ), 4, Vector2( 4, 2 ), 325, Vector2( 5, 0 ), 325, Vector2( 5, 1 ), 64, Vector2( 5, 2 ), 325, Vector2( 6, 0 ), 325, Vector2( 6, 1 ), 1, Vector2( 6, 2 ), 325, Vector2( 7, 0 ), 325, Vector2( 7, 1 ), 256, Vector2( 7, 2 ), 325 ]
+11/autotile/icon_coordinate = Vector2( 0, 0 )
+11/autotile/tile_size = Vector2( 82, 41 )
+11/autotile/spacing = 0
+11/autotile/occluder_map = [  ]
+11/autotile/navpoly_map = [  ]
+11/autotile/priority_map = [ Vector3( 1, 0, 7 ), Vector3( 2, 0, 5 ), Vector3( 3, 0, 3 ), Vector3( 4, 0, 3 ), Vector3( 5, 0, 4 ), Vector3( 6, 0, 3 ), Vector3( 7, 0, 11 ) ]
+11/autotile/z_index_map = [  ]
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shapes = [ {
+"autotile_coord": Vector2( 7, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+12/name = "seasons_tiles.png 12"
+12/texture = ExtResource( 1 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 246, 656, 123 )
+12/tile_mode = 1
+12/autotile/bitmask_mode = 0
+12/autotile/bitmask_flags = [ Vector2( 0, 0 ), 325, Vector2( 0, 1 ), 65, Vector2( 0, 2 ), 324, Vector2( 1, 0 ), 325, Vector2( 1, 1 ), 320, Vector2( 1, 2 ), 69, Vector2( 2, 0 ), 325, Vector2( 2, 1 ), 260, Vector2( 2, 2 ), 321, Vector2( 3, 0 ), 325, Vector2( 3, 1 ), 5, Vector2( 3, 2 ), 261, Vector2( 4, 0 ), 325, Vector2( 4, 1 ), 4, Vector2( 4, 2 ), 325, Vector2( 5, 0 ), 325, Vector2( 5, 1 ), 64, Vector2( 5, 2 ), 325, Vector2( 6, 0 ), 325, Vector2( 6, 1 ), 1, Vector2( 6, 2 ), 325, Vector2( 7, 0 ), 325, Vector2( 7, 1 ), 256, Vector2( 7, 2 ), 325 ]
+12/autotile/icon_coordinate = Vector2( 0, 0 )
+12/autotile/tile_size = Vector2( 82, 41 )
+12/autotile/spacing = 0
+12/autotile/occluder_map = [  ]
+12/autotile/navpoly_map = [  ]
+12/autotile/priority_map = [ Vector3( 1, 0, 3 ), Vector3( 2, 0, 3 ), Vector3( 3, 0, 3 ), Vector3( 4, 0, 3 ), Vector3( 5, 0, 3 ), Vector3( 6, 0, 3 ), Vector3( 7, 0, 10 ) ]
+12/autotile/z_index_map = [  ]
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shapes = [ {
+"autotile_coord": Vector2( 4, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 7, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+13/name = "seasons_tiles.png 13"
+13/texture = ExtResource( 1 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 369, 656, 123 )
+13/tile_mode = 1
+13/autotile/bitmask_mode = 0
+13/autotile/bitmask_flags = [ Vector2( 0, 0 ), 325, Vector2( 0, 1 ), 260, Vector2( 0, 2 ), 324, Vector2( 1, 0 ), 325, Vector2( 1, 1 ), 5, Vector2( 1, 2 ), 69, Vector2( 2, 0 ), 325, Vector2( 2, 1 ), 65, Vector2( 2, 2 ), 321, Vector2( 3, 0 ), 325, Vector2( 3, 1 ), 320, Vector2( 3, 2 ), 261, Vector2( 4, 0 ), 325, Vector2( 4, 1 ), 321, Vector2( 4, 2 ), 325, Vector2( 5, 0 ), 325, Vector2( 5, 1 ), 261, Vector2( 5, 2 ), 325, Vector2( 6, 0 ), 325, Vector2( 6, 1 ), 324, Vector2( 6, 2 ), 325, Vector2( 7, 0 ), 325, Vector2( 7, 1 ), 256, Vector2( 7, 2 ), 325 ]
+13/autotile/icon_coordinate = Vector2( 0, 0 )
+13/autotile/tile_size = Vector2( 82, 41 )
+13/autotile/spacing = 0
+13/autotile/occluder_map = [  ]
+13/autotile/navpoly_map = [  ]
+13/autotile/priority_map = [ Vector3( 0, 0, 4 ), Vector3( 1, 0, 3 ), Vector3( 2, 0, 3 ), Vector3( 3, 0, 3 ), Vector3( 4, 0, 4 ), Vector3( 5, 0, 4 ), Vector3( 6, 0, 5 ), Vector3( 7, 0, 7 ) ]
+13/autotile/z_index_map = [  ]
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shapes = [ {
+"autotile_coord": Vector2( 7, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 6, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 5, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0

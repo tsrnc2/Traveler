@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/alien_06.ogg-b0621927ded6da834ed5e35c427c91f2.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/alien_06.ogg"
+dest_files=[ "res://.import/alien_06.ogg-b0621927ded6da834ed5e35c427c91f2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

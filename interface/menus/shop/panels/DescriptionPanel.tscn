@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/menus/shop/panels/DescriptionPanel.gd" type="Script" id=1]
+[ext_resource path="res://interface/theme/fonts/source_code_pro_26.tres" type="DynamicFont" id=2]
+[ext_resource path="res://interface/fonts/source_code_pro_explanations.tres" type="DynamicFont" id=3]
+
+[node name="DescriptionPanel" type="Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_bottom = -65.0
+grow_vertical = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+DEFAULT_COLOR = Color( 0.25098, 0.25098, 0.25098, 1 )
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -700.0
+margin_right = 800.0
+margin_bottom = 3.99994
+grow_vertical = 0
+rect_min_size = Vector2( 800, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DescriptionHistory" type="Label" parent="VBox"]
+margin_right = 800.0
+margin_bottom = 600.0
+grow_vertical = 0
+rect_min_size = Vector2( 800, 600 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 0.392157 )
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="VBox"]
+margin_top = 604.0
+margin_right = 800.0
+margin_bottom = 704.0
+rect_min_size = Vector2( 800, 100 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.501961, 0.501961, 0.501961, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Press < i > to bring up your inventory
+Look out for cops!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]

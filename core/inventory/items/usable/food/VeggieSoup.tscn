@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=1]
+[ext_resource path="res://core/inventory/icons/food/soup2.png" type="Texture" id=2]
+
+[node name="VeggieSoup" instance=ExtResource( 1 )]
+icon = ExtResource( 2 )
+display_name = "VeggieSoup"
+description = "A soup made from a mixed variety of vegetables"
+usable = true
+ml_of_water = 5

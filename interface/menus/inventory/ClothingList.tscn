@@ -1,0 +1,151 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/theme/panel/Overlay.png" type="Texture" id=1]
+[ext_resource path="res://interface/fonts/source_code_pro_explanations.tres" type="DynamicFont" id=2]
+[ext_resource path="res://interface/menus/inventory/ClothingList.gd" type="Script" id=3]
+
+
+[node name="ClothingList" type="NinePatchRect"]
+margin_right = 600.0
+margin_bottom = 475.0
+rect_min_size = Vector2( 630, 475 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBox" type="HBoxContainer" parent="."]
+margin_left = 22.0
+margin_top = 60.0
+margin_right = 574.0
+margin_bottom = 444.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="HBox"]
+margin_right = 300.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 300, 404 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hat" type="HBoxContainer" parent="HBox/VBox"]
+margin_right = 300.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 300, 64 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBox/VBox/Hat"]
+margin_left = 92.0
+margin_top = 12.0
+margin_right = 207.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 115, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Hat"
+
+[node name="Shirt" type="HBoxContainer" parent="HBox/VBox"]
+margin_top = 68.0
+margin_right = 300.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 300, 64 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBox/VBox/Shirt"]
+margin_left = 92.0
+margin_top = 12.0
+margin_right = 207.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 115, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Shirt"
+
+[node name="Gloves" type="HBoxContainer" parent="HBox/VBox"]
+margin_top = 136.0
+margin_right = 300.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 300, 64 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBox/VBox/Gloves"]
+margin_left = 92.0
+margin_top = 12.0
+margin_right = 207.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 115, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Gloves"
+
+[node name="Pants" type="HBoxContainer" parent="HBox/VBox"]
+margin_top = 204.0
+margin_right = 300.0
+margin_bottom = 268.0
+rect_min_size = Vector2( 300, 64 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBox/VBox/Pants"]
+margin_left = 92.0
+margin_top = 12.0
+margin_right = 207.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 115, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Pants"
+
+[node name="Footwear" type="HBoxContainer" parent="HBox/VBox"]
+margin_top = 272.0
+margin_right = 300.0
+margin_bottom = 336.0
+rect_min_size = Vector2( 300, 64 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBox/VBox/Footwear"]
+margin_left = 92.0
+margin_top = 12.0
+margin_right = 207.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 115, 0 )
+custom_fonts/font = ExtResource( 2 )
+text = "Footwear"
+
+[node name="VBox2" type="VBoxContainer" parent="HBox"]
+margin_left = 304.0
+margin_right = 604.0
+margin_bottom = 404.0
+
+[node name="Socks" type="HBoxContainer" parent="HBox/VBox2"]
+margin_right = 300.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 300, 64 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBox/VBox2/Socks"]
+margin_left = 92.0
+margin_top = 12.0
+margin_right = 207.0
+margin_bottom = 51.0
+rect_min_size = Vector2( 115, 39 )
+custom_fonts/font = ExtResource( 2 )
+text = "Socks"
+valign = 1

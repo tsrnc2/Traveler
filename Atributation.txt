@@ -1,0 +1,577 @@
+Copyright/Attribution Notice: 
+
+CC-BY 3.0
+Recycle items art by Clint Bellanger 
+https://opengameart.org/content/recycle-items-set
+
+CC-BY 3.0
+hjm-pond_1.png
+Hansj�rg Malthaner, and link here: http://opengameart.org/users/varkalandar
+
+CC-BY 3.0 ROAD AND RAILS AND BUILDINGS PLANTS CHEST BOXES
+Hansj�rg Malthaner, and link here: http://opengameart.org/users/varkalandar
+
+CC_BY 3.0
+ISOMETRIC TILES TEXTURES
+https://opengameart.org/content/isometric-tile-starter-pack
+
+
+CC0 SNOWY TREES
+https://opengameart.org/content/free-isometric-plants-pack
+
+CC0 TOWER GATE MUCHROOM CHEST
+https://opengameart.org/content/more-isometric-parts
+i used these cc0 submissions:
+	http://opengameart.org/content/rocks-0 by yughues
+	http://opengameart.org/content/stone-coffin by yughues
+	http://opengameart.org/content/chest-blizzard-style by yughues
+	http://opengameart.org/content/watchtower-wood by atze
+	http://opengameart.org/content/wood-boxes by groemk
+	http://opengameart.org/content/horse-drawn-carriage by Lotnik
+	http://opengameart.org/content/cementery-gate by zerberros
+	http://opengameart.org/content/plants vy STKRudy85
+	http://opengameart.org/content/stone-brick-wall-golgotha-stone1512jpg
+
+CC0 isometric ruins
+https://opengameart.org/content/free-isometric-ruins
+
+CC-BY-SA 3.0 ISOMETRIC MOUNTINS
+Author: David Garay Salazar
+Attribution Instructions: 
+www.nirdia.com
+https://opengameart.org/content/mountains-isometric-sprite-3d-render 
+
+
+CC_BY_SA 3.0 TENT
+https://opengameart.org/content/isometric-tents-unknown-horizons-3d
+
+CC0 Ground TIles
+https://opengameart.org/content/flare-isometric-tiles
+
+CC-BY 3.0 SMALL HOUSE and WELL
+2DPIXX
+https://opengameart.org/content/rpg-village-isometric
+
+CC-BY-SA 3.0 SNOW TILES 
+Copyright/Attribution Notice: 
+my tileset is based on Clint Bellangers grassland tileset, which is cc-by-sa 3.0, for more information about each included art please read the credits.txt
+https://opengameart.org/content/isometric-snow-tileset-flare
+
+CC_BY_SA 4.0 SEASONS TILES
+https://opengameart.org/content/64x128-isometric-tiles-grassland-seasons
+
+cc0 CARDBOARD TEXTURE
+https://opengameart.org/content/tiling-cardboard-texture
+
+cc0 FONTS
+https://opengameart.org/content/the-collection-of-8-bit-fonts-for-grafx2-r2
+
+cc0 FONTS
+https://opengameart.org/content/kenney-fonts
+
+Artwork by DENZI
+denzi.diary@gmail.com
+
+Originally downloaded from http://www3.wind.ne.jp/DENZI/diary/
+
+Attribution/Licensing:
+	DENZI部屋のドット絵フリー素材は、クリエイティブ・コモンズ・ライセンス (http://www3.wind.ne.jp/DENZI/diary/) に基づいて公開しています。　（CC-by SA　表示-継承） https://creativecommons.org/licenses/by-sa/3.0/ 
+	"DENZI Room's pixel art (published at http://www3.wind.ne.jp/DENZI/diary/) is free material under the Creative Commons license (CC-BY-SA attribution, share alike) https://creativecommons.org/licenses/by-sa/3.0/"
+	Rain and snow animations by Medicine Storm http://utumno.medicinestorm.com
+	
+Also available at http://opengameart.org/content/denzis-time-weather-biome-gui
+
+BLEND FILES
+
+cabin_snowy.blend
+snowman_0.blend
+dead_trees_snow.blend
+snowplains_boat.blend
+snowplains_bridge.blend
+snowplains_containers.blend
+snowplains_exits.blend
+snowplains_fence.blend
+snowplains_fence2.blend
+snowplains_floor.blend
+snowplains_ice.blend
+snowplains_ice_floor.blend
+snowplains_objects.blend
+snowplains_path.blend
+snowplains_plants.blend
+snowplains_props.blend
+snowplains_rocks.blend
+grassland_walls.blend
+grassland_water.blend
+Artist: rubberduck, based on oroginal blend files from Clint Bellangers grassland tileset (CC-BY-SA 3.0)
+original textures from grassland tileset included
+See referenced textures for individual licenses
+
+
+
+Sources from the original grassland tileset
+ 
+
+Artist: Clint Bellanger and Lamoot (CC-BY 3.0)
+http://opengameart.org/content/medieval-props-textured
+
+grassland_plants.blend
+copyright Blender Foundation | apricot.blender.org (CC-BY 3.0)
+http://opengameart.org/content/low-poly-plants
+
+
+
+tree_dead/dead_trees.blend
+Artist: p0ss (CC-BY 3.0)
+http://opengameart.org/content/3-dead-trees
+
+tree_two/two_trees.blend
+Artist: Zuendholz (CC0)
+http://www.blendswap.com/3D-models/landscapes/trees/
+
+
+TEXTURES
+
+bark.png
+Artist: Bart K., OpenGameArt.org (CC-BY-SA 3.0)
+http://opengameart.org/content/seamless-tiling-tree-bark-texture
+
+brick.png, brick_normal.png
+Artist: Sindwiller (CC-BY-SA 3.0)
+http://opengameart.org/content/old-brick-wall
+Used in: path.png, path2.png, path.xcf
+
+burlap.jpg, catfur.jpg, pine_green.jpg, pine_light.jpg, pine_yellow.jpg
+Artist: Blender Texture Disc (Public Domain)
+
+crate.png
+Artist: Clint Bellanger (CC-BY-SA 3.0)
+http://opengameart.org/content/wood-apple-crate
+
+grass_overcast.png
+Artist: Lamoot, original copyright Blender Foundation | apricot.blender.org (CC-BY 3.0)
+http://opengameart.org/content/grass-texture
+Also used in: path.png, path2.png, path.xcf
+
+metal.png, metal_contrast.png
+Artist: p0ss (CC-BY 3.0)
+http://opengameart.org/content/rusted-metal-texture-pack
+
+rock_diffuse.png, rock_normal.png, rock_diffuse_wet.png, rock_diffuse_wet.xcf
+Artist: Yughues (Public Domain)
+http://opengameart.org/content/tilling-texture-pack-13
+
+path.png, path2.png, path.xcf
+Artist: Clint Bellanger (CC-BY-SA 3.0)
+derived from brick texture (see above), Sindwiller (CC-BY-SA 3.0)
+derived from grass texture (see above), Lamoot and Blender Foundation | apricot.blender.org (CC-BY 3.0)
+
+straw.png
+Artist: Bart K., OpenGameArt.org (CC-BY 3.0)
+http://opengameart.org/content/45-high-res-ground-texture-photos
+
+water.png
+Artist: Public Domain Textures (Public Domain)
+http://pdtextures.blogspot.com/
+
+snow_ground / snow_w_grass
+selfmade, released under cc0
+
+snow_wall_diffuse
+Artist: Yughues (Public Domain)
+http://opengameart.org/content/tilling-texture-pack-13
+released under cc0
+
+snow_wall_diffuse_wet, edited with rock_diffuse_wet.xcf
+CC-BY-SA 3.0, because rock_diffuse_wet.xcf comes from original grassland tileset (when whole tileset is licensed under CC-BY-SA 3.0, else cc0 (??), because used textures are only cc0), edited by me
+
+ice, snow_to_other is based on original water texture, same licensing like snow_wall_diffuse_wet, because of use of original texture from grassland tileset
+
+snow_path is based on original path texture, which is CC-BY-SA 3.0, from Clint Bellanger, edited by me
+
+snowman model (model has no textures) cc-by 3.0, by cemkalyoncu
+http://opengameart.org/content/snowman-high-poly
+
+wooden tower and cart from Daniel Andersson, released under cc0
+http://opengameart.org/content/medieval-props-pack-2
+	added snowy version of http://opengameart.org/content/broken-tower, CC-BY 3.0, by Clint Bellanger
+			http://opengameart.org/content/temple-entrance, ,CC-BY-SA 3.0 / GPL 2.0 / GPL 3.0 by Clint Bellanger
+			and http://opengameart.org/content/wip-flare-defense-tower (image edited in gimp only),CC-BY-SA 3.0 by Stefan Beller
+
+CC-BY 4.0 / CC-BY-SA 4.0
+	fern (both types): (layer 1, frame 1 - 14, 99 - 112)
+		model and texture, from https://opengameart.org/content/uberpack-1, by Duion, CC0
+	exotic shrub 1 (layer 1, frame 15 - 24)
+		model based on https://opengameart.org/content/tropical-shrubs, by yughues, CC0
+		texture replaced by me (own texture, CC0)
+	grass bushes and wood parts (used in layer 1, frame 25 - 52, 65 - 76, 87 - 98 and 113 - 118)
+		from blender project gooseberry plants and rocks collection: https://cloud.blender.org/p/cosmos-laundromat/56544960c379cf1796d85f9b, CC-BY 4.0 
+			(content from the blender cloud is normally CC BY 4.0 if not otherwise notified, see https://cloud.blender.org/terms-and-conditions)
+	flowers (layer 1, frame 53 - 98): 
+		from my plant pack, https://opengameart.org/content/free-plant-pack, CC0
+	cattail plant (layer 1, frame 119 - 127)
+		from https://www.blendswap.com/blends/view/68328, by MutantGenepool, CC-BY 3.0
+	simple plant (layer 1, frame 128 - 136)
+		from https://www.blendswap.com/blends/view/68327, by MutantGenepool, CC-BY 3.0
+	exotic plant (layer 2):
+		model from https://opengameart.org/content/tropical-plant-02-0, by yughues, CC0
+		texture replaced by me (from burningwell.org, CC0)
+	bamboo plant (layer 3):
+		from https://opengameart.org/content/free-bamboo-v1, by yughues, CC0
+		License: (Creative Commons Zero, CC0)
+ 
+ HUMVEE cc-by 3.0
+ Stagnation
+https://opengameart.org/content/humvee-isometric
+
+ISOHOUSE cc-0
+ (hernandack) 
+ https://opengameart.org/content/isometric-house-pack
+ 
+ rubberduck ISO GRASSLANDS CC-0
+ https://opengameart.org/content/grassland-tileset-1
+
+
+Bleed cc-0  ISOGIRL
+https://opengameart.org/content/tmim-heroine-bleeds-game-art
+
+CC-BY-SA-3.0  RAIL TILES
+Hansj�rg Malthaner, and link here: http://opengameart.org/users/varkalandar
+
+cc-0 3d-vehicles-pack
+mehrasaur 
+https://opengameart.org/content/3d-vehicles-pack
+
+cc-0 game interface
+https://opengameart.org/content/rpg-game-ui
+
+cc-ba-sa 3.0 train audio
+SinaCutie
+https://opengameart.org/content/departure-from-station-ten
+
+cc-by-sa4.0 grass tiles
+Chibizilla
+Copyright/Attribution Notice: 
+Jaqueline Martin 
+https://opengameart.org/content/isometric-grass-tiles
+
+cc-by-sa-4.0 isometric ground tiles
+formconstant
+https://opengameart.org/content/64x128-isometric-tiles-grassland-seasons
+
+CC_BY-3.0 beach and grass
+Unknown Horizons
+https://opengameart.org/content/unknown-horizons-tileset
+
+cc-by 3.0 timbered house
+Bleed
+https://opengameart.org/content/timbered-house
+
+cc0 ground tile
+artisticdude
+https://opengameart.org/content/cracked-tiles-flare-tileset
+
+cc-by 3.0 isometric buildings
+FLAG
+https://opengameart.org/content/econ-u-buildings-1
+https://opengameart.org/content/econ-u-buildings-2
+
+cc-by3.0 hacker girl
+SirRandom
+https://opengameart.org/content/programmer-character-sprites
+
+
+cc0 road tiles
+psycho_666
+https://opengameart.org/content/pixel-art-street-and-avenue
+
+cc-by-sa3.0 upgraded tents 
+ChrisOelmueller
+stubb
+https://opengameart.org/content/tents-hunter-lumberjack-pavilion-storage-unknown-horizons-2d
+
+cc-by-sa3.0 coastal tents
+ChrisOelmueller
+stubb
+https://opengameart.org/content/coastal-tent-buildings-and-animated-signal-fire-unknown-horizons-2d
+
+cc-by-sa-3.0 isometric people
+FLAG
+https://opengameart.org/content/isometric-people
+
+cc-by-3.0 grass tile
+brmethhor
+https://opengameart.org/content/isometric-grass-tile
+
+cc-by blender isometric assets
+rubberduck
+https://opengameart.org/content/isometric-render-resource-pack
+
+cc-by3.0 npc in black clothing
+TiZiana
+https://opengameart.org/content/wandering-vendor-npc
+
+cc-by 3.0 tree collection
+Bleed
+https://opengameart.org/content/tree-collection-bleeds-game-art
+
+cc-by 3.0 pesant
+"Bleed - http://remusprites.carbonmade.com/"
+
+cc-by 3.0
+MrSorbias Tutorials
+https://www.youtube.com/watch?v=zzOQVeb6J8E
+
+cc-by 3.0 Metal textures
+p0ss
+https://opengameart.org/content/rusted-metal-texture-pack
+
+cc-by 3.0 wood textures
+bart
+https://opengameart.org/content/31-high-res-wood-texture-photos
+
+cc-by 3.0 train sounds
+https://opengameart.org/content/background-rumble-noise
+
+cc-0 fire animation
+Mikodrak
+https://opengameart.org/content/fire-fx-burning-fire-animation
+
+cc-0 fire sounds
+AntumDeluge
+https://opengameart.org/content/fire-crackling
+ https://opengameart.org/node/16327
+ 
+ cc-by-sa-4.0
+ goobliata
+ Copyright/Attribution Notice: 
+� 2019 Nooskewl
+ https://opengameart.org/content/93-low-res-sprites-and-various-images
+ 
+ cc0 creature sounds
+ rubberduck
+ https://opengameart.org/content/80-cc0-creature-sfx
+ 
+ cc0 liquid drink sounds
+ qubodup
+ https://opengameart.org/content/liquid-bottle-drink-set
+ 
+ cc-by-sa 3.0 Background music dark-ambiance
+Philippe Groarke
+ https://opengameart.org/content/dark-ambiance
+ 
+ cc-by-sa-3.0 MUSIC PACK
+ Attribution Instructions: 
+Place this in your game or application in the about or credits screen : XXXXX (score name) written and produced by Ove Melaa (Omsofware@hotmail.com) Or Additional samples by Ove Melaa (Omsofware@hotmail.com) -2013 Ove Melaa
+File(s): 
+EssentialGameAudiopack.zip EssentialGameAudiopack.zip 35.9 Mb [2999 download(s)]
+EssentialGameAudiopackFixed.zip EssentialGameAudiopackFixed.zip 35.8 Mb [5316 download(s)]
+Ove - Earth Is All We Have .ogg Ove - Earth Is All We Have .ogg 1.9 Mb [2329 download(s)]
+Ove Melaa - Dark Blue.ogg Ove Melaa - Dark Blue.ogg 1.4 Mb [2997 download(s)]
+Ove Melaa - Flesheating Mothers Part XVIII.ogg Ove Melaa - Flesheating Mothers Part XVIII.ogg 1.6 Mb [2996 download(s)]
+Ove Melaa - High Stakes,Low Chances.mp3 Ove Melaa - High Stakes,Low Chances.mp3 2.1 Mb [1556 download(s)]
+Ove Melaa - I have just been eaten.ogg Ove Melaa - I have just been eaten.ogg 942.3 Kb [1331 download(s)]
+Ove Melaa - Infection By Chewing.ogg Ove Melaa - Infection By Chewing.ogg 901.1 Kb [2019 download(s)]
+Ove Melaa - ItaloLoopDikkoDikko.ogg Ove Melaa - ItaloLoopDikkoDikko.ogg 341.1 Kb [1199 download(s)]
+Ove Melaa - They Came By Boat.ogg Ove Melaa - They Came By Boat.ogg 1 Mb [1234 download(s)]
+Ove Melaa - ZombieAmbient.ogg Ove Melaa - ZombieAmbient.ogg 508.4 Kb [1270 download(s)]
+Ove Melaa - Flew.mp3 Ove Melaa - Flew.mp3 634.3 Kb [1393 download(s)]
+Ove Melaa - Hero Within.mp3 Ove Melaa - Hero Within.mp3 1.2 Mb [1527 download(s)]
+Ove Melaa - Dead, Buried and Cold(Ambient Pad).ogg Ove Melaa - Dead, Buried and Cold(Ambient Pad).ogg 495.3 Kb [1252 download(s)]
+Ove Melaa - Deader = Better.ogg Ove Melaa - Deader = Better.ogg 1.1 Mb [1677 download(s)]
+Ove Melaa - Approaching The Green Grass.ogg Ove Melaa - Approaching The Green Grass.ogg 1.4 Mb [1472 download(s)]
+Ove Melaa - GOAT.ogg Ove Melaa - GOAT.ogg 3.7 Mb [1352 download(s)]
+Ove Melaa - BellHell.ogg Ove Melaa - BellHell.ogg 1.6 Mb [1301 download(s)]
+Ove Melaa - Gloomey.ogg Ove Melaa - Gloomey.ogg 773.7 Kb [1299 download(s)]
+Enterin The Skies.mp3 Enterin The Skies.mp3 883.6 Kb [1664 download(s)]
+CastleGameSamples.zip CastleGameSamples.zip 3.2 Mb [1478 download(s)]
+
+CC-BY-SA 3.0 Epic Music
+Copyright/Attribution Notice: 
+Alexandr Zhelanov, https://soundcloud.com/alexandr-zhelanov
+
+
+cc-BY-SA 3.0 CC-BY 3.0 LIGHT POST
+Varkalandar
+https://opengameart.org/content/street-lamp
+
+cc0 flashlight render
+jpsweber
+https://opengameart.org/content/torch
+
+cc-by 3.0 Rusty Light Post
+RDT
+https://opengameart.org/content/old-street-lamp
+
+cc-by 3.0 bridges
+Author: Bleed
+https://opengameart.org/content/bridge-bleeds-game-art
+
+cc-by 3.0 Building sprites
+Jason Wodordon The majority of the building sprites are from zac zidik(FLAG) you can find more from them here https://opengameart.org/content/econ-u-buildings-2 released under CC-BY 3.0 https://creativecommons.org/licenses/by-sa/3.0/us/
+
+cc0 mountan parallax background
+ansimuz
+https://opengameart.org/content/mountain-at-dusk-background
+
+cc0 countryside parallax background
+ansimuz
+https://opengameart.org/content/country-side-platform-tiles
+
+CC0 hanger scene and forest
+ansimuz
+https://opengameart.org/content/bulkhead-walls-hangar
+https://opengameart.org/content/forest-background
+
+CC-BY 3.0 VInes
+KnoblePersona
+https://opengameart.org/content/vines-0
+
+cc-By 3.0
+Recycle items art by Clint Bellanger 
+https://opengameart.org/content/recycle-items-set
+
+cc0 glitch assets
+Tiny Speck
+https://opengameart.org/content/hd-multi-layer-parallex-background-samples-of-glitch-game-assets
+
+CC-BY 3.0 platform animation base
+Clint Bellanger
+https://opengameart.org/content/platformer-animations
+
+CC-BY-SA 3.0
+Wyrmheart
+https://opengameart.org/content/inventory-ui
+
+CC-BY-SA 3.0 oil paintings
+JAP
+https://opengameart.org/content/oil-painting-landscapes
+
+CC-BY 3.0 Isometric heros
+Clint Bellanger
+https://opengameart.org/content/isometric-hero-and-heroine
+
+CC-BY-SA 3.0
+animated trees
+Various
+https://opengameart.org/content/animated-widelands-trees-blackland
+
+cc0 japanes buildings
+Jetrel
+https://opengameart.org/content/japanese-buildings-isometric-strategy-game-mockup
+
+CC-BY-SA 3.0 isometric buildings
+Scribe
+https://opengameart.org/content/6-isometric-buildings
+
+cc0 portaraits
+qubodup
+https://opengameart.org/content/public-domain-portraits
+
+
+cc0 book overlay
+yd
+https://opengameart.org/content/fantasy-book
+
+cc0 ui elemets
+Wyrmheart
+https://opengameart.org/content/ui-resources
+
+cc0 stone buildings
+Blarumyrran
+blarumyrran@gmail.com 
+
+cc0 smoke
+Beast
+https://opengameart.org/content/smoke-aura
+
+CC0 gloves pointer
+yd
+https://opengameart.org/content/pointers-part-5
+
+CC-BY 3.0 Stone Walls
+extradave
+https://opengameart.org/content/castle-walls-isometric-64-x-128
+
+CC-BY 3.0 cartography
+yd
+https://opengameart.org/content/cartography-brushes-for-gimp
+
+C-BY-SA 3.0Resource Icons
+Unknown Horizons
+https://opengameart.org/content/resource-and-building-icons-unknown-horizons
+
+CC-BY-SA 3.0 isometric items
+rubberduck
+https://opengameart.org/content/isometric-parts-2
+	using
+	http://opengameart.org/content/knight-statue, by yd
+
+	http://opengameart.org/content/knight-lying, by yd
+
+	http://opengameart.org/content/trashbox, by groemk
+
+	and here the non-cc0-submissions:
+
+	http://opengameart.org/content/barricade, by Sullivan, CC-BY-SA 3.0
+
+	http://opengameart.org/content/mecha-training-dummy, by Danimal, CC-BY-SA 3.0
+
+	http://opengameart.org/content/spyke-trap-low-poly-updated, by Danimal, CC-BY 3.0
+
+	http://opengameart.org/content/stone-jar
+
+	and
+
+	http://opengameart.org/content/netted-jar, both by Clint Bellanger, CC-BY 3.0
+
+	http://opengameart.org/content/mortis-and-tenon-table
+
+	and
+
+	http://opengameart.org/content/wooden-box-open, both by ulf, CC-BY-SA 3.0
+	
+CC-BY 3.0 cublicles
+Clint Bellanger
+https://opengameart.org/content/cubicle-mini-tile-set
+
+cc0 city background
+acasas
+https://opengameart.org/content/abandon-city-seamless-background
+
+CC-BY-SA 3.0 water splash
+Julien
+https://opengameart.org/content/water-splash
+
+cc0 Roads
+psycho_666
+https://opengameart.org/content/pixel-art-street-and-avenue
+
+cc-by 3.0 UI Elements
+Jorge Avila
+https://opengameart.org/content/moderna-graphical-interface
+
+cc-by-sa 3.0 portrat
+Gaspard
+https://opengameart.org/content/four-post-apocalyptic-portraits
+
+cc-by-sa 3.0 portrat
+soreCactus
+https://opengameart.org/content/justin-nichols-sci-fi-portraits-png-psd-transparency
+
+"Saint Patrick's Day Parade" by Dmitry Dzhus is licensed under CC BY 2.0 police image
+
+cc0 spell book image
+yd
+https://opengameart.org/content/fantasy-book
+
+cc-by-3.0 ui elements
+Jorge Avila
+https://opengameart.org/content/moderna-graphical-interface
+
+cc0 lowress heartbeat
+Qroft
+https://opengameart.org/content/unanimated-led-like-heartbeat-flatline
+
+cc-by 3.0 Trees 
+https://remos.itch.io/isometric-tree-sprites
+Copyright/Attribution Notice: "Bleed - remusprites.carbonmade.com/"

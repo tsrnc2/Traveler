@@ -1,0 +1,189 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://interface/default.theme" type="Theme" id=1]
+[ext_resource path="res://interface/gui/player/PlayerGUI.gd" type="Script" id=2]
+[ext_resource path="res://interface/gui/player/Label.gd" type="Script" id=3]
+[ext_resource path="res://interface/gui/bars/HungerBar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interface/gui/bars/StaminaBar.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interface/gui/bars/ThirstBar.tscn" type="PackedScene" id=7]
+[ext_resource path="res://interface/gui/bars/WantedLevelBar.tscn" type="PackedScene" id=8]
+[ext_resource path="res://interface/gui/bars/WalletHUD.tscn" type="PackedScene" id=9]
+[ext_resource path="res://interface/gui/player/Metabalisim.gd" type="Script" id=11]
+[ext_resource path="res://interface/fonts/source_code_pro_explanations_bold.tres" type="DynamicFont" id=13]
+[ext_resource path="res://interface/theme/panel/panel.stylebox" type="StyleBox" id=14]
+[ext_resource path="res://interface/gui/player/WantedLevelPanel.gd" type="Script" id=15]
+
+[node name="PlayerGUI" type="HBoxContainer"]
+pause_mode = 2
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -22.0
+theme = ExtResource( 1 )
+custom_constants/separation = 16
+alignment = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MetabalisimBars" type="HBoxContainer" parent="."]
+margin_left = 1406.0
+margin_right = 1708.0
+margin_bottom = 22.0
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HungerPanel" type="Panel" parent="MetabalisimBars"]
+pause_mode = 2
+margin_right = 90.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 90, 20 )
+mouse_filter = 2
+mouse_default_cursor_shape = 16
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MetabalisimBars/HungerPanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 6.0
+margin_top = -17.5
+margin_right = 30.0
+margin_bottom = 17.5
+mouse_default_cursor_shape = 16
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 13 )
+text = "100"
+align = 1
+valign = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HungerBar" parent="MetabalisimBars/HungerPanel" instance=ExtResource( 5 )]
+margin_left = -45.5598
+margin_right = -5.5598
+mouse_filter = 2
+mouse_default_cursor_shape = 16
+
+[node name="ThurstPanel" type="Panel" parent="MetabalisimBars"]
+pause_mode = 2
+margin_left = 106.0
+margin_right = 196.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 90, 20 )
+mouse_filter = 2
+mouse_default_cursor_shape = 16
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MetabalisimBars/ThurstPanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 6.0
+margin_top = -17.5
+margin_right = 34.0
+margin_bottom = 17.5
+mouse_default_cursor_shape = 16
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 13 )
+text = "100"
+align = 1
+valign = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ThurstBar" parent="MetabalisimBars/ThurstPanel" instance=ExtResource( 7 )]
+mouse_filter = 2
+mouse_default_cursor_shape = 16
+
+[node name="StaminaPanel" type="Panel" parent="MetabalisimBars"]
+pause_mode = 2
+margin_left = 212.0
+margin_right = 302.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 90, 20 )
+mouse_filter = 2
+mouse_default_cursor_shape = 16
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MetabalisimBars/StaminaPanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 6.0
+margin_top = -17.5
+margin_right = 40.0
+margin_bottom = 17.5
+mouse_default_cursor_shape = 16
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 13 )
+text = "100"
+align = 1
+valign = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stamina" parent="MetabalisimBars/StaminaPanel" instance=ExtResource( 6 )]
+mouse_filter = 2
+mouse_default_cursor_shape = 16
+
+[node name="WantedLevelPanel" type="Panel" parent="."]
+pause_mode = 2
+margin_left = 1724.0
+margin_right = 1814.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 90, 20 )
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 14 )
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="WantedLevelPanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 6.0
+margin_top = -17.5
+margin_right = 30.0
+margin_bottom = 17.5
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 13 )
+text = "100"
+align = 1
+valign = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WantedLevel" parent="WantedLevelPanel" instance=ExtResource( 8 )]
+
+[node name="WalletHUD" parent="." instance=ExtResource( 9 )]
+theme = ExtResource( 1 )
+custom_styles/panel = ExtResource( 14 )
+[connection signal="mouse_entered" from="MetabalisimBars" to="MetabalisimBars" method="_on_mouse_entered"]
+[connection signal="value_changed" from="MetabalisimBars/HungerPanel/HungerBar" to="MetabalisimBars/HungerPanel/Label" method="_on_value_changed"]
+[connection signal="value_changed" from="MetabalisimBars/ThurstPanel/ThurstBar" to="MetabalisimBars/ThurstPanel/Label" method="_on_value_changed"]
+[connection signal="value_changed" from="MetabalisimBars/StaminaPanel/Stamina" to="MetabalisimBars/StaminaPanel/Label" method="_on_value_changed"]
+[connection signal="value_changed" from="WantedLevelPanel/WantedLevel" to="WantedLevelPanel/Label" method="_on_value_changed"]

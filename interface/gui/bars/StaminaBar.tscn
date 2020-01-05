@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/gui/player/TextureProgress.gd" type="Script" id=1]
+[ext_resource path="res://interface/gui/barbuilders/fill_white.png" type="Texture" id=2]
+[ext_resource path="res://interface/gui/barbuilders/background.png" type="Texture" id=3]
+
+[node name="Stamina" type="TextureProgress"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -46.0
+margin_top = -15.0
+margin_right = -6.00001
+margin_bottom = 15.0
+rect_min_size = Vector2( 40, 20 )
+value = 50.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+tint_under = Color( 0.458824, 0.454902, 0.454902, 1 )
+tint_progress = Color( 0.690196, 0.698039, 0.721569, 1 )
+nine_patch_stretch = true
+stretch_margin_left = 6
+stretch_margin_top = 3
+stretch_margin_right = 6
+stretch_margin_bottom = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+COLOR_FULL = Color( 1, 1, 1, 1 )
+COLOR_NORMAL = Color( 0.690196, 0.698039, 0.721569, 1 )
+COLOR_LOW = Color( 0.333333, 0.337255, 0.345098, 1 )
+COLOR_CRITICAL = Color( 0.678431, 0.0313726, 0.0313726, 1 )
+THRESHOLD_LOW = 0.5
+THRESHOLD_CRITICAL = 0.2
+
+[node name="Tween" type="Tween" parent="."]

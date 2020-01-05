@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://actors/Vision.gd" type="Script" id=1]
+[ext_resource path="res://actors/HeadlightVisionCone.png" type="Texture" id=2]
+
+[node name="SecirityVision" type="Area2D"]
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+monitorable = false
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -0.235432, -11.9506, -0.461365, 8.60945, 120.336, 49.139, 122.653, -47.6886 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -5.93228, -1.15826 )
+rotation = 1.5708
+scale = Vector2( 0.132549, 0.234825 )
+texture = ExtResource( 2 )
+offset = Vector2( 0, -300 )
+energy = 0.7
+shadow_enabled = true
+[connection signal="body_entered" from="." to="." method="_on_Vision_body_entered"]

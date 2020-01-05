@@ -1,0 +1,138 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://core/inventory/ItemDatabase.gd" type="Script" id=1]
+[ext_resource path="res://core/inventory/items/usable/food/PeanutButter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://core/inventory/items/usable/food/Coffee.tscn" type="PackedScene" id=3]
+[ext_resource path="res://core/inventory/items/clothing/BasicSandles.tscn" type="PackedScene" id=4]
+[ext_resource path="res://core/inventory/items/clothing/BasicHat.tscn" type="PackedScene" id=5]
+[ext_resource path="res://core/inventory/items/usable/food/Tomato.tscn" type="PackedScene" id=6]
+[ext_resource path="res://core/inventory/items/usable/food/Lemonade.tscn" type="PackedScene" id=7]
+[ext_resource path="res://core/inventory/items/usable/food/Pinapple.tscn" type="PackedScene" id=8]
+[ext_resource path="res://core/inventory/items/clothing/BasicShirt.tscn" type="PackedScene" id=9]
+[ext_resource path="res://core/inventory/items/clothing/BasicPants.tscn" type="PackedScene" id=10]
+[ext_resource path="res://core/inventory/items/usable/food/Wine.tscn" type="PackedScene" id=11]
+[ext_resource path="res://core/inventory/items/usable/food/Strawberry.tscn" type="PackedScene" id=12]
+[ext_resource path="res://core/inventory/items/usable/food/Soup.tscn" type="PackedScene" id=13]
+[ext_resource path="res://core/inventory/items/usable/food/Jelly.tscn" type="PackedScene" id=14]
+[ext_resource path="res://core/inventory/items/usable/food/Corn.tscn" type="PackedScene" id=15]
+[ext_resource path="res://core/inventory/items/usable/food/FancyTreat.tscn" type="PackedScene" id=16]
+[ext_resource path="res://core/inventory/items/usable/food/Fish.tscn" type="PackedScene" id=17]
+[ext_resource path="res://core/inventory/items/usable/food/Hotsause.tscn" type="PackedScene" id=18]
+[ext_resource path="res://core/inventory/items/usable/food/Banana.tscn" type="PackedScene" id=19]
+[ext_resource path="res://core/inventory/items/equipment/flashlight/Flashlight.tscn" type="PackedScene" id=20]
+[ext_resource path="res://core/inventory/items/usable/food/Apple.tscn" type="PackedScene" id=21]
+[ext_resource path="res://core/inventory/items/usable/food/Jam.tscn" type="PackedScene" id=22]
+[ext_resource path="res://core/inventory/items/usable/food/Steak.tscn" type="PackedScene" id=23]
+[ext_resource path="res://core/inventory/items/usable/food/Egg.tscn" type="PackedScene" id=24]
+[ext_resource path="res://core/inventory/items/usable/food/Boozejug.tscn" type="PackedScene" id=25]
+[ext_resource path="res://core/inventory/items/usable/food/Lemon.tscn" type="PackedScene" id=26]
+[ext_resource path="res://core/inventory/items/usable/food/Honey.tscn" type="PackedScene" id=27]
+[ext_resource path="res://core/inventory/items/usable/food/VeggieSoup.tscn" type="PackedScene" id=28]
+[ext_resource path="res://core/inventory/items/usable/food/Water.tscn" type="PackedScene" id=29]
+[ext_resource path="res://core/inventory/items/usable/food/CookingOil.tscn" type="PackedScene" id=30]
+[ext_resource path="res://core/inventory/items/usable/food/Carrot.tscn" type="PackedScene" id=31]
+[ext_resource path="res://core/inventory/items/usable/food/Ice.tscn" type="PackedScene" id=32]
+[ext_resource path="res://core/inventory/items/usable/food/Cheese.tscn" type="PackedScene" id=33]
+[ext_resource path="res://core/inventory/items/usable/food/Butter.tscn" type="PackedScene" id=34]
+[ext_resource path="res://core/inventory/items/clothing/BasicGloves.tscn" type="PackedScene" id=35]
+[ext_resource path="res://core/inventory/items/usable/food/Chery.tscn" type="PackedScene" id=36]
+[ext_resource path="res://core/inventory/items/usable/food/Beer.tscn" type="PackedScene" id=37]
+[ext_resource path="res://core/inventory/items/equipment/flashlight/Axe.tscn" type="PackedScene" id=38]
+[ext_resource path="res://core/inventory/items/resources/Wood.tscn" type="PackedScene" id=39]
+[ext_resource path="res://core/inventory/items/clothing/BasicSocks.tscn" type="PackedScene" id=40]
+
+[node name="ItemDatabase" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Equipment" type="Node" parent="."]
+
+[node name="Flashlight" parent="Equipment" instance=ExtResource( 20 )]
+description = "An old, slightly rusted flashlight. Fairly dull."
+
+[node name="Axe" parent="Equipment" instance=ExtResource( 38 )]
+
+[node name="BaseFood" type="Node" parent="."]
+
+[node name="Apple" parent="BaseFood" instance=ExtResource( 21 )]
+
+[node name="Water" parent="BaseFood" instance=ExtResource( 29 )]
+
+[node name="Banana" parent="BaseFood" instance=ExtResource( 19 )]
+
+[node name="Beer" parent="BaseFood" instance=ExtResource( 37 )]
+
+[node name="Butter" parent="BaseFood" instance=ExtResource( 34 )]
+calories = 15
+
+[node name="Carrot" parent="BaseFood" instance=ExtResource( 31 )]
+calories = 15
+
+[node name="Cheese" parent="BaseFood" instance=ExtResource( 33 )]
+calories = 15
+
+[node name="Chery" parent="BaseFood" instance=ExtResource( 36 )]
+calories = 15
+
+[node name="Coffee" parent="BaseFood" instance=ExtResource( 3 )]
+calories = 15
+
+[node name="CookingOil" parent="BaseFood" instance=ExtResource( 30 )]
+
+[node name="Corn" parent="BaseFood" instance=ExtResource( 15 )]
+description = "Combine with drill for corn challenge"
+
+[node name="Egg" parent="BaseFood" instance=ExtResource( 24 )]
+
+[node name="FancyTreat" parent="BaseFood" instance=ExtResource( 16 )]
+
+[node name="Fish" parent="BaseFood" instance=ExtResource( 17 )]
+
+[node name="Hunny" parent="BaseFood" instance=ExtResource( 27 )]
+
+[node name="Hotsause" parent="BaseFood" instance=ExtResource( 18 )]
+
+[node name="Ice" parent="BaseFood" instance=ExtResource( 32 )]
+
+[node name="BoozeJug" parent="BaseFood" instance=ExtResource( 25 )]
+
+[node name="Jam" parent="BaseFood" instance=ExtResource( 22 )]
+
+[node name="Jelly" parent="BaseFood" instance=ExtResource( 14 )]
+
+[node name="Lemon" parent="BaseFood" instance=ExtResource( 26 )]
+
+[node name="Lemonade" parent="BaseFood" instance=ExtResource( 7 )]
+
+[node name="PeanutButter" parent="BaseFood" instance=ExtResource( 2 )]
+
+[node name="Pinapple" parent="BaseFood" instance=ExtResource( 8 )]
+
+[node name="Soup" parent="BaseFood" instance=ExtResource( 13 )]
+
+[node name="Steak" parent="BaseFood" instance=ExtResource( 23 )]
+
+[node name="Strawberry" parent="BaseFood" instance=ExtResource( 12 )]
+
+[node name="Tomato" parent="BaseFood" instance=ExtResource( 6 )]
+
+[node name="VeggieSoup" parent="BaseFood" instance=ExtResource( 28 )]
+
+[node name="Wine" parent="BaseFood" instance=ExtResource( 11 )]
+
+[node name="BaseClothing" type="Node" parent="."]
+
+[node name="BasicSocks" parent="BaseClothing" instance=ExtResource( 40 )]
+
+[node name="BasicGloves" parent="BaseClothing" instance=ExtResource( 35 )]
+
+[node name="BasicHat" parent="BaseClothing" instance=ExtResource( 5 )]
+
+[node name="BasicPants" parent="BaseClothing" instance=ExtResource( 10 )]
+
+[node name="BasicSandles" parent="BaseClothing" instance=ExtResource( 4 )]
+
+[node name="BasicShirt" parent="BaseClothing" instance=ExtResource( 9 )]
+
+[node name="BaseResorces" type="Node" parent="."]
+
+[node name="Wood" parent="BaseResorces" instance=ExtResource( 39 )]

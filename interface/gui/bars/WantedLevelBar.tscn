@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://interface/gui/player/TextureProgress.gd" type="Script" id=1]
+[ext_resource path="res://interface/gui/player/WantedLevel.gd" type="Script" id=2]
+[ext_resource path="res://interface/gui/barbuilders/fill_white.png" type="Texture" id=3]
+[ext_resource path="res://interface/gui/barbuilders/background.png" type="Texture" id=4]
+
+[node name="WantedLevel" type="TextureRect"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -46.0
+margin_top = -15.0
+margin_right = -6.00001
+margin_bottom = 15.0
+rect_min_size = Vector2( 40, 30 )
+expand = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -15.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 40, 30 )
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+tint_progress = Color( 1, 0.984314, 0, 1 )
+nine_patch_stretch = true
+stretch_margin_left = 6
+stretch_margin_top = 3
+stretch_margin_right = 6
+stretch_margin_bottom = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+COLOR_FULL = Color( 0.992157, 0.0117647, 0.0117647, 1 )
+COLOR_NORMAL = Color( 0.756863, 0.733333, 0.129412, 1 )
+COLOR_LOW = Color( 0, 0.592157, 0.94902, 1 )
+COLOR_CRITICAL = Color( 0.537255, 0.85098, 0.956863, 1 )
+COLOR_REGENARATION = Color( 0.0196078, 0.239216, 0.517647, 1 )
+THRESHOLD_LOW = 0.4
+THRESHOLD_CRITICAL = 0.2
+
+[node name="Tween" type="Tween" parent="TextureProgress"]
+[connection signal="value_changed" from="TextureProgress" to="." method="_on_TextureProgress_value_changed"]

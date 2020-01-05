@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/menus/Panel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/gui/barbuilders/background.png" type="Texture" id=2]
+[ext_resource path="res://interface/fonts/source_code_pro_explanations.tres" type="DynamicFont" id=3]
+[ext_resource path="res://interface/gui/barbuilders/fill.png" type="Texture" id=4]
+[ext_resource path="res://interface/gui/bars/PeformingActionBar.gd" type="Script" id=5]
+
+[node name="PeformingActionBar" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1619.0
+margin_bottom = -958.0
+rect_min_size = Vector2( 200, 100 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Action = "Action"
+Time = 1.0
+
+[node name="Panel" parent="." instance=ExtResource( 1 )]
+margin_right = -149.0
+margin_bottom = 0.0
+rect_min_size = Vector2( 300, 120 )
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -552.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/VBox"]
+margin_right = 300.0
+margin_bottom = 39.0
+custom_fonts/font = ExtResource( 3 )
+text = "Action"
+align = 1
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBox"]
+margin_top = 43.0
+margin_right = 300.0
+margin_bottom = 83.0
+rect_min_size = Vector2( 200, 40 )
+texture_over = ExtResource( 2 )
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+stretch_margin_left = 6
+stretch_margin_top = 6
+stretch_margin_right = 6
+stretch_margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}

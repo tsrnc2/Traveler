@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/default.theme" type="Theme" id=1]
+[ext_resource path="res://interface/menus/inventory/ItemsMenu.gd" type="Script" id=2]
+[ext_resource path="res://interface/menus/inventory/ItemButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/menus/inventory/ItemGrid.gd" type="Script" id=4]
+[ext_resource path="res://interface/menus/inventory/user_select/UserSelectMenu.tscn" type="PackedScene" id=5]
+
+[node name="ItemsMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 600, 800 )
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+ItemButton = ExtResource( 3 )
+
+[node name="Column" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+
+[node name="ItemsList" type="Panel" parent="Column"]
+margin_right = 1920.0
+margin_bottom = 980.0
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="Column/ItemsList"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 600, 800 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Grid" type="GridContainer" parent="Column/ItemsList/Margin"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 1904.0
+margin_bottom = 964.0
+size_flags_horizontal = 3
+custom_constants/vseparation = 16
+custom_constants/hseparation = 16
+script = ExtResource( 4 )
+
+[node name="Placeholder" type="Button" parent="Column/ItemsList/Margin/Grid"]
+margin_right = 1888.0
+margin_bottom = 27.0
+size_flags_horizontal = 3
+disabled = true
+flat = true
+
+[node name="DescriptionPanel" type="Panel" parent="Column"]
+margin_top = 980.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="Margin" type="MarginContainer" parent="Column/DescriptionPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="Column/DescriptionPanel/Margin"]
+margin_left = 16.0
+margin_top = 25.0
+margin_right = 1904.0
+margin_bottom = 74.0
+text = "Item descripton here.
+"
+autowrap = true
+
+[node name="UserSelectMenu" parent="." instance=ExtResource( 5 )]
+visible = false

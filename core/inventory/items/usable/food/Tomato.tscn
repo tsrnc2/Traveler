@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/icons/food/tommatto.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=2]
+
+[node name="Tomato" instance=ExtResource( 2 )]
+icon = ExtResource( 1 )
+display_name = "Tomato"
+description = "A glossy red, or occasionally yellow, pulpy edible fruit that is eaten as a vegetable or in salad."
+price = 15
+usable = true
+calories = 10
+ml_of_water = 2

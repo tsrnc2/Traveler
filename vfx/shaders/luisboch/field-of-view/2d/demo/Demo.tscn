@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/Enemy2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/Enemy1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/Block.tscn" type="PackedScene" id=3]
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/Player.tscn" type="PackedScene" id=4]
+
+
+[node name="Game" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 573.248, 577.546 )
+danger_text_path = NodePath("../CanvasLayer/Danger")
+warn_text_path = NodePath("../CanvasLayer/Warn")
+
+[node name="CameraD2" type="Camera2D" parent="Player"]
+position = Vector2( 0.445007, 5.39999 )
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+
+[node name="Blocks" type="Node" parent="."]
+
+[node name="Block2" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 575.783, 37.1189 )
+
+[node name="Block" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 153.727, 95.9053 )
+
+[node name="Block3" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 212.513, 391.344 )
+
+[node name="Block4" parent="Blocks" instance=ExtResource( 3 )]
+position = Vector2( 577.29, 273.772 )
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 231.79, 256.982 )
+
+[node name="Enemy1" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 426.054, 158.539 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Warn" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 15.0
+margin_top = 17.0
+margin_right = 915.0
+margin_bottom = 57.0
+text = "Warn"
+
+[node name="Danger" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 15.0
+margin_top = 77.0
+margin_right = 915.0
+margin_bottom = 117.0
+text = "Danger"

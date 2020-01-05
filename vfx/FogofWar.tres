@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://vfx/shaders/fogofwar.shader" type="Shader" id=1]
+
+
+[sub_resource type="OpenSimplexNoise" id=1]
+seed = 1
+octaves = 4
+period = 32.0
+persistence = 0.3
+
+[sub_resource type="NoiseTexture" id=2]
+width = 256
+height = 256
+seamless = true
+noise = SubResource( 1 )
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/offset = null
+shader_param/intensity = 1.4
+shader_param/noise_texture = SubResource( 2 )

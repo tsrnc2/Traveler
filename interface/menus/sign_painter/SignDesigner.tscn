@@ -1,0 +1,321 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://interface/menus/MenuTitle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/menus/shared/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/menus/shared/PanelOverlay.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Icon.png" type="Texture" id=4]
+[ext_resource path="res://interface/menus/sign_painter/Cardboard.png" type="Texture" id=5]
+[ext_resource path="res://interface/fonts/font_Pix3M_ccby/alagard_by_pix3m-d6awiwp.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://interface/menus/sign_painter/SignDesigner.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 125
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+use_filter = true
+font_data = ExtResource( 6 )
+
+[node name="SignDesigner" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitlePanel" parent="VBox" instance=ExtResource( 1 )]
+margin_bottom = 120.0
+title = "Sign Designer"
+
+[node name="PanelOverlay" parent="VBox" instance=ExtResource( 3 )]
+margin_top = 124.0
+margin_right = 1920.0
+margin_bottom = 924.0
+rect_min_size = Vector2( 0, 800 )
+
+[node name="LeftButtons" type="Control" parent="VBox/PanelOverlay"]
+anchor_bottom = 1.0
+rect_min_size = Vector2( 400, 300 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="VBox/PanelOverlay/LeftButtons"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 100.0
+margin_bottom = -381.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator2" type="HSeparator" parent="VBox/PanelOverlay/LeftButtons/VBox"]
+margin_right = 365.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hook" type="Label" parent="VBox/PanelOverlay/LeftButtons/VBox/HSeparator2"]
+margin_top = -18.0
+margin_right = 365.0
+margin_bottom = -4.0
+text = "Hook"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hook_Button" parent="VBox/PanelOverlay/LeftButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 8.0
+margin_right = 272.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 180, 64 )
+text = "Spare Change"
+
+[node name="Hook_Button2" parent="VBox/PanelOverlay/LeftButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 76.0
+margin_right = 272.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 180, 64 )
+text = "Need a Dollar"
+
+[node name="Hook_Button3" parent="VBox/PanelOverlay/LeftButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 144.0
+margin_right = 272.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 180, 64 )
+text = "Hungry"
+
+[node name="Hook_Button4" parent="VBox/PanelOverlay/LeftButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 212.0
+margin_right = 272.0
+margin_bottom = 276.0
+rect_min_size = Vector2( 180, 64 )
+text = "Smile"
+
+[node name="Hook_Button8" parent="VBox/PanelOverlay/LeftButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 280.0
+margin_right = 272.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 180, 64 )
+text = "Traveling Broke Hungry"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBox/PanelOverlay/LeftButtons"]
+margin_left = 35.0
+margin_top = 475.0
+margin_right = 400.0
+margin_bottom = 683.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="VBox/PanelOverlay/LeftButtons/VBoxContainer"]
+margin_right = 365.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Accents" type="Label" parent="VBox/PanelOverlay/LeftButtons/VBoxContainer/HSeparator"]
+margin_top = -18.0
+margin_right = 365.0
+margin_bottom = -4.0
+text = "Accents"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Accent_Blank" parent="VBox/PanelOverlay/LeftButtons/VBoxContainer" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 8.0
+margin_right = 272.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 180, 64 )
+text = "Blank"
+
+[node name="Accent_Button1" parent="VBox/PanelOverlay/LeftButtons/VBoxContainer" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 76.0
+margin_right = 272.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 180, 64 )
+text = "Anything Helps"
+
+[node name="Accent_Button2" parent="VBox/PanelOverlay/LeftButtons/VBoxContainer" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 144.0
+margin_right = 272.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 180, 64 )
+text = "God Bless"
+
+[node name="RightButtons" type="Control" parent="VBox/PanelOverlay"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -404.0
+margin_right = -3.99988
+rect_min_size = Vector2( 400, 300 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="VBox/PanelOverlay/RightButtons"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 35.0
+margin_top = 102.392
+margin_bottom = -75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator2" type="HSeparator" parent="VBox/PanelOverlay/RightButtons/VBox"]
+margin_right = 365.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hook" type="Label" parent="VBox/PanelOverlay/RightButtons/VBox/HSeparator2"]
+margin_top = -18.0
+margin_right = 365.0
+margin_bottom = -4.0
+text = "Graphic"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Graphic_Blank" parent="VBox/PanelOverlay/RightButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 8.0
+margin_right = 272.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 180, 64 )
+text = "Blank"
+
+[node name="Graphic_Button" parent="VBox/PanelOverlay/RightButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 76.0
+margin_right = 272.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 180, 64 )
+text = "Smiley Face"
+
+[node name="Graphic_Button2" parent="VBox/PanelOverlay/RightButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 144.0
+margin_right = 272.0
+margin_bottom = 208.0
+rect_min_size = Vector2( 180, 64 )
+text = "Peace Sign"
+
+[node name="Graphic_Button3" parent="VBox/PanelOverlay/RightButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 212.0
+margin_right = 272.0
+margin_bottom = 276.0
+rect_min_size = Vector2( 180, 64 )
+text = "Dog"
+
+[node name="Graphic_Button4" parent="VBox/PanelOverlay/RightButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 280.0
+margin_right = 272.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 180, 64 )
+text = "Train Tracks"
+
+[node name="Graphic_Button5" parent="VBox/PanelOverlay/RightButtons/VBox" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 348.0
+margin_right = 272.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 180, 64 )
+text = "Hobo"
+
+[node name="VBox2" type="VBoxContainer" parent="VBox/PanelOverlay/RightButtons"]
+margin_left = 35.0
+margin_top = 560.0
+margin_right = 400.0
+margin_bottom = 590.392
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="VBox/PanelOverlay/RightButtons/VBox2"]
+margin_right = 365.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CraftButton" parent="VBox/PanelOverlay/RightButtons/VBox2" instance=ExtResource( 2 )]
+margin_left = 92.0
+margin_top = 8.0
+margin_right = 272.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 180, 64 )
+text = "Craft Sign"
+
+[node name="Cardboard" type="Sprite" parent="VBox/PanelOverlay"]
+position = Vector2( 987.73, 379.902 )
+scale = Vector2( 1, 0.531454 )
+texture = ExtResource( 5 )
+
+[node name="MainText" type="Label" parent="VBox/PanelOverlay/Cardboard"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1006.58
+margin_top = -850.146
+margin_right = -2.58459
+margin_bottom = -586.146
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Spare Change"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AccentText" type="Label" parent="VBox/PanelOverlay/Cardboard"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -537.164
+margin_top = -388.276
+margin_right = -110.164
+margin_bottom = -132.276
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Anything Helps"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="VBox/PanelOverlay/Cardboard"]
+position = Vector2( -339.901, 236.337 )
+texture = ExtResource( 4 )

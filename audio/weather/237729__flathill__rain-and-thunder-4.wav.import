@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/237729__flathill__rain-and-thunder-4.wav-a3c40ca6580761921af7698a0e6b66d6.sample"
+
+[deps]
+
+source_file="res://audio/weather/237729__flathill__rain-and-thunder-4.wav"
+dest_files=[ "res://.import/237729__flathill__rain-and-thunder-4.wav-a3c40ca6580761921af7698a0e6b66d6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

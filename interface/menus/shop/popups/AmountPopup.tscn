@@ -1,0 +1,100 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/menus/shop/popups/AmountPopup.gd" type="Script" id=1]
+[ext_resource path="res://interface/menus/MenuSfx.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/default.theme" type="Theme" id=3]
+[ext_resource path="res://interface/menus/shop/popups/HSlider.gd" type="Script" id=4]
+
+[sub_resource type="GDScript" id=1]
+resource_local_to_scene = true
+script/source = "extends Label
+
+var _max_value
+
+func initialize(value, max_value):
+	_max_value = max_value
+	update_text(value)
+
+func _on_HSlider_value_changed(value):
+	update_text(value)
+
+func update_text(value):
+	text = \"%s/%s\" % [value, _max_value]
+"
+
+[node name="AmountPopup" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuSfx" parent="." instance=ExtResource( 2 )]
+
+[node name="Popup" type="PopupPanel" parent="."]
+visible = true
+margin_right = 300.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 300, 120 )
+theme = ExtResource( 3 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Popup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = -2.0
+
+[node name="Title" type="Label" parent="Popup/VBoxContainer"]
+margin_right = 296.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 60 )
+text = "Amount"
+align = 1
+valign = 1
+
+[node name="Slider" type="Control" parent="Popup/VBoxContainer"]
+margin_top = 76.0
+margin_right = 296.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 0, 140 )
+
+[node name="Amount" type="Label" parent="Popup/VBoxContainer/Slider"]
+anchor_right = 1.0
+margin_top = 34.0
+margin_bottom = 57.0
+text = "6/8"
+align = 1
+valign = 1
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="Popup/VBoxContainer/Slider"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 20.0
+margin_top = -7.0
+margin_right = -20.0
+margin_bottom = 9.0
+max_value = 8.0
+value = 6.0
+script = ExtResource( 4 )
+
+[node name="OkButton" type="Button" parent="Popup/VBoxContainer"]
+margin_left = 18.0
+margin_top = 232.0
+margin_right = 278.0
+margin_bottom = 272.0
+rect_min_size = Vector2( 260, 40 )
+size_flags_horizontal = 4
+text = "OK"
+[connection signal="value_changed" from="Popup/VBoxContainer/Slider/HSlider" to="Popup/VBoxContainer/Slider/Amount" method="_on_HSlider_value_changed"]

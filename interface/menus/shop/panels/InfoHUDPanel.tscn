@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://interface/menus/shop/panels/DescriptionPanel.gd" type="Script" id=1]
+
+[node name="DescriptionPanel" type="Control"]
+margin_right = 800.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 800, 100 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="."]
+margin_right = 1.0
+margin_bottom = 65.0
+rect_min_size = Vector2( 800, 100 )
+text = "Item descripton here.
+"
+autowrap = true

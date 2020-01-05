@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=2]
+
+[ext_resource path="res://vfx/splash/splash7.png" type="Texture" id=1]
+[ext_resource path="res://vfx/splash/splash6.png" type="Texture" id=2]
+[ext_resource path="res://vfx/splash/splash5.png" type="Texture" id=3]
+[ext_resource path="res://vfx/splash/splash4.png" type="Texture" id=4]
+[ext_resource path="res://vfx/splash/splash3.png" type="Texture" id=5]
+[ext_resource path="res://vfx/splash/splash2.png" type="Texture" id=6]
+[ext_resource path="res://vfx/splash/splash1.png" type="Texture" id=7]
+
+[resource]
+animations = [ {
+"frames": [ null ],
+"loop": false,
+"name": "no-splash",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), null ],
+"loop": false,
+"name": "splash",
+"speed": 30.0
+} ]

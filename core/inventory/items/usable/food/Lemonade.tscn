@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=1]
+[ext_resource path="res://core/inventory/icons/food/lemmonade.png" type="Texture" id=2]
+
+[node name="Lemonade" index="0" instance=ExtResource( 1 )]
+icon = ExtResource( 2 )
+display_name = "Lemonade"
+description = "A drink made from lemon juice and water"
+price = 10
+usable = true
+calories = 10
+ml_of_water = 10

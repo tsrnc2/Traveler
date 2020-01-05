@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/fonts/source_code_pro_explanations_bold_32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://interface/menus/inventory/InventoryHUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/menus/Panel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/menus/shared/Button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://utils/ActionMenu/NPCInentoryHUD.gd" type="Script" id=5]
+
+[node name="NPCInventory" type="Control" groups=[
+"NPCInventoryHUD",
+]]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -600.0
+margin_top = -280.0
+rect_min_size = Vector2( 600, 280 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" parent="." instance=ExtResource( 3 )]
+light_mask = 8
+margin_right = 0.0
+margin_bottom = 0.0
+rect_min_size = Vector2( 600, 260 )
+mouse_filter = 1
+mouse_default_cursor_shape = 3
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacing" type="Control" parent="Panel/VBox"]
+margin_right = 608.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/VBox"]
+margin_top = 54.0
+margin_right = 608.0
+margin_bottom = 99.0
+rect_min_size = Vector2( 0, 45 )
+custom_fonts/font = ExtResource( 1 )
+text = "NPC INVENTORY"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBox"]
+margin_top = 103.0
+margin_right = 608.0
+margin_bottom = 183.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacing" type="Control" parent="Panel/VBox/HBoxContainer"]
+margin_right = 50.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 50, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InventoryHUD" parent="Panel/VBox/HBoxContainer" instance=ExtResource( 2 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 54.0
+margin_top = 0.0
+margin_right = 554.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 500, 80 )
+
+[node name="Spacing2" type="Control" parent="Panel/VBox/HBoxContainer"]
+margin_left = 558.0
+margin_right = 608.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 50, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" parent="Panel/VBox" instance=ExtResource( 4 )]
+margin_left = 274.0
+margin_top = 187.0
+margin_right = 334.0
+margin_bottom = 217.0
+text = "Close"
+
+[node name="Tween" type="Tween" parent="."]
+[connection signal="pressed" from="Panel/VBox/Button" to="." method="_on_Button_pressed"]

@@ -1,0 +1,437 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://core/world/tiles/rail/ISOMETRIC_TRAIN_tileset.png" type="Texture" id=1]
+[ext_resource path="res://actors/train/Train.gd" type="Script" id=2]
+[ext_resource path="res://audio/Objects/Train/background_ambience.ogg" type="AudioStream" id=3]
+[ext_resource path="res://actors/VisionConeCentered.png" type="Texture" id=4]
+[ext_resource path="res://utils/ActionMenu/ActionMenu.tscn" type="PackedScene" id=5]
+[ext_resource path="res://vfx/particles/dust_puffs/SmokeStacks.tscn" type="PackedScene" id=6]
+[ext_resource path="res://actors/train/BoardingPoint.gd" type="Script" id=7]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 164, 41, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 246, 41, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 328, 41, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 410, 41, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 164, 0, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 246, 0, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 328, 0, 82, 41 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 410, 0, 82, 41 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "Left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "Right",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=10]
+resource_name = "Moving"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Car4:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.5, 0.9, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.0, 3.0, 5.0, 3.5, 4.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Car3:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6, 1, 1.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.0, 3.0, 5.0, 3.5, 4.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Car2:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7, 1.1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.0, 3.0, 5.0, 3.0, 4.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Car1:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8, 1.2, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.0, 3.0, 5.0, 3.0, 4.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Engine:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 0.9, 1.3, 1.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 4.0, 3.0, 5.0, 3.0, 4.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Engine:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.1, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ), Vector2( 2, 1 ), Vector2( 0, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Car1:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -69, -34 ), Vector2( -71.9863, -35.5474 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Car2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.5, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -139, -68 ), Vector2( -141.489, -69 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Car3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -215, -104 ), Vector2( -217, -105 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Car4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 1, 1.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -286, -140 ), Vector2( -230, -144 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Light2D:enabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "stoped"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Car4:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 4.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Car3:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 4.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Car2:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 4.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Car1:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 4.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Engine:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 4.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Engine:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Car1:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Car2:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Car3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Car4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Light2D:enabled")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[node name="Train" type="KinematicBody2D" groups=[
+"train",
+]]
+position = Vector2( 500, 500 )
+collision_layer = 4
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="Car4" type="AnimatedSprite" parent="."]
+position = Vector2( -286, -140 )
+rotation = 0.0698132
+frames = SubResource( 9 )
+animation = "Right"
+frame = 1
+
+[node name="Car3" type="AnimatedSprite" parent="."]
+position = Vector2( -215, -104 )
+rotation = 0.0698132
+frames = SubResource( 9 )
+animation = "Right"
+frame = 2
+
+[node name="Car2" type="AnimatedSprite" parent="."]
+position = Vector2( -139.83, -68.3333 )
+rotation = 0.0698132
+frames = SubResource( 9 )
+animation = "Right"
+
+[node name="Car1" type="AnimatedSprite" parent="."]
+position = Vector2( -70.4931, -34.7737 )
+rotation = 0.0698132
+frames = SubResource( 9 )
+animation = "Right"
+frame = 1
+
+[node name="Engine" type="AnimatedSprite" parent="."]
+position = Vector2( 2, 1 )
+rotation = 0.0698132
+frames = SubResource( 9 )
+animation = "Right"
+frame = 3
+
+[node name="SmokeStacks" parent="." instance=ExtResource( 6 )]
+position = Vector2( -5.50119, -19.2577 )
+
+[node name="SmokeStacks2" parent="." instance=ExtResource( 6 )]
+position = Vector2( -22.5155, -25.7589 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Moving = SubResource( 10 )
+anims/stoped = SubResource( 11 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 18.8919, 21.5695, 22.6285, 22.1712, 34.3622, 23.0297, 40.229, 19.4524, 39.9428, 15.1596, 32.7882, 11.4392, 33.2174, 4.28453, -23.4475, -22.7601, -30.3225, -22.1783, -313.5, -158.078, -333.445, -145.122, -48.8439, -9.37149, -39.6452, -6.30527 )
+
+[node name="Light2D" type="Light2D" parent="."]
+light_mask = 5
+position = Vector2( 11.181, 4.81665 )
+rotation = 2.0944
+texture = ExtResource( 4 )
+energy = 0.6
+shadow_enabled = true
+shadow_color = Color( 0.945098, 0.952941, 0.658824, 0 )
+shadow_filter_smooth = 32.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+attenuation = 0.535887
+bus = "Sounds"
+
+[node name="ActionMenu" parent="." instance=ExtResource( 5 )]
+margin_left = -300.0
+margin_top = -150.0
+margin_right = -300.0
+margin_bottom = -150.0
+mouse_filter = 1
+mouse_default_cursor_shape = 13
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 2.87799, -5.75592 )
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -356.064, -135.323, -297.776, -176.476, -11.7816, -42.9505, -68.2666, 5.69714 )
+
+[node name="BoardingPoint" type="Position2D" parent="."]
+position = Vector2( -231.538, -117.351 )
+script = ExtResource( 7 )
+[connection signal="mouse_entered" from="ActionMenu" to="ActionMenu" method="_on_ActionMenu_mouse_entered"]
+[connection signal="input_event" from="Area2D" to="." method="_on_input_event"]

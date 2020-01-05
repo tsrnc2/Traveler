@@ -1,0 +1,71 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://actors/cop.gd" type="Script" id=1]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0006.png" type="Texture" id=2]
+[ext_resource path="res://actors/cops/Vision.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0002.png" type="Texture" id=5]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0011.png" type="Texture" id=6]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0012.png" type="Texture" id=7]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0013.png" type="Texture" id=8]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0015.png" type="Texture" id=9]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0016.png" type="Texture" id=10]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0008.png" type="Texture" id=11]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0009.png" type="Texture" id=12]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0010.png" type="Texture" id=13]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0014.png" type="Texture" id=14]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0007.png" type="Texture" id=15]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0017.png" type="Texture" id=16]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0018.png" type="Texture" id=17]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0019.png" type="Texture" id=18]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0020.png" type="Texture" id=19]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0004.png" type="Texture" id=20]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0005.png" type="Texture" id=21]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0001.png" type="Texture" id=22]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0003.png" type="Texture" id=23]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0000.png" type="Texture" id=24]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0021.png" type="Texture" id=25]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0022.png" type="Texture" id=26]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0023.png" type="Texture" id=27]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0028.png" type="Texture" id=28]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0027.png" type="Texture" id=29]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0024.png" type="Texture" id=30]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0025.png" type="Texture" id=31]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0026.png" type="Texture" id=32]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0030.png" type="Texture" id=33]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0029.png" type="Texture" id=34]
+[ext_resource path="res://actors/resident/green/green rallyecar straight0031.png" type="Texture" id=35]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 22 ), ExtResource( 5 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 2 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "Driving",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 45.3463
+
+[node name="cop" type="KinematicBody2D" groups=[
+"cop",
+]]
+scale = Vector2( 0.4, 0.4 )
+collision_layer = 4
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Driving"
+frame = 24
+
+[node name="VisionPivot" type="Position2D" parent="."]
+
+[node name="Vision" parent="VisionPivot" instance=ExtResource( 3 )]
+position = Vector2( 1.1376, 0 )
+z_index = 1
+
+[node name="IdleTimer" type="Timer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )

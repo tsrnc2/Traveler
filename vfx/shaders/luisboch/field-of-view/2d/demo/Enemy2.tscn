@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://vfx/shaders/luisboch/field-of-view/2d/demo/img/block-green.jpg" type="Texture" id=1]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 40.8181, 41.4788 )
+
+[node name="Enemy2" type="KinematicBody2D" groups=[
+"Enemy",
+]]
+
+position = Vector2( 409.473, 151.002 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 1 )
+
+

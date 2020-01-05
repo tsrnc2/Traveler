@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://core/world/tiles/Water/WaterWaves.tres" type="SpriteFrames" id=1]
+
+[node name="WaterWaves" type="AnimatedSprite"]
+frames = ExtResource( 1 )
+animation = "DeepWater"
+playing = true

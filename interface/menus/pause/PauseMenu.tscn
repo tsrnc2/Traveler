@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://interface/default.theme" type="Theme" id=1]
+[ext_resource path="res://interface/menus/pause/PauseMenu.gd" type="Script" id=2]
+[ext_resource path="res://interface/menus/shared/Button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interface/menus/save_and_load/SaveMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interface/menus/pause/OptionsMenu.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interface/theme/panel/Overlay.png" type="Texture" id=6]
+[ext_resource path="res://interface/menus/MenuSfx.tscn" type="PackedScene" id=7]
+[ext_resource path="res://vfx/BackgroundFog.tscn" type="PackedScene" id=8]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends VBoxContainer
+
+var focus_active = true setget set_focus_active
+
+func _ready():
+	self.focus_active = focus_active
+
+func set_focus_active(_value:int) -> void:
+	focus_active = true
+	var focus_mode = FOCUS_ALL if focus_active else FOCUS_NONE
+	for child in get_children():
+		child.focus_mode = focus_mode
+"
+
+[node name="PauseMenu" type="NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+texture = ExtResource( 6 )
+region_rect = Rect2( 1, 0, 600, 335 )
+patch_margin_left = 12
+patch_margin_top = 42
+patch_margin_right = 12
+patch_margin_bottom = 34
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuSfx" parent="." instance=ExtResource( 7 )]
+
+[node name="BackgroundFog" parent="." instance=ExtResource( 8 )]
+margin_left = 18.0
+margin_top = 30.0
+margin_right = -18.0
+margin_bottom = -30.0
+
+[node name="Background" type="NinePatchRect" parent="."]
+self_modulate = Color( 0.490196, 0.34902, 0.215686, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = -280.0
+margin_right = 300.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 600, 0 )
+texture = ExtResource( 6 )
+region_rect = Rect2( 2, 0, 598, 335 )
+patch_margin_left = 18
+patch_margin_top = 43
+patch_margin_right = 20
+patch_margin_bottom = 35
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Column" type="VBoxContainer" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 600, 0 )
+alignment = 1
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/Column"]
+margin_top = 108.0
+margin_right = 600.0
+margin_bottom = 131.0
+text = "Pause Menu"
+align = 1
+valign = 1
+
+[node name="ContinueButton" parent="Background/Column" instance=ExtResource( 3 )]
+margin_left = 100.0
+margin_top = 147.0
+margin_right = 500.0
+margin_bottom = 211.0
+rect_min_size = Vector2( 400, 64 )
+text = "Continue"
+
+[node name="SaveButton" parent="Background/Column" instance=ExtResource( 3 )]
+margin_left = 100.0
+margin_top = 227.0
+margin_right = 500.0
+margin_bottom = 291.0
+rect_min_size = Vector2( 400, 64 )
+text = "Save"
+
+[node name="OptionsButton" parent="Background/Column" instance=ExtResource( 3 )]
+margin_left = 100.0
+margin_top = 307.0
+margin_right = 500.0
+margin_bottom = 371.0
+rect_min_size = Vector2( 400, 64 )
+text = "Options"
+
+[node name="QuitButton" parent="Background/Column" instance=ExtResource( 3 )]
+margin_left = 100.0
+margin_top = 387.0
+margin_right = 500.0
+margin_bottom = 451.0
+rect_min_size = Vector2( 400, 64 )
+text = "Quit"
+
+[node name="SaveMenu" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="OptionsMenu" parent="." instance=ExtResource( 5 )]
+visible = false
+SUB_MENU_PATH = NodePath("")
+[connection signal="pressed" from="Background/Column/QuitButton" to="." method="_on_QuitButton_pressed"]

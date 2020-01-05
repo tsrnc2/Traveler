@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/icons/food/hotsause.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=2]
+
+[node name="Hotsause" instance=ExtResource( 2 )]
+icon = ExtResource( 1 )
+display_name = "Hotsause"
+description = "Spicy Condament"
+price = 25
+calories = 3

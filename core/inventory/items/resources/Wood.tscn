@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/resources/Resources.gd" type="Script" id=1]
+[ext_resource path="res://core/inventory/icons/resources/woodplank.png" type="Texture" id=2]
+
+[node name="Wood" type="Node"]
+script = ExtResource( 1 )
+icon = ExtResource( 2 )
+display_name = "Wood"
+description = "Dry wood good for burning"
+price = 0
+weight = 4

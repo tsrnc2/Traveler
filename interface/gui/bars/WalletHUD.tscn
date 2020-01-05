@@ -1,0 +1,131 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://interface/fonts/source_code_pro_explanations_bold.tres" type="DynamicFont" id=1]
+[ext_resource path="res://interface/theme/panel/panel.stylebox" type="StyleBox" id=2]
+[ext_resource path="res://core/inventory/items/coins/coin_single.png" type="Texture" id=3]
+
+[sub_resource type="GDScript" id=1]
+script/source = "# warning-ignore-all:unused_class_variable
+extends Panel
+
+export(Color) var FLASHCOLOR: Color
+export(Color) var DEFAULTCOLOR := Color('FFFFFF')
+
+var error:int = OK setget on_error
+
+func on_error(new_error) -> void:
+	error = new_error
+	print(\"Error in WalletHUD :\", error)
+
+func initialize(wallet:Node) -> void:
+	update_count(wallet.coins)
+	error = wallet.connect(\"coins_changed\",self,\"_on_Walet_coins_changed\")
+
+func _on_Walet_coins_changed(coins:int) -> void:
+	update_count(coins)
+	$AnimationPlayer.play(\"Flash\")
+
+func update_count(value :int) -> void:
+	$Label.text = str(value)
+"
+
+[sub_resource type="Animation" id=2]
+resource_name = "Flash"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Coin:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Coin:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "defualt"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Coin:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Coin:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[node name="WalletHUD" type="Panel"]
+pause_mode = 2
+margin_left = 1830.0
+margin_right = 1920.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 90, 20 )
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coin" type="TextureRect" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -16.5
+margin_right = 30.0
+margin_bottom = 16.5
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -55.0
+margin_top = -20.4182
+margin_right = -7.62939e-06
+margin_bottom = 19.5818
+grow_horizontal = 0
+rect_min_size = Vector2( 55, 40 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 1 )
+text = "120"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Flash = SubResource( 2 )
+anims/defualt = SubResource( 3 )

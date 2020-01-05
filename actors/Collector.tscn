@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://actors/CoinsCollector.gd" type="Script" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 44.6727
+__meta__ = {
+
+}
+
+[node name="Collector" type="Area2D"]
+monitorable = false
+collision_layer = 128
+collision_mask = 64
+script = ExtResource( 1 )
+__meta__ = {
+
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+__meta__ = {
+
+}
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/items/clothing/BaseClothing.gd" type="Script" id=1]
+[ext_resource path="res://core/inventory/icons/clothing/Sandles.png" type="Texture" id=2]
+
+[node name="BasicSandles" type="Node"]
+script = ExtResource( 1 )
+icon = ExtResource( 2 )
+display_name = "Sandles"
+description = "Basic footwear"
+price = 45
+weight = 2
+usable = false
+COLD_PROTECTION = 15
+HEAT_PROTECTION = 10

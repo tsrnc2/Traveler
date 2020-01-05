@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://core/world/weather/splash.tres" type="SpriteFrames" id=1]
+
+[node name="Splash" type="AnimatedSprite"]
+scale = Vector2( 0.05, 0.05 )
+frames = ExtResource( 1 )
+animation = "no-splash"

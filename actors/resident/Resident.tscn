@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://actors/resident/Body/people.png" type="Texture" id=1]
+[ext_resource path="res://actors/resident/ResidentWalker.gd" type="Script" id=2]
+[ext_resource path="res://actors/resident/Body.gd" type="Script" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 1280, 1200 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+[node name="Resident" type="KinematicBody2D" groups=[
+"npc",
+"resident",
+]]
+script = ExtResource( 2 )
+
+[node name="Body" type="Sprite" parent="."]
+scale = Vector2( 0.6, 0.6 )
+texture = SubResource( 1 )
+vframes = 25
+hframes = 40
+region_enabled = true
+region_rect = Rect2( 0, 0, 1280, 1200 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -0.540344 )
+shape = SubResource( 2 )
+disabled = true

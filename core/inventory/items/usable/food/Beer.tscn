@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core/inventory/icons/food/beer.png" type="Texture" id=1]
+[ext_resource path="res://core/inventory/items/usable/food/BaseFood.tscn" type="PackedScene" id=2]
+
+[node name="Beer" index="0" instance=ExtResource( 2 )]
+icon = ExtResource( 1 )
+display_name = "Beer"
+description = "Refreshing Drink"
+price = 15
+usable = true

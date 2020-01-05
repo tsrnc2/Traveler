@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cough_03.ogg-d54b8ede11a26849aea8d1628186c855.oggstr"
+
+[deps]
+
+source_file="res://audio/sfx/cough_03.ogg"
+dest_files=[ "res://.import/cough_03.ogg-d54b8ede11a26849aea8d1628186c855.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

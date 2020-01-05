@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://interface/menus/overviews/HungerOverview.tscn" type="PackedScene" id=1]
+[ext_resource path="res://interface/menus/overviews/StaminaOverview.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/theme/panel/Overlay.png" type="Texture" id=3]
+[ext_resource path="res://interface/menus/overviews/PlayerOverview.gd" type="Script" id=4]
+[ext_resource path="res://interface/menus/overviews/ThirstOverview.tscn" type="PackedScene" id=5]
+[ext_resource path="res://interface/menus/MenuTitle.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interface/gui/player/EventLog.tscn" type="PackedScene" id=7]
+
+
+[node name="PlayerOverview" type="NinePatchRect" groups=[
+"PlayerOverview",
+]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -600.0
+margin_top = -475.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 600, 925 )
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, -0.683174, 598.804, 335.023 )
+patch_margin_left = 13
+patch_margin_top = 31
+patch_margin_right = 14
+patch_margin_bottom = 24
+axis_stretch_horizontal = 1
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitlePanel" parent="VBoxContainer" instance=ExtResource( 6 )]
+margin_right = 600.0
+margin_bottom = 84.0
+title = "Player Stats"
+
+[node name="HungerOverview" parent="VBoxContainer" instance=ExtResource( 1 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 88.0
+margin_right = 600.0
+margin_bottom = 288.0
+rect_min_size = Vector2( 600, 200 )
+
+[node name="ThurstOverview" parent="VBoxContainer" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 292.0
+margin_right = 600.0
+margin_bottom = 492.0
+rect_min_size = Vector2( 600, 200 )
+
+[node name="EventLogNote" type="Label" parent="VBoxContainer"]
+margin_top = 496.0
+margin_right = 600.0
+margin_bottom = 576.0
+rect_min_size = Vector2( 600, 80 )
+text = "Metablism Event Log"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MetablismEventLog" parent="VBoxContainer/EventLogNote" instance=ExtResource( 7 )]
+margin_left = 50.0
+margin_top = 18.0
+margin_right = 550.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 500, 42 )
+align = 1
+
+[node name="StaminaOverview" parent="VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 580.0
+margin_right = 600.0
+margin_bottom = 830.0
+rect_min_size = Vector2( 600, 250 )
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_top = 834.0
+margin_right = 600.0
+margin_bottom = 884.0
+rect_min_size = Vector2( 500, 50 )
+text = "Close"
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]

@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/default.theme" type="Theme" id=1]
+[ext_resource path="res://interface/items/ItemButton.gd" type="Script" id=2]
+[ext_resource path="res://interface/theme/icons/purse.png" type="Texture" id=3]
+[ext_resource path="res://interface/theme/icons/coins.png" type="Texture" id=4]
+[ext_resource path="res://interface/theme/panel/StonePanel.tres" type="StyleBox" id=5]
+
+[node name="ItemButton" type="Button"]
+margin_right = 200.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 230, 60 )
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+custom_styles/normal = ExtResource( 5 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+anchor_bottom = 1.0
+margin_left = 64.3228
+margin_top = 23.0807
+margin_right = 163.323
+margin_bottom = -13.9193
+rect_min_size = Vector2( 50, 20 )
+text = "Item Name"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="."]
+anchor_bottom = 1.0
+margin_left = -9.88782
+margin_top = 0.540344
+margin_right = 60.1122
+margin_bottom = 0.540344
+texture = ExtResource( 3 )
+stretch_mode = 4
+
+[node name="coins" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -41.0
+margin_top = -14.0
+margin_right = -9.0
+margin_bottom = 18.0
+texture = ExtResource( 4 )
+
+[node name="Price" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -64.0
+margin_top = 22.0
+margin_right = -42.0
+margin_bottom = -15.0
+rect_min_size = Vector2( 22, 20 )
+text = "20"
+align = 2
+valign = 1

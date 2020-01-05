@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="Buffer" type="Control"]
+margin_top = 80.0
+margin_right = 600.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 600, 50 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://levels/scripts/clock.gd" type="Script" id=1]
+
+
+[node name="clock" type="Node"]
+script = ExtResource( 1 )
+hour = 5
+minute = 55
+
+[node name="Timer" type="Timer" parent="."]

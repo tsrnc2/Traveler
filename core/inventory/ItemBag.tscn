@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://core/inventory/ItemBag.gd" type="Script" id=1]
+[ext_resource path="res://core/inventory/ShopInventory.tscn" type="PackedScene" id=2]
+[ext_resource path="res://core/world/tiles/decor/brownloot.png" type="Texture" id=3]
+[ext_resource path="res://core/inventory/Sprite.gd" type="Script" id=4]
+
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 172.413
+
+[node name="ItemBag" type="Area2D" groups=[
+"lootbag",
+"enviroment",
+]]
+scale = Vector2( 0.15, 0.15 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 2.32001, 2.30505 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 10, -10 )
+texture = ExtResource( 3 )
+hframes = 3
+script = ExtResource( 4 )
+ANIMATION_SPEED = 0.2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/StaticBody2D"]
+position = Vector2( 3.92918, -4.28791 )
+scale = Vector2( -20.9914, 87.9448 )
+polygon = PoolVector2Array( 8.21817, 0.115627, 8.21817, 1.04065, 2.41711, 1.96566, -7.25133, 0.578136, -7.25133, -0.809391, -3.38395, -1.2719, 8.21817, 0.115627 )
+
+[node name="Timer" type="Timer" parent="Sprite"]
+one_shot = true
+
+[node name="Inventory" parent="." instance=ExtResource( 2 )]
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="." to="." method="_on_ItemBag_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_ItemBag_body_exited"]
+[connection signal="timeout" from="Sprite/Timer" to="Sprite" method="_on_Timer_timeout"]

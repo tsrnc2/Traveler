@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://actors/DamageSource.tscn" type="PackedScene" id=1]
+[ext_resource path="res://actors/hit_box/HitBox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://enemies/mosquito/mosquito.png" type="Texture" id=3]
+[ext_resource path="res://actors/health/Stats.tscn" type="PackedScene" id=4]
+[ext_resource path="res://enemies/mosquito/Mosquito.gd" type="Script" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 38.4768
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 24.9469
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/exclamation-mark.png-71455c01c46e91dfa6565f7fa57a362a.stex"
+
+[node name="Mosquito" type="KinematicBody2D" groups=[
+"character",
+]]
+position = Vector2( -1.98642, 0.817726 )
+collision_layer = 2
+script = ExtResource( 5 )
+
+[node name="Stats" parent="." instance=ExtResource( 4 )]
+max_health = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -3.01358, 49.1823 )
+polygon = PoolVector2Array( -18.0136, -69.4669, -18.0136, -29.4669, 31.9864, -29.4669, 31.9864, -69.4669 )
+disabled = true
+
+[node name="HitBox" parent="." instance=ExtResource( 2 )]
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2( 6, -2.42273 )
+shape = SubResource( 1 )
+
+[node name="DamageSource" parent="." instance=ExtResource( 1 )]
+monitoring = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageSource"]
+position = Vector2( 6, 0 )
+shape = SubResource( 2 )
+
+[node name="BodyPivot" type="Position2D" parent="."]
+z_index = 2
+
+[node name="exclamation-mark" type="Sprite" parent="BodyPivot"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 74.8139, -90 )
+rotation = 0.253141
+texture = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="BodyPivot"]
+position = Vector2( 1.40846, -1.88954 )
+texture = ExtResource( 3 )
+offset = Vector2( 15.695, 0.889542 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+visible = false
+[connection signal="damage_taken" from="Stats" to="." method="_on_Stats_damage_taken"]
+[connection signal="area_entered" from="DamageSource" to="." method="_on_DamageSource_area_entered"]
+
+[editable path="HitBox"]
