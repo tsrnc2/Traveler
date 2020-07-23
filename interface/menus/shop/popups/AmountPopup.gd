@@ -17,7 +17,7 @@ func on_error(new_error)->void:
 """args: {value, max_value}"""
 func initialize(args={}) -> void:
 	error = ok_button.connect("pressed", self, "confirmed")
-	assert args.size() == 2
+	assert(args.size() == 2)
 	var value = args['value']
 	var max_value = args['max_value']
 	label.initialize(value, max_value)

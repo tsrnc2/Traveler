@@ -51,7 +51,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-LEVEL_START = "res://levels/CityTestHandMadeDesert.tscn"
+LEVEL_START = "res://levels/CityTestHandMade.tscn"
 
 [node name="MapAstar" parent="LevelLoader" instance=ExtResource( 11 )]
 DEFAULT_LOCATION = Vector2( 10, 100 )

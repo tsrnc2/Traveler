@@ -20,7 +20,7 @@ enum ITEM_TYPE {EQUIPMENT = 0, FOOD = 1, CLOTHING = 2, RESOURCE = 3}
 """args: {shop, buyer}"""
 func open(args={}) ->void:
 	get_tree().paused = true
-	assert args.size() == 2
+	assert( args.size() == 2)
 	var shop = args['shop']
 	var buyer = args['buyer']
 	self.error = button_buy_equipment.connect("pressed", self, "open_submenu",
@@ -60,7 +60,7 @@ func close() ->void:
 """args: type, shop, buyer, inventory"""
 func open_submenu(Menu:PackedScene, args={}) -> void:
 	emit_signal('open_menu')
-	assert args.size() == 4
+	assert( args.size() == 4)
 	var type :int= args['type']
 	var shop :Node= args['shop']
 	var buyer :Node= args['buyer']

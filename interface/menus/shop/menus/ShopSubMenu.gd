@@ -16,11 +16,11 @@ func on_error(new_error)->void:
 		print("Error in ShopSubMenu :", error)
 
 func _ready():
-	assert ACTION != ""
+	assert( ACTION != "")
 
 """Args: {shop, buyer, items}"""
 func initialize(_args={})->void:
-	assert _args.size() == 4
+	assert( _args.size() == 4)
 	# Extract the nodes from the args dict to preserve legacy code below
 	var type : int = _args['type']
 	var shop :Node = _args['shop']

@@ -23,16 +23,13 @@ void vertex() {
 
 void fragment() {
 // Input:4
-	vec3 n_out4p0;
-	n_out4p0 = vec3(SCREEN_UV,0.0);
+	vec3 n_out4p0 = vec3(SCREEN_UV, 0.0);
 
 // Input:2
-	float n_out2p0;
-	n_out2p0 = TIME;
+	float n_out2p0 = TIME;
 
 // ScalarFunc:3
-	float n_out3p0;
-	n_out3p0 = sin(n_out2p0);
+	float n_out3p0 = sin(n_out2p0);
 
 // Output:0
 	COLOR.rgb = n_out4p0;

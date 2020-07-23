@@ -15,4 +15,5 @@ dest_files=[ "res://.import/StreetLamp.obj-d62b1af7ff5f47b323049ee92c3ceed3.mesh
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true

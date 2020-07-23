@@ -10,7 +10,7 @@ onready var inventory := $Inventory
 onready var wallet := $Wallet
 
 func _ready():
-	assert inventory != null
+	assert (inventory != null)
 
 func buy_from(actor :Node, item :Node, amount:int=1) -> void:
 	amount = int(clamp(amount, 1, MAX_TRANSACTION_COUNT))

@@ -25,7 +25,7 @@ func initialize(args:Dictionary={})->void:
 """args: {inventory}"""
 func open(args:Dictionary={}) ->void:
 #	get_tree().paused = true
-	assert args.size() == 1
+	assert(args.size() == 1)
 #	var inventory = args['inventory']
 	self.tween_error = tween.interpolate_property(self,'rect_position', close_position, open_position, ANIMATION_TIME,Tween.TRANS_BOUNCE, Tween.EASE_OUT)
 	self.tween_error = tween.start()
